@@ -1,27 +1,31 @@
 --- 
-title_meta  : Chapter 1
-title       : Intro to basics
-description : In this chapter, you will take your first steps with R. You will learn how to use the console as a calculator and how to assign variables. You will also get to know the basic data types in R. Let us get started!
+title_meta  : Capítulo 1
+title       : Introducción
+description : En este capítulo vamos a dar nuestros primeros pasos en R. Aprenderemos a usar la consola como calculadora y a asignar variables. También aprenderemos algunos de los tipos básicos de datos en R. Comencemos!
 framework   : datacamp
 mode        : selfcontained
 ---
 
 
-## How it works
+## Como funciona la plataforma
 
-In the **editor** on the right you should type R code to solve the exercises. 
+En el **editor** a la derecha puedes escribir el código para resolver los ejercicios.
 
-R makes use of the `#` sign to add comments, so that you and others can understand what the R code is about. Just like Twitter! 
-Comments are not run as R code, so they will not influence your result. 
+R utiliza el símbolo `#` para añadir comentarios en el código. Comentar el código es un buen habito a desarrollar pues indica a las personas (incluyendo nosotros mismos) leyendo el código que es lo que éste hace.
 
-The output of your R code is shown in the **console** in the lower right corner, while **graphs** are shown in the upper right corner.
+Los comentarios no modifican las instrucciones que escribimos en R de ninguna manera.  
+
+Las salidas del código escrito en el editor aparecen en la **consola** (R console) abajo a la derecha, mientras que los **gráficos** se muestran en la esquina superior derecha.
+
+Cada ejercicio consta de una explicación (lo que estas leyendo ahora) y unas Instrucciones (**Instructions**) presentadas a continuación.
+
 
 *** =instructions
-- Click 'Submit Answer' and see how the console now shows you the executed R code: the solution `7` appears as the sum of `3` and `4`. In its most basic form, R can thus be used as a calculator or as a means to generate plots, but there is much more!
-- You can see that R has generated some cool visualizations in the upper right corner. Use the buttons beneath in the pane to browse through these. 
+- Da clic a 'Submit Answer' y date cuenta como la consola ejecuta el código de R del editor: la solución `7` aparece como la suma de `3` y `4`. El uso más simple de R es como una calculadora y graficadora, pero por supuesto hay mucho, mucho, mucho más!
+- Puedes ver que R ha producido algunos gráficos en la esquina superior derecha. Puedes usar las flechas para navegar por los gráficos. 
 
 *** =hint
-Just click the 'Submit Answer' button.
+Solo da clic al botton 'Submit Answer'
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -29,105 +33,103 @@ Just click the 'Submit Answer' button.
 ```
 
 *** =sample_code
+
 ```{r eval=FALSE}
-# This is the editor and the part below the white line is called the console
+# Este es el editor y la parte de abajo es la consola
 
-# The hashtag is used to add comments
+# El símbolo de numeral (hashtag) es utilizada para hacer comentarios
 
-# Show some demo graphs generated with R
+# La siguiente línea de código muestra una demostración de las gráficas en R.
 demo("graphics")
 
-# Calculate 3 + 4
-3 + 4
+# Calcula 3+4
+3+4
 ```
 
 *** =solution
+
 ```{r eval=FALSE}
-#Just click the 'Submit Answer' button
+# Solo da clic en 'Submit Answer' 
 
-# This is the editor and the part below the white line is called the console
+# Este es el editor y la parte de abajo es la consola
 
-# The hashtag is used to add comments
+# El símbolo de numeral (hashtag) es utilizada para hacer comentarios
 
-# Calculate 3+4
-3 + 4
+# Calcula 3+4
+3+4
 
-# Show some demo graphs generated with R
+# La siguiente línea de código muestra una demostración de las gráficas en R.
 demo("graphics")
 ```
 
 *** =sct
 ```{r eval=FALSE}
-success_msg("Awesome! Now that you're familiar with the interface, let's get down to R business!")
+success_msg("Muy bien! Ahora que estas familiarizado con la plataforma empecemos a aprende-R!")
 ```
 
 ---
 
-## Little arithmetics with R
+## Aritmetica con R
 
-As previously stated, in its most basic form R can be used as a simple calculator. Consider the following arithmetic operators:
+Como vimos el uso más simple que se le puede dar a R es el de una calculadora. Consideremos las siguientes operaciones:
 
-- Addition: `+`
-- Subtraction: `-`
-- Multiplication: `*`
-- Division: `/`
-- Exponentiation: `^`
+- Adición: `+`
+- Resta: `-`
+- Multiplicación: `*`
+- División: `/`
+- Exponenciación: `^`
 - Modulo: `%%`
 
-The last two might need some explaining:
-- The `^` operator raises the number to its left to the power of the number to its right: for example `3^2` is 9.
-- The modulo returns the remainder of the division of the number to the left by the number on its right, for example 5 modulo 3 or `5 %% 3` is 2.
+Los últimos dos necesitan una breve explicación:
+- El operador `^` eleva el número a la izquierda a la potencia a la derecha `3^2` es 9
+- El módulo (mod) `%%` calcula el residuo de la división del número a la izquierda por el número a la derecha, por ejemplo 5 mod 3 o `5%%3` es 2.
 
 *** =instructions
-- Type `2^5` in the editor to calculate 2 to the power 5.
-- Type `17 %% 4` to calculate 17 modulo 4.
-- Click 'Submit Answer' and have a look at the R output in the console.
-- Note how the `#` symbol is used to add comments on the R code.
+- Escribe `2^5` en el editor para calcular 2 a la quinta potencia.
+- Escribe `17%%4` para calcular el 17 módulo 4.
+- Da clic a 'Submit Answer' para ver el resultado en la consola.
 
 *** =hint
-Another example of the modulo operator: `9 %5 2` equals `1`.
-
-*** =pre_exercise_code
-```{r eval=FALSE}
-# no pec
-```
+Solo sigue las instrucciones, es sencillo :). Otro ejemplo de módulo es 9%%2 = 1.
 
 *** =sample_code
+
 ```{r eval=FALSE}
-# An addition
-5 + 5 
+# Adición
+5+5 
 
-# A subtraction
-5 - 5 
+# Resta
+5-5 
 
-# A multiplication
-3 * 5
+# Multiplicación
+3*5
 
- # A division
-(5 + 5)/2 
+ # División
+(5+5)/2 
 
-# Exponentiation
-
+# Exponenciación
+# Escribe aquí!
 
 # Modulo
+# Escribe aquí!
 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# An addition
-5 + 5
+# Adición
+5 + 5 
 
-# A subtraction
+# Resta
 5 - 5 
 
-# A multiplication
+# Multiplicación
 3 * 5
 
- # A division
+ # División
 (5 + 5)/2 
 
-# Exponentiation
+# Exponenciación
 2^5
 
 # Modulo
@@ -136,34 +138,30 @@ Another example of the modulo operator: `9 %5 2` equals `1`.
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Do not remove the other arithmetic examples!"
+msg = "No borres los otros ejemplos aritméticos!"
 test_output_contains("5 + 5", incorrect_msg = msg)
 test_output_contains("5 - 5", incorrect_msg = msg)
 test_output_contains("(5 + 5)/2", incorrect_msg = msg)
-test_output_contains("2^5", incorrect_msg = "The exponentiation example is not correct. Make sure to read the instructions carefully.")
-test_output_contains("17 %% 4", incorrect_msg = "There seems to be an issue with the modulo example. Make sure to read the instructions carefully.")
-success_msg("Great! Head over to the next exercise.")
+test_output_contains("2^5", incorrect_msg = "La exponenciación no fue correcta, Asegúrate de haber leido las instrucciones")
+test_output_contains("17%%4", incorrect_msg = "Parece haber un problema con la parte del módulo. Asegúrate de haber leido las instrucciones.")
+success_msg("Excelente! vamos al siguiente ejercicio.")
 ```
 
 ---
 
-## Variable assignment 
+## Variables y asignaciones
 
-A basic concept in (statistical) programming is called a **variable**. 
+Un concepto básico en programación es el de **variable**. 
 
-A variable allows you to store a value (e.g. 4) or an object (e.g. a function description) in R. You can then later use this variable's name to easily access the value or the object that is stored within this variable. 
+Una variable nos permite guardar valores (por ejemplo el número 4) o algún objeto (veremos mas adelante de que se trata) en R. Luego puedes acceder al valor guardado en la variable por medio del nombre de la misma.
 
-You can assign a value 4 to a variable `my_variable` with the command
-
-```
-my_variable <- 4
-```
+Podemos asignar el valor de 4 a la variable `mi_variable` con el siguiente comando: `mi_variable <- 4`
 
 *** =instructions
-Over to you: complete the code in the editor such that it assigns the value 42 to the variable `x` in the editor. Click 'Submit Answer'. Notice that when you ask R to print `x`, the value 42 appears.
+- Completa el código en el editor de tal manera que el valor de 42 quede asignado a la variable x. Da clic en 'Submit Answer'. Nota al escribir `x` en R, se imprime el valor de 42 en la consola.  
 
 *** =hint
-Look at how the value 4 was assigned to `my_variable` in the exercise's assignment. Do the exact same thing in the editor, but now assign 42 to the variable `x`.
+Mira como asignamos el número 4 a `mi_variable`: `mi_variable <- 4`
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -172,42 +170,42 @@ Look at how the value 4 was assigned to `my_variable` in the exercise's assignme
 
 *** =sample_code
 ```{r eval=FALSE}
-# Assign the value 42 to 'x'
+# Asigna 42 a x
 x <- 
 
-# Print out the value of the variable 'x'
+# Imprime el valor de la variable x
 x
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Assign the value 42 to 'x'
+# Asigna 42 a x
 x <- 42
 
-# Print out the value of the variable 'x'
+# Imprime el valor de la variable x
 x
 ```
 
 *** =sct
 ```{r eval=FALSE}
-test_object("x", undefined_msg = "Make sure to define a variable <code>x</code>.",
-            incorrect_msg = "Make sure that you assign the correct value to <code>x</code>.") 
-success_msg("Good job! Have you noticed that R does not print the value of a variable to the console when you did the assingment? <code>x <- 42</code> did not generate any output, because R assumes that you will be needing this variable in the future. Otherwise you wouldn't have stored the value in a variable in the first place, right? Proceed to the next exercise!")
+test_object("x", undefined_msg = "Asegúrate de haber definido la variable <code>x</code>.",
+            incorrect_msg = "Asegúrate de que asignaste el valor correcto a <code>x</code>.") 
+success_msg("Bien! Notaste que R no imprime el valor de la variable a la que le asignaste el valor? el código<code>x <- 42</code> no generó ninguna salida a la consola porque R supone que vas a usar esa variable en el futuro, precisamente por eso fue que creamos la variable, verdad? Muy bien sigamos!")
 ```
 
 ---
 
-## Variable assignment (2)
+## Variables y asignaciones (2)
 
-Suppose you have a fruit basket with five apples. As a data analyst in training, you want to store the number of apples in a variable with the name `my_apples`. 
+Supongamos que tienes una canasta con cinco manzanas. Para recordarlo, quizás quieras asignar el número de manzanas en una variable llamada `numero_manzanas`
 
 *** =instructions
-- Type the following code in the editor: `my_apples <- 5`. This will assign the value 5 to `my_apples`.
-- Type: `my_apples` below the second comment. This will print out the value of `my_apples`.
-- Click 'Submit Answer', and look at the console: you see that the number 5 is printed. So R now links the variable `my_apples` to the value 5.
+- Escribe el siguiente código: `numero_manzanas <- 5` para asignar el numero 5 a la variable `numero_manzanas`.
+- Escribe: `numero_manzanas` abajo del segundo comentario.
+- Da clic a 'Submit Answer', ve la consola: el numero que sea ha impreso es `5`.
 
 *** =hint
-Remember that if you want to assign a number or an object to a variable in R, you can make use of the assignment operator `<-`. Alternativy, you can use `=`, but `<-` is widely preferred in the R community.
+Recuerda que para asignar valores a variables puedes utilizar el símbolo `<-`. Alternativamente pudieras haber utilizado `=` pero `<-` es mucho mas preferido en la comunidad de R.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -215,47 +213,44 @@ Remember that if you want to assign a number or an object to a variable in R, yo
 
 *** =sample_code
 ```{r eval=FALSE}
-# Assign the value 5 to the variable called 'my_apples'
+# Asigna el valor de 5 a la variable numero_manzanas
 
 
-# Print out the value of the variable 'my_apples'
 
+# Imprime el valor de la variable numero_manzanas
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Assign the value 5 to the variable called 'my_apples'
-my_apples <- 5
+# Asigna el valor de 5 a la variable numero_manzanas
+numero_manzanas <- 5
 
-# Print out the value of the variable 'my_apples'
-my_apples
+# Imprime el valor de la variable numero_manzanas
+numero_manzanas
 ```
 
 *** =sct
 ```{r eval=FALSE}
-test_object("my_apples", 
-            undefined_msg = "Please make sure to define a variable <code>my_apples</code>.",
-            incorrect_msg = "Make sure that you assign the correct value to <code>my_apples</code>.")
-test_output_contains("my_apples", 
-                     incorrect_msg = "Have you explicitly told R to print out the <code>my_apples</code> variable to the console?")
-success_msg("Great! Continue to the next exercise!")
+test_object("numero_manzanas", 
+            undefined_msg = "Asegúrate de haber creado la variable <code>numero_manzanas</code>.",
+            incorrect_msg = "Asegúrate de haber asignado el valor correcto a la variable <code>numero_manzanas</code>.")
+test_output_contains("numero_manzanas", 
+                     incorrect_msg = "Has dicho explicitamente a R que imprima la variable <code>numero_manzanas</code> a la consola?")
+success_msg("Ok bien! Vamos al siguiente ejercicio.")
 ```
 
 ---
 
 ## Variable assignment (3)
 
-Every tasty fruit basket needs oranges, so you decide to add six oranges. As a data analyst, your reflex is to immediately create the variable `my_oranges` and assign the value 6 to it. Next, you want to calculate how many pieces of fruit you have in total. Since you have given meaningful names to these values, you can now code this in a clear way: 
-```
-my_apples + my_oranges
-```
+Supongamos que ahora tienes 6 naranjas. De nuevo, para no olvidarlo se te ocurre crear una variable llamada `numero_naranjas` y asignar el valor de 6 a esa variable. Ahora podemos a empezar a utilizar las variables creadas para hacer algo con ellas. Usemos R para saber el número total de frutas con las que contamos, pidamos que haga la cuenta por nosotros: `numero_manzanas + numero_naranjas`. Al leer este codigo nos damos cuenta de la importancia de dar nombres útiles a nuestras variables.
 
 *** =instructions
-- Assign to `my_oranges` the value 6.
-- R allows you to combine the variables `my_apples` and `my_oranges` into a new variable `my_fruit`. Create this new variable `my_fruit`, which is the total amount of fruits in your fruit basket.
+- Asigna a `numero_naranjas` el valor de 6.
+- R permite combinar estas variables `numero_manzanas` y `numero_naranjas` en una nueva variable `numero_frutas`. Crea la variable `numero_frutas` y asigna el valor del total de frutas que tenemos.
 
 *** =hint
-`my_fruit` is just the sum of `my_apples` and `my_oranges`. You can use the `+` operator to sum the two and `<-` to assign that value to the variable `my_fruit`.
+`numero_frutas` es la suma de `numero_manzanas` and `numero_naranjas`. Usa `+` para obtener la suma y `<-` para asignar el valor de la suma a `numero_frutas`.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -264,57 +259,55 @@ my_apples + my_oranges
 
 *** =sample_code
 ```{r eval=FALSE}
-# Assign a value to the variables called 'my_apples' and 'my_oranges'
-my_apples <- 5
+# Asigna el valor de 5 y 6 a las variables numero_manzanas y numero_naranjas respectivamente
 
 
-# Add these two variables together and print the result
+# Suma estas dos variables e imprime el resultado.
 
 
-# Create the variable 'my_fruit'
-
+#Crea la variable numero_frutas y asigna el resultado de la suma anterior.
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Assign a value to the variables called 'my_apples' and 'my_oranges'
-my_apples  <- 5
-my_oranges <- 6
+# Asigna el valor de 5 y 6 a las variables numero_manzanas y numero_naranjas respectivamente
+numero_manzanas <- 5
+numero_naranjas <- 6
 
-# Add these two variables together and print the result
-my_apples + my_oranges
+# Suma estas dos variables e imprime el resultado.
+numero_manzanas + numero_naranjas
 
-# Create the variable 'my_fruit'
-my_fruit <- my_apples + my_oranges
+#Crea la variable numero_frutas y asigna el resultado de la suma anterior.
+numero_frutas <- numero_manzanas + numero_naranjas
 ```
 
 *** =sct
 ```{r eval=FALSE}
-test_object("my_apples", 
-            undefined_msg = "Please make sure to define a variable <code>my_apples</code>.",
-            incorrect_msg = "Do not change the assignment of the <code>my_apples</code> variable!")
-test_object("my_oranges", 
-            undefined_msg = "Have you defined a variable <code>my_oranges</code>?",
-            incorrect_msg = "Have you assigned the correct value to the variable <code>my_oranges</code>?")
-test_output_contains("my_apples + my_oranges",
-                     incorrect_msg = "The output does not contain the result of adding <code>my_apples</code> and <code>my_oranges</code>. Try again")
-test_object("my_fruit",
-            undefined_msg = "Please make sure to define a variable <code>my_fruit</code>.",
-            incorrect_msg = "Make sure that you assign the correct value to <code>my_fruit</code>.")
-success_msg("Nice one! The great advantage of doing calculations with variables is reusability. If you just change <code>my_apples</code> to equal 12 instead of 5 and rerun the script, <code>my_fruit</code> will automatically update as well. Continue to the next exercise.")
+test_object("numero_manzanas", 
+            undefined_msg = "Asegúrate de haber definido la variable <code>numero_manzanas</code>.",
+            incorrect_msg = "No cambias el valor asignado a la variable <code>numero_manzanas</code>")
+test_object("numero_naranjas", 
+            undefined_msg = "Asegúrate de haber definido la variable <code>numero_naranjas</code>?",
+            incorrect_msg = "Asegúrate de asignarle el valor correcto a <code>numero_naranjas</code>?")
+test_output_contains("numero_manzanas + numero_naranjas",
+                     incorrect_msg = "El resultado no contiene la suma de la variables <code>numero_manzanas</code> y <code>numero_naranjas</code>. Trata de nuevo")
+test_object("numero_frutas",
+            undefined_msg = "Asegúrate de haber definido la variable <code>numero_frutas</code>.",
+            incorrect_msg = "Asegúrate de haber dado el valor correcto a la variable <code>numero_frutas</code>.")
+success_msg("Bien hecho! La gran ventaja de haber hecho los cálculos usando variables es que éstas son reusables. Si cambias el valor de la variable <code>numero_manzanas</code> que sea 12 en lugar de 5 y corres de nuevo el script el valor de <code>numero_frutas</code> se actualizará al nuevo valor. Continuemos!")
 ```
 
 ---
-## Apples and oranges
+## Manzanas y naranjas
 
-Common knowledge tells you not to add apples and oranges. But hey, that is what you just did, no :-)? The `my_apples` and `my_oranges` variables both contained a number in the previous exercise. The `+` operator works with numeric variables in R. If you really tried to add "apples" and "oranges", and assigned a text value to the variable `my_oranges` (see the editor), you would be trying to assign the addition of a numeric and a character variable to the variable `my_fruit`. This is not possible.
+En la escuela primaria nos decían que no sumáramos manzanas con naranjas, pero es lo que acabamos de hacer :) \n Sin embargo `numero_manzanas` y `numero_naranjas` son dos variables que contienen el mismo tipo de dato: un dato de tipo numérico. El operador `+` en R funciona con variables de este tipo. Si alguna de nuestras variables no es numérica sino por ejemplo caracter (ver el editor), entonces estaríamos tratando de asignar la suma de un caracter y un número a la variable `numero_frutas`, lo cual no es posible.
 
 *** =instructions
-- Click 'Submit Answer' and read the error message. Make sure to understand why this did not work.
-- Adjust the code so that R knows you have 6 oranges and thus a fruit basket with 11 pieces of fruit.
+- Da clic a 'Submit Answer' lee el mensaje de error, asegúrate de entender que dice (puedes copiar y pegar el texto en ingles en un traductor)
+- Ajusta el código para que R deje de mostrar ese error.
 
 *** =hint
-You have to assign the numeric value `6` to the `my_oranges` variable instead of the character value `"six"`. Note how the quotation marks are used to indicate that `"six"` is a character.
+Tienes que asignar el valor de `6` a `numero_naranjas` en lugar de la cadena de caracteres `"seis"`. Nota como las comillas nos indican que `"seis"` es caracter y no un número.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -323,76 +316,75 @@ You have to assign the numeric value `6` to the `my_oranges` variable instead of
 
 *** =sample_code
 ```{r eval=FALSE}
-# Assign a value to the variable called 'my_apples'
-my_apples <- 5 
+# Asigna el valor de 5 a la variable llamada numero_manzanas
+numero_manzanas <- 5 
 
-# Print out the value of 'my_apples'
-my_apples       
+# Imprime el valor en numero_manzanas
+numero_manzanas      
 
-# Assign a value to the variable 'my_oranges' and print it out
-my_oranges <- "six" 
-my_oranges 
+# Asignando un caracter a numero_naranjas
+numero_naranjas <- "seis" 
+numero_naranjas
 
-# New variable that contains the total amount of fruit
-my_fruit <- my_apples + my_oranges 
-my_fruit
+# La nueva variable contiene el número total de frutas
+numero_frutas   <- numero_manzanas + numero_naranjas 
+numero_frutas
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Assign a value to the variable called my_apples
-my_apples <- 5  
+# Asigna el valor de 5 a la variable llamada numero_manzanas
+numero_manzanas <- 5 
 
-# Print out the value of answer
-my_apples  
+# Imprime el valor en numero_manzanas
+numero_manzanas      
 
-# Assign a value to the variable 'my_oranges' and print it out
-my_oranges <- 6
-my_oranges 
+# Asignando un número a numero_naranjas
+numero_naranjas <- 6 
+numero_naranjas
 
-# New variable that contains the total amount of fruit
-my_fruit <- my_apples + my_oranges 
-my_fruit
+# La nueva variable contiene el número total de frutas
+numero_frutas   <- numero_manzanas + numero_naranjas 
+numero_frutas
 ```
 
 *** =sct
 ```{r eval=FALSE}
 test_error()
-test_object("my_oranges",
-            undefined_msg = "Please make sure to define a variable <code>my_oranges</code>.",
-            incorrect_msg = "Make sure that you assign the correct value to <code>my_oranges</code>. Strings and numbers are different things!")
-test_output_contains("my_apples + my_oranges", 
-                     incorrect_msg = "The output does not contain the result of adding <code>my_apples</code> and <code>my_oranges</code>.")
-test_object("my_fruit", 
-            undefined_msg = "Please make sure to define a variable <code>my_fruit</code>.",
-            incorrect_msg = "Make sure that you assign the correct value to <code>my_fruit</code>.")
-success_msg("Awesome, keep up the good work! Continue to the next exercise.")
+test_object("numero_naranjas",
+            undefined_msg = "Por favor define la variable <code>numero_naranjas</code>.",
+            incorrect_msg = "Asegúrate de asignarle el valor correcto a la variable <code>numero_naranjas</code>. Caracteres y números son cosas diferentes")
+test_output_contains("numero_manzanas + numero_naranjas", 
+                     incorrect_msg = "El resultado no contiene la suma de <code>numero_manzanas</code> con <code>numero_naranjas</code>.")
+test_object("numero_frutas", 
+            undefined_msg = "Por favor define la variable <code>numero_frutas</code>.",
+            incorrect_msg = "Asegúrate de asignarle el valor correcto a la variable <code>numero_frutas</code>.")
+success_msg("Muy bien, que buen trabajo! Sigamos...")
 ```
 
 ---
 
-## Basic data types in R
+## Tipos de datos básicos en R
 
-R works with numerous data types. Some of the most basic types to get started are:
+R trabaja con muchos tipos de datos. Para empezar, algunos de los más básicos son:
 
-- Decimals values like `4.5` are called **numerics**.
-- Natural numbers like `4` are called **integers**. Integers are also numerics.
-- Boolean values (`TRUE` or `FALSE`) are called **logical** (`TRUE` can be abbreviated to `T` and `FALSE` to `F`).
-- Text (or string) values are called **characters**.
+- Decimales como `4.5` son llamados **numeric** (numéricos).
+- Números enteros como `4` son llamados (sorpresa!) **integer** (enteros).
+- Valores Booleanos (`TRUE` (Verdadero) o `FALSE` (Falso)) **logical** (lógicos).
+- Texto (cadenas de caracteres) son **characters** (caracteres).
 
-Note how the quotation marks on the right indicate that "some text" is a character.
+Nota como utilizamos las comillas para denotar el texto en el editor.
 
 *** =instructions
-Change the value of the:
-- `my_numeric` variable to `42`.
-- `my_character` variable to `"forty-two"`. Note that the quotation marks indicate that `"forty-two"` is a character.
-- `my_logical` variable to `FALSE`.
+Cambia los valores de:
+- `mi_numerica` a `42`.
+- `mi_caracter` a `"cuarenta_y_dos"`. Nota como utilizamos las comillas.
+- `mi_logica` a `FALSE` (Falso).
 
-Note that R is case sensitive!
+Ten en cuenta que R distingue entre mayúsculas y minúsculas!
 
 *** =hint 
-Replace the values in the editor with the values that are provided in the exercise. For example: 
-`my_numeric <- 42` assigns the value 42 to the variable `my_numeric`. 
+Solo sigue instrucciones, recuerda que asignamos valores a las variables con `<-`.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -401,55 +393,54 @@ Replace the values in the editor with the values that are provided in the exerci
 
 *** =sample_code
 ```{r eval=FALSE}
-# What is the answer to the universe?
-my_numeric <- 42.5
+# Un valor numérico
+mi_numerica <- 42.5
 
-# The quotation marks indicate that the variable is of type character
-my_character <- "some text"
+# Asignando una cadena de caracteres (o simplemente caracteres) nota el uso de las comillas
+mi_caracter <- "cuarenta_y_dos"
 
-my_logical <- TRUE
+# Asignando un valor lógico verdadero
+mi_logica <- TRUE
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# What is the answer to the universe?
-my_numeric <- 42
+# Un valor numérico
+mi_numerica <- 42
 
-# The quotation marks indicate that the variable is of type character
-my_character <- "forty-two"
+# Asignando una cadena de caracteres (o simplemente caracteres) nota el uso de las comillas
+mi_caracter <- "cuarenta_y_dos"
 
-my_logical <- FALSE
+# Asignando un valor lógico verdadeso
+mi_logica <- FALSE
 ```
 
 *** =sct
 ```{r eval=FALSE}
-test_object("my_numeric", 
-            undefined_msg = "Please make sure to define a variable <code>my_numeric</code>.",
-            incorrect_msg = "Make sure that you assign the correct value to <code>my_numeric.</code>")
-test_object("my_character",
-            undefined_msg = "Please make sure to define a variable <code>my_character</code>.",
-            incorrect_msg = "Make sure that you assign the correct value to <code>my_character</code>. Do not forget the quotes.")
-test_object("my_logical",
-            undefined_msg = "Please make sure to define a variable <code>my_logical</code>.",
-            incorrect_msg = "Make sure that you assign the correct value to <code>my_logical</code>.") 
-success_msg("Great work! Continue to the next exercise.")
+test_object("mi_numerica", 
+            undefined_msg = "Asegúrate de definir la variable <code>my_numeric</code>.",
+            incorrect_msg = "Asignaste el valor correcto a <code>mi_numerica.</code>?")
+test_object("mi_caracter",
+            undefined_msg = "Asegúrate de definir la variable <code>mi_caracter</code>.",
+            incorrect_msg = "Asignaste el valor correcto a <code>mi_caracter</code>?. No olvides las comillas")
+test_object("mi_logica",
+            undefined_msg = "Asegúrate de definir la variable <code>mi_logica</code>.",
+            incorrect_msg = "Asignaste el valor correcto a<code>mi_logica</code>?") 
+success_msg("GBuen trabajo! ya casi finalizamos este capítulo :)")
 ```
 
 ---
 
-## What's that data type?
+## ¿Cómo sé el tipo de dato?
 
-Do you remember that when you added `5 + "six"`, you got an error due to a mismatch in data types? You can avoid such embarrassing situations by checking the data type of a variable beforehand. You can do this as follows:
-
-```
-class(some_variable_name)
-```
+¿Recuerdas que cuando añadiste `5 + "seis"` obtuviste un error debido a que los tipos de datos no coincidian? Para evitar estas penosas situaciones :\ puedes saber de antemano el tipo de dato que tienen tus variables utilizando el código `class(nombre_variable)`
 
 *** =instructions
-Complete the code in the editor and print the class of `my_numeric`, `my_character` and `my_logical` to the console. 
+- Completa el código en el editor para imprimir a la consola el tipo de dato de las variables `mi_numerica`, `mi_caracter` y `mi_logica`. 
+ 
 
 *** =hint
-You can find out the data type of the `my_numeric` variable for example by typing `class(my_numeric)`. What you should do is similar for `my_character` and `my_logical`. 
+Puedes saber el tipo de dato de la variable `mi_numerica` escribiendo `class(mi_numerica)`.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -458,38 +449,38 @@ You can find out the data type of the `my_numeric` variable for example by typin
 
 *** =sample_code
 ```{r eval=FALSE}
-# Declare variables of different types
-my_numeric <- 42
-my_character <- "forty-two"
-my_logical <- FALSE 
+# Declarando las variables de diferentes tipos
+mi_numerica <- 40
+mi_caracter <- "cuarenta"
+mi_logica <- FALSE 
 
-# Check which type these variables have:
+# Escribe el código para averiguar el tipo de dato de cada variable
 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Declare variables of different types:
-my_numeric <- 42
-my_character <- "forty-two"
-my_logical <- FALSE
+# Declarando las variables de diferentes tipos
+mi_numerica <- 40
+mi_caracter <- "cuarenta"
+mi_logica <- FALSE 
 
-# Check which type these variables have:
-class(my_numeric)
-class(my_character)
-class(my_logical)
+# Escribe el código para averiguar el tipo de dato de cada variable
+class(mi_numerica)
+class(mi_caracter)
+class(mi_logica)
 ```
 
 *** =sct
 ```{r eval=FALSE}
-test_object("my_numeric")
-test_object("my_character")
-test_object("my_logical")
-test_output_contains("class(my_numeric)",
-                     incorrect_msg = "The output does not contain the class of <code>my_numeric</code>. Try again.")
-test_output_contains("class(my_character)",
-                     incorrect_msg = "The output does not contain the class of <code>my_character</code>. Give it another try.")
-test_output_contains("class(my_logical)",
-                     incorrect_msg = "The output does not contain the class of <code>my_logical</code>.")
-success_msg("Congratulations! This was the last exercise for this chapter. Head over to the next chapter and get immersed in the world of vectors!")
+test_object("mi_numerica")
+test_object("mi_caracter")
+test_object("mi_logica")
+test_output_contains("class(mi_numerica)",
+                     incorrect_msg = "El resultado no contiene el tipo de <code>mi_numerica</code>. Trata de nuevo.")
+test_output_contains("class(mi_caracter)",
+                     incorrect_msg = "El resultado no contiene el tipo de <code>mi_caracter</code>. Trata de nuevo")
+test_output_contains("class(mi_logica)",
+                     incorrect_msg = "El resultado no contiene el tipo de <code>mi_logica</code>.")
+success_msg("Felicitaciones! Este fue el último ejercicio del capítulo. Ahora vamos a conocer el mundo de los vectores!")
 ```
