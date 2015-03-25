@@ -86,7 +86,7 @@ Los últimos dos necesitan una breve explicación:
 
 *** =instructions
 - Escribe `2^5` en el editor para calcular 2 a la quinta potencia.
-- Escribe `17%%4` para calcular el 17 módulo 4.
+- Escribe `28 %% 6` para calcular el 28 módulo 6.
 - Da clic a 'Submit Answer' para ver el resultado en la consola.
 
 *** =hint
@@ -133,7 +133,7 @@ Solo sigue las instrucciones, es sencillo :). Otro ejemplo de módulo es 9%%2 = 
 2^5
 
 # Modulo
-17 %% 4
+28 %% 6
 ```
 
 *** =sct
@@ -143,7 +143,7 @@ test_output_contains("5 + 5", incorrect_msg = msg)
 test_output_contains("5 - 5", incorrect_msg = msg)
 test_output_contains("(5 + 5)/2", incorrect_msg = msg)
 test_output_contains("2^5", incorrect_msg = "La exponenciación no fue correcta, Asegúrate de haber leido las instrucciones")
-test_output_contains("17%%4", incorrect_msg = "Parece haber un problema con la parte del módulo. Asegúrate de haber leido las instrucciones.")
+test_output_contains("28%%6", incorrect_msg = "Parece haber un problema con la parte del módulo. Asegúrate de haber leido las instrucciones.")
 success_msg("Excelente! vamos al siguiente ejercicio.")
 ```
 
