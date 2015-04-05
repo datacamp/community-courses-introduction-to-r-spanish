@@ -9,23 +9,19 @@ mode        : selfcontained
 
 ## Como funciona la plataforma
 
-En el **editor** a la derecha puedes escribir el código para resolver los ejercicios.
+En el **editor** a la derecha puedes escribir el código para resolver los ejercicios. Al dar clic en 'Submit Answer' (Enviar Respuesta) cada línea de código es interpretada y ejecutada por R y se mostrará un mensaje diciendo si el cá, every line of code is interpreted and executed by R and you get código es correcto o contiene errores. La salidas son mostradas en la **consola** en la parte inferior derecha. También es posibe ejecutar comandos directamente en la consola, es una buena forma de experimentar con R. Los **gráficos** se muestran en la esquina superior derecha.
 
-R utiliza el símbolo `#` para añadir comentarios en el código. Comentar el código es un buen habito a desarrollar pues indica a las personas (incluyendo nosotros mismos) leyendo el código que es lo que éste hace.
-
-Los comentarios no modifican las instrucciones que escribimos en R de ninguna manera.  
-
-Las salidas del código escrito en el editor aparecen en la **consola** (R console) abajo a la derecha, mientras que los **gráficos** se muestran en la esquina superior derecha.
+R utiliza el símbolo `#` para añadir comentarios en el código. Comentar el código es un buen habito a desarrollar pues indica a las personas (incluyendo nosotros mismos) que leen el código que es lo que éste hace. Los comentarios no modifican las instrucciones que escribimos en R de ninguna manera.  
 
 Cada ejercicio consta de una explicación (lo que estas leyendo ahora) y unas Instrucciones (**Instructions**) presentadas a continuación.
 
 
 *** =instructions
 - Da clic a 'Submit Answer' y date cuenta como la consola ejecuta el código de R del editor: la solución `7` aparece como la suma de `3` y `4`. El uso más simple de R es como una calculadora y graficadora, pero por supuesto hay mucho, mucho, mucho más!
-- Puedes ver que R ha producido algunos gráficos en la esquina superior derecha. Puedes usar las flechas para navegar por los gráficos. 
+- Añade una linea que haga el calculo de `6` y `12`. 
 
 *** =hint
-Solo da clic al botton 'Submit Answer'
+Solo agrega una linea que calcule la suma de `6` y `12` tal como se muestra en el código de ejemplo!
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -37,33 +33,29 @@ Solo da clic al botton 'Submit Answer'
 ```{r eval=FALSE}
 # Este es el editor y la parte de abajo es la consola
 
-# El símbolo de numeral (hashtag) es utilizada para hacer comentarios
+# El símbolo de numeral # (hashtag) es utilizada para hacer comentarios
 
-# La siguiente línea de código muestra una demostración de las gráficas en R.
-demo("graphics")
+# Calcula 3 + 4
+3 + 4
 
-# Calcula 3+4
-3+4
+# Calcula 6 + 12
+
 ```
 
 *** =solution
 
 ```{r eval=FALSE}
-# Solo da clic en 'Submit Answer' 
+# Calcula 3 + 4
+3 + 4
 
-# Este es el editor y la parte de abajo es la consola
-
-# El símbolo de numeral (hashtag) es utilizada para hacer comentarios
-
-# Calcula 3+4
-3+4
-
-# La siguiente línea de código muestra una demostración de las gráficas en R.
-demo("graphics")
+# Calcula 6 + 12
+6 + 12
 ```
 
 *** =sct
 ```{r eval=FALSE}
+test_output_contains("7", incorrect_msg = "No borres el código que calcula la suma de 3 y 4. Solo agrega una linea que suma 6 y 12")
+test_output_contains("18", incorrect_msg = "Asegúrate de agregar una linea que suma 6 y 12. No empieces la linea con <code>#</code> o R no la ejecutará.")
 success_msg("Muy bien! Ahora que estas familiarizado con la plataforma empecemos a aprende-R!")
 ```
 
