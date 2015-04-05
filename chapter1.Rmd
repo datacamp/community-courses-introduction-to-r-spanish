@@ -69,7 +69,7 @@ success_msg("Muy bien! Ahora que estas familiarizado con la plataforma empecemos
 
 ---
 
-## Aritmetica con R
+## Aritmética con R
 
 Como vimos el uso más simple que se le puede dar a R es el de una calculadora. Consideremos las siguientes operaciones:
 
@@ -241,7 +241,7 @@ success_msg("Ok bien! Vamos al siguiente ejercicio.")
 
 ---
 
-## Variable assignment (3)
+## Variables y asignaciones (3)
 
 Supongamos que ahora tienes 6 naranjas. De nuevo, para no olvidarlo se te ocurre crear una variable llamada `numero_naranjas` y asignar el valor de 6 a esa variable. Ahora podemos a empezar a utilizar las variables creadas para hacer algo con ellas. Usemos R para saber el número total de frutas con las que contamos, pidamos que haga la cuenta por nosotros: `numero_manzanas + numero_naranjas`. Al leer este codigo nos damos cuenta de la importancia de dar nombres útiles a nuestras variables.
 
