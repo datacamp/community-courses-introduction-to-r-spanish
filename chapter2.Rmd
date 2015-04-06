@@ -54,9 +54,9 @@ success_msg("Muy bien! Sigamos.")
 
 Primero concentrémonos.
 
-En nuestro camino a para quebrar el casino, haremos uso extensivo de los vectores. Un vector es un arreglo unidimensional que puede contener datos numéricos, caracteres, o valores lógicos. En otras palabras un vector es una herramienta simple para guardar datos. Por ejemplo podemos llevar la cuenta de las ganancias y pérdidas en los juegos de casino.
+En nuestro camino a para quebrar al casino, haremos uso extensivo de los vectores. Un vector es un arreglo unidimensional que puede contener datos numéricos, caracteres, o valores lógicos. En otras palabras un vector es una herramienta simple para guardar un conjunto de datos del mismo tipo. Por ejemplo podemos llevar la cuenta de las ganancias y pérdidas en los juegos de casino.
 
-En R, se crea un vector con la función [`c()`](http://www.rdocumentation.org/packages/base/functions/c). La función se llama c por "Concatenar". Se ponen los valores o elementos del vector dentro de paréntesis, separados por coma. Por ejemplo:
+En R, se crea un vector con la función [`c()`](http://www.rdocumentation.org/packages/base/functions/c). La función se llama c por "concatenar". Se ponen los valores o elementos del vector dentro de paréntesis, separados por coma. Por ejemplo:
 
 ```
 vector_numerico <- c(1, 2, 3)
@@ -110,14 +110,14 @@ Después de una semana en Las Vegas y cero Ferraris en tu garage, decides que es
 
 Antes de hacer un primer análisis, decides llevar un registro de todas tus ganancias y pérdidas de la semana pasada:
 
-En el poker (`vector_poker`):
+En el poker:
 - Lunes: ganaste 140
 - Martes: perdiste 50
 - Miercoles: ganaste 20
 - Jueves: perdiste 120
 - Viernes: ganaste 240
 
-En la ruleta (`vector_ruleta`): 
+En la ruleta: 
 - Lunes: perdiste 24
 - Martes: perdiste 50
 - Miercoles: ganaste 100
@@ -165,7 +165,7 @@ success_msg("Muy bien! revisa los contenidos en tus vectores, puedes hacerlo sim
 
 --- 
 
-## Dando nombres a un vector
+## Nombrando elementos
 
 Como analista de datos, es importante tener una clara visión de que datos estas usando. Entender a qué se refiere cada elemento es por lo tanto esencial.
 
@@ -185,10 +185,12 @@ vector
 ```
 
 *** =instructions
-Ahora asigna los días de la semana como nombres a los vectores `vector_poker` y `vector_ruleta`. Usa los nombres con mayúscula inicial: Lunes, Martes, Miercoles, Jueves y Viernes.
+- Ahora asigna los días de la semana como nombres a los vectores `vector_poker` y `vector_ruleta`. Usa los nombres con mayúscula inicial y sin acentos (esto no es clase de ortografía...): Lunes, Martes, Miercoles, Jueves y Viernes.
+
+- Imprime los vectores en la consola
 
 *** =hint
-Puedes usar `names(vector_poker)` para asignar nombres a los elementos de `vector_poker`. No olvides ni las mayúsculas ni las comillas al cread el vector de nombres:
+Puedes usar `names(vector_poker)` para asignar nombres a los elementos de `vector_poker`. No olvides ni las mayúsculas ni las comillas al crear el vector de nombres:
 ```
 c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 ```
@@ -206,7 +208,10 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Agrega tu código aquí
+# Asigna los nombres a los vectores
+
+
+# Imprime los vectores en la consola
 
 ```
 
@@ -218,9 +223,13 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Add your code here
+# Asigna los nombres a los vectores
 names(vector_poker) <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_ruleta) <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
+
+# Imprime los vectores en la consola
+vector_poker
+vector_ruleta
 ```
 
 *** =sct
@@ -237,11 +246,13 @@ test_object("vector_poker",
 test_object("vector_ruleta",
             eq_condition = "equal",
             incorrect_msg = "Asegúrate de haber asignado los nombres correctos a <code>vector_ruleta</code>.")
+test_output_contains("vector_poker", incorrect_msg = "Imprime vector_poker para que puedas ver sus contenidos, solo escribe vector_poker en el editor.")
+test_output_contains("vector_ruleta", incorrect_msg = "Imprime vector_poker para que puedas ver sus contenidos, solo escribe vector_ruleta en el editor.")
 success_msg("Bien hecho! Continuemos al siguiente ejercicio.")
 ```
 
 ---
-## Dando nombres a un vector (2)
+## Nombrando elementos (2)
 
 Si quieres ser un buen estadístico, tienes que ser un poco perezoso. (Si ya eres perezoso, quizás has nacido con esos excepcionales talentos estadísticos.)
 
