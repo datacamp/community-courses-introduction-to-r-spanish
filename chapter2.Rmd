@@ -1,28 +1,28 @@
 --- 
-title_meta  : Chapter 2
-title       : Vectors
-description : We take you on a trip to Vegas, where you will learn how to analyze your gambling results using vectors in R! After completing this chapter, you will be able to create vectors in R, name them, select elements from them and compare different vectors. 
+title_meta  : Capítulo 2
+title       : Vectores
+description : Vamos a ir a las Vegas, donde aprenderemos como analizar los resultados de los juegos usando vectores en R! Después de completar este capítulo serás capaz de crear vectores en R, nombrarlos, seleccionar elementos de ellos y comparar diferentes vectores.
 framework   : datacamp
 mode        : selfcontained
 ---
 
-## Create a vector
+## Creando un vector
 
-Feeling lucky? 
+Te sientes de suerte? 
 
-You better, because this chapter takes you on a trip to the City of Sins, also known as *"Statisticians Paradise"* ;-).
+Eso espero, porque en este capítulo vamos de viaje a la Ciudad del Pecado, también conocida como el *"Paraíso del estadístico"* ;-).
 
-Thanks to R and your new data-analytical skills, you will learn how to uplift your performance at the tables and fire off your career as a professional gambler. This chapter will show how you can easily keep track of your betting progress and how you can do some simple analyses on past actions. Next Stop, Vegas Baby... VEGAS!!
+Gracias a R y a tus nuevas habilidades analíticas, vas a aprender como mejorar tus ganancias en el casino y empezar una lucrativa carrera como jugador profesional. En este capítulo veremos como puedes fácilmente llevar la cuenta de tus apuestas y como hacer análisis simples de tus jugadas. Próxima parada... Viva las Vegas!!!
 
 *** =instructions
-- Do you still remember what you have learned in the first chapter? Assign the value `"Here we go!"` to the variable `Vegas`!
+- Esperamos que recuerdes lo que aprendiste en el capítulo anterior. Asigna el valor `"Alla vamos!"` a la variable `Vegas`
 
 *** =hint
-Just type the following line in the editor:
+Solo escribe lo siguiente en el editor:
 ```
-Vegas <- "Here we go!"
+Vegas <- "Alla vamos!"
 ```
-Note that R is case sensitive.
+Ten encuenta que R distingue las mayúsculas de las minúsculas.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
