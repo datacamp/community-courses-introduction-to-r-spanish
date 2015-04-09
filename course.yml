@@ -4,5 +4,10 @@ author_field: Alvaro Fuentes
 description: Curso introductorio al lenguage de programación R. Este curso está basado
   en gran parte en el curso "Introduction to R" de Jonathan Cornelissen.
 chapters:
-- chapter1.Rmd: 1554
+- chapter1.Rmd: 1578
+- chapter2.Rmd: 1579
+- chapter3.Rmd: 1580
+- chapter4.Rmd: 1581
+- chapter5.Rmd: 1582
+- chapter6.Rmd: 1583
 
