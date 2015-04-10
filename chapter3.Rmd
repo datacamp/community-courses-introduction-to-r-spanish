@@ -1,32 +1,31 @@
 --- 
-title_meta  : Chapter 3
+title_meta  : Capítulo 2
 title       : Matrices
-description : In this chapter you will learn how to work with matrices in R. By the end of the chapter, you will be able to create matrices and to understand how you can do basic computations with them. You will analyze the box office numbers of Star Wars to illustrate the use of matrices in R. May the force be with you! 
+description : En este capítulo vamos a aprender a trabajar con matrices en R. Al finalizar el capílo serás capaz de crear matrices y hacer operaciones básicas con éstas. Vamos a analizar cuanto dinero hizo la película Star Wars para ilustrar el uso de matrices en R. Que la fuerza te acompañe!
 framework   : datacamp
 mode        : selfcontained
 
 ---
-## What's a matrix?
+## ¿Que es una Matriz?
 
-In R, a matrix is a collection of elements of the same data type (numeric, character, or logical) arranged into a fixed number of rows and columns. Since you are only working with rows and columns, a matrix is called two-dimensional. 
+En R, una matriz es un conjunto de elementos del mismo tipo (numerico, caracter o lógico) arreglados de forma rectangular en filas y columnas. Como una matriz se compone de filas y columnas decimos que es un objeto de dos dimensiones. 
 
-You can construct a matrix in R with the [`matrix()`](http://www.rdocumentation.org/packages/base/functions/matrix) function. Consider the following example: 
+Para construir una matriz en R usamos la función [`matrix()`](http://www.rdocumentation.org/packages/base/functions/matrix). Consideremos el siguiente ejemplo: 
 
 ```
 matrix(1:9, byrow = TRUE, nrow = 3)
 ```
 
-In the [`matrix()`](http://www.rdocumentation.org/packages/base/functions/matrix) function:
-- The first argument is the collection of elements that R will arrange into the rows and columns of the matrix. Here, we use `1:9` which constructs the vector `c(1, 2, 3, 4, 5, 6, 7, 8, 9)`.
-- The argument `byrow` indicates that the matrix is filled by the rows. If we want the vector to be filled by the columns, we just place `byrow = FALSE`. 
-- The third argument `nrow` indicates that the matrix should have three rows.
+En la función [`matrix()`](http://www.rdocumentation.org/packages/base/functions/matrix) function:
+- El primer argumento es la colección de elementos que R pondrá en la matriz. Aqui usamos `1:9` para construir el vector `c(1,2,3,4,5,6,7,8,9)`.
+- El argumento `byrow = TRUE` indica que la matriz debe de ser llenada por filas. Si queremos que la matriz sea llenada por columnas escribinos `byrow = FALSE` (o bien no escribimos el argumento, ya que `byrow = FALSE` es el valor predeterminado).
+- El tercer argumento `nrow = 3` indica el numero de filas que deseamos que nuestra matriz tenga, en este caso 3.
 
 *** =instructions
-Construct a matrix with 3 rows containing the numbers 1 up to 9. Click the 'Submit Answer' button and look at the output in the console.
+Construye una matriz con 3 filas, conteniendo los numeros del 1 al 9 y que este llenada por filas. Observa el resultado en la consola.
 
 *** =hint
-Read the assignment carefully, the answer is already given ;-).
-
+Lee la pregunta con cuidado, la respuesta ya está escrita en alguna parte...
 *** =pre_exercise_code
 ```{r eval=FALSE}
 # no pec
@@ -47,26 +46,26 @@ matrix(1:9, byrow = TRUE, nrow = 3)
 ```{r eval=FALSE}
 test_function("matrix", c("data","byrow", "nrow"))
 test_output_contains("matrix(1:9, byrow=TRUE, nrow=3)",
-                     incorrect_msg = "There seems to be an issue with the matrix definition.")
-success_msg("Great! Continue to the next exercise.")
+                     incorrect_msg = "Parece haber un problema con la definición de la matriz.")
+success_msg("Bien! Vamos al siguiente ejercicio.")
 ```
 
 ---
-## Analyzing matrices, you shall
+## Analizando matrices
 
-It is now time to get your hands dirty. In the following exercises you will analyze the box office numbers of the Star Wars franchise. May the force be with you! 
+Es hora de ensuciarnos las manos. En los siguientes ejercicios vamos a analizar los números de las películas de Star Wars. Que la fuerza te acompañe!
 
-In the editor, three vectors are defined. Each one represents the box office numbers from the first three Star Wars movies. The first element of each vector indicates the US box office revenue, the second element refers to the Non-US box office (source: Wikipedia).
+En el editor, se definen tres vectores. Cada uno representa el el dinero hecho en taquilla por las primeras tres películas de la saga. El primer elemento de cada vector indica los ingresos obtenidos en Estados Unidos. El segundo es el dinero fuera de los Estados Unidos (fuente: Wikipedia).
 
 *** =instructions
-Construct a matrix with one row for each movie (thus 3 rows). The first column is for the US box office revenue, and the second column for the non-US box office revenue. Name the matrix `star_wars_matrix`.
+Construye una matriz con una fila para cada pelicula (3 filas). La primera columna es el ingreso en taquilla para EEUU, y la segunda columna el ingreso de taquilla fuera de los EEUU. Asigna la matriz a la variable `star_wars_matrix`.
 
 *** =hint
-Remember that you can construct a matrix containing the numbers 1 up to 9 with
+Recuerda como construimos la matriz en el ejercicio anterior, con los números del 1 al 9:
 ```
 matrix(1:9, byrow = TRUE, nrow = 3)
 ```
-In this case, you do not want the numbers 1 up to 9, but the elements of the 3 Star Wars movies: this means the input vector is
+En este caso no queremos los números del 1 al 9, sino los elementos de las 3 películas de Star Wars, o sea que el vector de elementos para construir la matriz es:
 ```
 c(new_hope,empire_strikes,return_jedi)
 ```
@@ -78,25 +77,25 @@ c(new_hope,empire_strikes,return_jedi)
 
 *** =sample_code
 ```{r eval=FALSE}
-# Box office Star Wars: In Millions!
-# The first element: US, the second element: Non-US 
-new_hope <- c(460.998, 314.4)
+# Taquilla de Star Wars: En Millones de dólares (USD)!
+# Primer elemento taquilla en EEUU, segundo taquilla fuera de EEUU.
+new_hope <- c(460.998, 314.400)
 empire_strikes <- c(290.475, 247.900)
-return_jedi <- c(309.306, 165.8)
+return_jedi <- c(309.306, 165.800)
 
-# Add your code below to Construct matrix
+# Agrega el código para construir la matriz
 star_wars_matrix <- 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Box office Star Wars: In Millions!
-# The first element: US, Second element: Non-US 
-new_hope <- c(460.998, 314.4)
+# Taquilla de Star Wars: En Millones de dólares (USD)!
+# Primer elemento taquilla en EEUU, segundo taquilla fuera de EEUU.
+new_hope <- c(460.998, 314.400)
 empire_strikes <- c(290.475, 247.900)
-return_jedi <- c(309.306, 165.8)
+return_jedi <- c(309.306, 165.800)
 
-# Add your code below to Construct matrix
+# Agrega el código para construir la matriz
 star_wars_matrix <- matrix(c(new_hope, empire_strikes, return_jedi), nrow = 3, byrow = TRUE) 
 ```
 
