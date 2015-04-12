@@ -56,7 +56,7 @@ Primero concentrémonos.
 
 En nuestro camino a para quebrar al casino, haremos uso extensivo de los vectores. Un vector es un arreglo unidimensional que puede contener datos numéricos, caracteres, o valores lógicos. En otras palabras un vector es una herramienta simple para guardar un conjunto de datos del mismo tipo. Por ejemplo podemos llevar la cuenta de las ganancias y pérdidas en los juegos de casino.
 
-En R, se crea un vector con la función [`c()`](http://www.rdocumentation.org/packages/base/functions/c). La función se llama c por "concatenar". Se ponen los valores o elementos del vector dentro de paréntesis, separados por coma. Por ejemplo:
+En R, se crea un vector con la función [`c()`](http://www.rdocumentation.org/packages/base/functions/c). La función se llama c por "combinar". Se ponen los valores o elementos del vector dentro de paréntesis, separados por coma. Por ejemplo:
 
 ```
 vector_numerico <- c(1, 2, 3)
@@ -247,16 +247,16 @@ test_object("vector_ruleta",
             eq_condition = "equal",
             incorrect_msg = "Asegúrate de haber asignado los nombres correctos a <code>vector_ruleta</code>.")
 test_output_contains("vector_poker", incorrect_msg = "Imprime vector_poker para que puedas ver sus contenidos, solo escribe vector_poker en el editor.")
-test_output_contains("vector_ruleta", incorrect_msg = "Imprime vector_poker para que puedas ver sus contenidos, solo escribe vector_ruleta en el editor.")
+test_output_contains("vector_ruleta", incorrect_msg = "Imprime vector_ruleta para que puedas ver sus contenidos, solo escribe vector_ruleta en el editor.")
 success_msg("Bien hecho! Continuemos al siguiente ejercicio.")
 ```
 
 ---
 ## Nombrando elementos (2)
 
-Si quieres ser un buen estadístico, tienes que ser un poco perezoso. (Si ya eres perezoso, quizás has nacido con esos excepcionales talentos estadísticos.)
+Si quieres ser un buen estadístico, tienes que ser un poco perezoso. (Si ya eres perezoso, quizás hayas nacido con esos excepcionales talentos estadísticos.)
 
-En los ejercicios anteriores probablemente sentiste que es aburrido escribir una y otra vez información como los días de la semana. Sin embargo, cuando lo vemos desde otra perspectiva, existe una manera mas eficiente de lograr esto, que tal si asignamos el vector que contiene los días de la semana a una **variable**.
+En los ejercicios anteriores probablemente sentiste que es aburrido escribir una y otra vez información como los días de la semana. Sin embargo, existe una manera mas eficiente de lograr esto, que tal si asignamos el vector que contiene los días de la semana a una **variable**.
 
 Así como lo hiciste con las ganancias/pérdidas de la ruleta y el poker, puedes también crear un vector que contenga los días de la semana. Al asignarlo a una variable, éste puede ser reusado.
 
@@ -390,8 +390,10 @@ test_object("vector_B",
             undefined_msg = "Asegúrate de definir la variable <code>vector_B</code>.",
             incorrect_msg = "Asegúrate de asignar los valores correctos a <code>vector_B</code>.")
 test_object("vector_total",
-            undefined_msg = "Asegúrate de definir la variable <code>total_vector</code>.",
+            undefined_msg = "Asegúrate de definir la variable <code>vector_total</code>.",
             incorrect_msg = "Asegúrate de que <code>vector_total</code> contiene la suma de  <code>vector_A</code> y <code>vector_B</code>.")
+
+
 success_msg("Buen trabajo! Continuemos.")
 ```
 
@@ -406,7 +408,11 @@ Ya es hora de tener uno de esos Ferraris en el garage! Primero, hay que saber cu
 En R, este cálculo es simplemente la suma de `vector_ruleta` y `vector_poker`.
 
 *** =instructions
-Asigna a la variable `total_diario` lo que ganaste/perdiste cada día en total (poker y ruleta combinado)
+- Asigna a la variable `total_diario` lo que ganaste/perdiste cada día en total (poker y ruleta combinado).
+
+- Nombra los elementos de `total_diario` utilizando `vector_dias`. 
+
+- Imprime `total_diario` en la consola para que puedas ver tus resultados totales en cada día de la semana. Cuáles fueron los días buenos y los días malos?
 
 *** =hint
 Justo como en el ejercicio anterior, asigna la suma de los vectores a `total_diario`.
@@ -431,6 +437,12 @@ names(vector_ruleta) <- vector_dias
 
 # Calculando las ganancias/pérdidas diarias:
 total_diario <- 
+  
+# Dando nombres a 'total_diario'
+names(total_diario) <- 
+  
+# Imprime total_diario a la consola para ver tus resultados por día
+  
 ```
 
 *** =solution
@@ -448,6 +460,13 @@ names(vector_ruleta) <- vector_dias
 
 # Calculando las ganancias/pérdidas diarias:
 total_diario <- vector_poker + vector_ruleta
+
+# Dando nombres a 'total_diario'
+names(total_diario) <- vector_dias
+  
+# Imprime total_diario a la consolo para ver tus resultados por día
+total_diario
+
 ```
 
 *** =sct
@@ -456,8 +475,9 @@ msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vec
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
-test_object("total_diario", 
-            incorrect_msg = "Asegúrate de asignar la suma de <code>vector_poker</code> y <code>vector_ruleta</code> a <code>total_diario</code>.")
+test_object("total_diario", eq_condition = "equal",
+            incorrect_msg = "Asegúrate de asignar la suma de <code>vector_poker</code> y <code>vector_ruleta</code> a <code>total_diario</code>. También tienes que nombrar los elementos de <code>total_diario</code> usando <code>vector_dias</code>.")
+test_output_contains("total_diario", incorrect_msg = "Imprime <code>total_diario</code> para que puedas ver sus contenidos, solo escribe <code>total_diario</code> en el editor.")
 success_msg("Bien! Vamos al siguiente ejercicio.")
 ```
 
@@ -467,7 +487,7 @@ success_msg("Bien! Vamos al siguiente ejercicio.")
 
 Basado en los análisis previos, parece que tuviste una mezcla de días buenos y malos. Esto no era lo que tu ego esperaba, y te preguntas si quizás hay una (muy pequeña) posibilidad de que hayas perdido dinero en la semana.
 
-La función que nos ayudará a contestar esta pregunta es [`sum()`](http://www.rdocumentation.org/packages/base/functions/sum). La mencionada función calcula la suma de todos los elementos de un vector. Por ejemplo para calcular el monto total de dinero que has ganado/perdido en el poker en la semana, escribe: 
+La función que nos ayudará a contestar esta pregunta es [`sum()`](http://www.rdocumentation.org/packages/base/functions/sum). Ésta función calcula la suma de todos los elementos de un vector. Por ejemplo para calcular (y asignar a una variable) el monto total de dinero que has ganado/perdido en el poker en la semana, escribe: 
 
 ```
 total_poker <- sum(vector_poker)
@@ -475,7 +495,8 @@ total_poker <- sum(vector_poker)
 
 *** =instructions
 - Calcula el monto total de dinero que has ganado/perdido en la ruleta, asígnalo a la variable `total_ruleta`.
-- Ahora que tienes los totales para la ruleta y el poker, puedes fácilmente calcular el valor de `total_semana`. (Que es la suma de todas las ganancias y pérdidas en la semana)
+- Ahora que tienes los totales para la ruleta y el poker, puedes fácilmente calcular el valor de `total_semana`, que es la suma de todas las ganancias y pérdidas en la semana.
+- Imprime el valor de `total_semana` a la consola. ¿En total ganaste o perdiste en la semana?
 
 *** =hint
 Usa la función `sum` para obtener el total de `vector_ruleta`. `total_semana` debe de ser la suma de `vector_ruleta` y `vector_poker`.
@@ -503,7 +524,10 @@ total_poker <- sum(vector_poker)
 
 # Ahora completa el código:
 total_ruleta <-
-total_semana <- 
+total_semana <-
+  
+#Imprime el total que ganaste/perdiste en la semana
+  
 ```
 
 *** =solution
@@ -525,6 +549,9 @@ total_poker <- sum(vector_poker)
 # Ahora completa el código:
 total_ruleta <-  sum(vector_ruleta)
 total_semana <- total_ruleta + total_poker
+
+#Imprime el total que ganaste/perdiste en la semana
+total_semana
 ```
 
 *** =sct
@@ -542,6 +569,9 @@ test_object("total_ruleta",
 test_object("total_semana",
             undefined_msg = "Asegúrate de definir la variable <code>total_semana</code>.",
             incorrect_msg = "Asegúrate de asignar a <code>total_semana</code> la suma de totales de los vectores.")
+
+test_output_contains("total_semana", incorrect_msg = "Imprime <code>total_semana</code> para que puedas ver sus contenidos, solo escribe <code>total_semana</code> en el editor.")
+success_msg("Bien! Eres muy bueno en R! aunque como vemos no te fue tan bien en el casino... no importa, vamos al siguiente ejercicio.")
 ```
 
 ---
@@ -556,6 +586,7 @@ Después de una breve lluvia de ideas en el jacuzzi del hotel, piensas que una p
 - Calcula `total_poker` y `total_ruleta` como en el ejercicio anterior.
 - Fíjate si tus ganancias totales en el poker son más altas que en la ruleta haciendo una comparación. Asigna el resultado de esta comparación a la variable `respuesta`.
 ¿Cuál es tu conclusión? ¿Deberías dedicarte a la ruleta o al poker?
+- Imprime `respuesta` a la consola.
 
 *** =hint
 Prácticamente ya calculaste la respuesta en el ejercicio anterior. Para saber si 6 es más grande que 5, escribe `6 > 5`. Esto devuelve un valor lógico (`TRUE`)  o bien `FALSE` para `6 < 5 `. 
@@ -584,6 +615,8 @@ total_ruleta <-
 
 # Probando si las ganancias en el poker son más altas que en la ruleta:
 respuesta <-
+
+# Imprime respuesta a la consola  
 ```
 
 *** =solution
@@ -605,6 +638,9 @@ total_ruleta <- sum(vector_ruleta)
 
 # Probando si las ganancias en el poker son más altas que en la ruleta:
 respuesta <- total_poker > total_ruleta
+
+# Imprime respuesta a la consola  
+respuesta
 ```
 
 *** =sct
@@ -622,6 +658,7 @@ test_object("total_ruleta",
 test_object("respuesta",
             undefined_msg = "Asegúrate de definir la variable <code>respuesta</code>.",
             incorrect_msg = "Parece que la variable respuesta no contiene el valor correcto. Lee las instrucciones cuidadosamente")
+test_output_contains("respuesta", incorrect_msg = "Imprime <code>respuesta</code> para que puedas ver sus contenidos, solo escribe <code>respuesta</code> en el editor.")
 success_msg("Buen trabajo! Continúa al siguiente ejercicio.")
 ```
 
@@ -633,7 +670,7 @@ La corazonada parece que fue cierta. Parece que te va mejor en el poker que en l
 
 Otro posible aspecto a investigar son tus resultados al comienzo de la semana comparados con los últimos días. Talvez te excediste en los tequilas al final de la semana...
 
-Para responder esta pregunta, concentrémonos en solo unos elementos del `vector_total`. En otras palabras, nuestro objetivo es seleccionar elementos específicos de los vectores. Para seleccionar elementos de un vector (y luego matrices, data frames, ...), puedes utilizar los corchetes. Entre corchetes indicamos los elementos que queremos seleccionar. Por ejemplo, para seleccionar el primer elemento de un vector, escribes `vector_poker[1]`. Para seleccionar el segundo elemento escribimos `vector_poker[2]`, etc.
+Para responder esta pregunta, concentrémonos en solo unos elementos del `vector_total`. En otras palabras, nuestro objetivo es seleccionar elementos específicos de los vectores. Para seleccionar elementos de un vector (y luego matrices, data frames, etc.), puedes utilizar los corchetes. Entre corchetes indicamos los elementos que queremos seleccionar. Por ejemplo, para seleccionar el primer elemento de un vector, escribes `vector_poker[1]`. Para seleccionar el segundo elemento escribimos `vector_poker[2]`, etc.
 
 *** =instructions
 Asigna tu ganancia del Miércoles a la variable `poker_miercoles`
@@ -706,7 +743,8 @@ vector_poker[c(1,5)]
 ```
 
 *** =instructions
-Asigna los resultados de obtenidos del poker de los días Martes, Miercoles y Jueves a la variable `dias_medios_poker`.
+- Asigna los resultados de obtenidos del poker de los días Martes, Miercoles y Jueves a la variable `dias_medios_poker`.
+- Imprime el vector `dias_medios_poker` a la consola para ver sus elementos.
 
 *** =hint
 Usa el vector `c(2,3,4)` entre corchetes para seleccionar los elementos deseados `vector_poker`.
@@ -731,6 +769,9 @@ names(vector_ruleta) <- vector_dias
 
 # Define la nueva variable:
 dias_medios_poker <- 
+  
+# Imprime dias_medios_poker
+
 ```
 
 *** =solution
@@ -748,6 +789,9 @@ names(vector_ruleta) <- vector_dias
 
 # Define la nueva variable:
 dias_medios_poker <- vector_poker[c(2, 3, 4)]
+
+# Imprime dias_medios_poker
+dias_medios_poker
 ```
 
 *** =sct
@@ -759,6 +803,7 @@ test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorr
 test_object("dias_medios_poker", 
             undefined_msg = "Asegúrate de definir la variable <code>dias_medios_poker</code>.",
             incorrect_msg = "Parece que <code>dias_medios_poker</code> no contiene los valores correctos de <code>vector_poker</code>.")
+test_output_contains("dias_medios_poker", incorrect_msg = "Imprime <code>dias_medios_poker</code> para que puedas ver sus contenidos, solo escribe <code>dias_medios_poker</code> en el editor.")
 success_msg("Bien hecho! Seleccionar elementos es de las operaciones más importantes en R, y hemos aprendiendo mucho, pero falta más aun");
 ```
 
@@ -766,14 +811,15 @@ success_msg("Bien hecho! Seleccionar elementos es de las operaciones más import
 
 ## Seleccionando elementos: los buenos tiempos (3)
 
-Seleccionar varios elementos del `vector_poker` con `c(2,3,4)` quizás no sea muy conveniente.  Recordemos como estadísticos nuestras raíces perezosas, así que usemos una notación que R utiliza para crear vectores de números consecutivos `c(2,3,4)` se puede crear con el código `2:4`, que genera el vector que contiene los números naturales del 2 al 4.
+Seleccionar varios elementos del `vector_poker` con `c(2,3,4)` quizás no sea muy conveniente.  Recordemos como estadísticos nuestras raíces perezosas, así que usemos una notación que R utiliza para crear vectores de números consecutivos `c(2,3,4)` se puede crear con el código `2:4`, que genera el vector que contiene los números naturales del 2 al 4 (incluyendo ambos extremos).
 
 Así que ahora tenemos otra manera de seleccionar los elementos que corresponden a los días medios de la semana: `vector_poker[2:4]`.
 
-Quizás en este ejemplo no haya mucha diferencia entre `c(2,3,4)` y `2:4`pero imagina que tuviéramos que extraer los primeros 80 elementos consecutivos de un vector, con la primera notación tendríamos que escribir todos los números del 1 al 80, sin embargo ahora sabemos que podemos hacerlo así de simple: `1:80`.
+Quizás en este ejemplo no haya mucha diferencia entre `c(2,3,4)` y `2:4` pero imagina que tuviéramos que extraer los primeros 80 elementos consecutivos de un vector, con la primera notación tendríamos que escribir todos los números del 1 al 80, sin embargo ahora sabemos que podemos hacerlo así de simple: `1:80`.
 
 *** =instructions
-Asigna los resultados del Martes al Viernes del `vector_ruleta` a la variable `martes_a_viernes_ruleta`. Utiliza la notación de dos puntos`:`.
+- Asigna los resultados del Martes al Viernes del `vector_ruleta` a la variable `martes_a_viernes_ruleta`. Utiliza la notación de dos puntos`:`.
+- Imprime `martes_a_viernes_ruleta` en la consola.
 
 *** =hint
 Asigna los elementos de `vector_ruleta` solicitados a `vector_ruleta` usando `2:5` entre corchetes.
@@ -794,6 +840,8 @@ names(vector_ruleta) <- vector_dias
 
 # Define la nueva variable siguiendo las instrucciones
 martes_a_viernes_ruleta <- 
+
+#Imprime martes_a_viernes_ruleta en la consola
 ```
 
 *** =solution
@@ -812,6 +860,9 @@ names(vector_ruleta) <- vector_dias
 
 # Define la nueva variable siguiendo las instrucciones
 martes_a_viernes_ruleta <- vector_ruleta[2:5]
+
+#Imprime martes_a_viernes_ruleta en la consola
+martes_a_viernes_ruleta
 ```
 
 *** =sct
@@ -824,6 +875,7 @@ test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorr
 test_object("martes_a_viernes_ruleta", 
             undefined_msg = "Asegúrate de haber definido <code>martes_a_viernes_ruleta</code>.",
             incorrect_msg = "Parece que <code>martes_a_viernes_ruleta</code> no contiene los valores correctos de <code>vector_ruleta</code>. Verifica que utilizaste los índices correctos.")
+test_output_contains("martes_a_viernes_ruleta", incorrect_msg = "Imprime <code>martes_a_viernes_ruleta</code> para que puedas ver sus contenidos, solo escribe <code>martes_a_viernes_ruleta</code> en el editor.")
 success_msg("Fantástico! El operados dos puntos es muy útil y se usa mucho en R. Así que recuérdalo bien. Vamos al siguiente ejercicio")
 ```
 

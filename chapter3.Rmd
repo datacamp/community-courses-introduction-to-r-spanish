@@ -67,7 +67,7 @@ matrix(1:9, byrow = TRUE, nrow = 3)
 ```
 En este caso no queremos los números del 1 al 9, sino los elementos de las 3 películas de Star Wars, o sea que el vector de elementos para construir la matriz es:
 ```
-c(new_hope,empire_strikes,return_jedi)
+c(new_hope, empire_strikes, return_jedi)
 ```
 
 *** =pre_exercise_code
@@ -125,7 +125,7 @@ colnames(mi_matriz) <- vector_nombres_columnas
 ```
 
 *** =instructions
-- Dale a las columnas de `star_wars_matrix` los nombres `"EEUU"` and `"no-EEUU"`, respectivamente.
+- Dale a las columnas de `star_wars_matrix` los nombres `"EEUU"` y `"no-EEUU"`, respectivamente.
 - Dale a las filas de la matriz `star_wars_matrix` los nombres de las tres películas. En caso de que no seas un fanático ;-), los nombres son: "A New Hope", "The Empire Strikes Back" and "Return of the Jedi".
 
 *** =hint
@@ -202,7 +202,7 @@ Una de las cosas más importantes para quienes han invertido en hacer una pelíc
 
 Para calcular el total de la taquilla tienes que sumar lo que la película hizo en EEUU y fuera de EEUU. Como cada fila contiene los datos de una película, debemos sumar los dos elementos de cada fila. 
 
-En R, la función [`rowSums()`](http://www.rdocumentation.org/packages/base/functions/colSums) calcula la suma de los elementos para cada elemento de la matriz. Esta función crea como respuesta un vector que contiene las sumas:
+En R, la función [`rowSums()`](http://www.rdocumentation.org/packages/base/functions/colSums) calcula la suma de los elementos para cada fila de la matriz. Esta función crea como respuesta un vector que contiene los totales de las filas:
 
 ```
 vector_sumas_filas <- rowSums(mi_matriz)
@@ -230,7 +230,7 @@ nombres_columnas <- c("EEUU","no-EEUU")
 star_wars_matrix <- matrix(taquillas, nrow=3, byrow = TRUE, dimnames = list(nombres, nombres_columnas))
 
 # Tu código aquí, no olvides imprimir el vector a la consola para ver tu resultado
-taquilla_mudial <- 
+taquilla_mundial <- 
   
 ```
 
@@ -244,8 +244,8 @@ nombres_columnas <- c("EEUU","no-EEUU")
 star_wars_matrix <- matrix(taquillas, nrow=3, byrow = TRUE, dimnames = list(nombres, nombres_columnas))
 
 # Tu código aquí, no olvides imprimir el vector a la consola para ver tu resultado
-taquilla_mudial <- rowSums(star_wars_matrix)
-taquilla_mudial
+taquilla_mundial <- rowSums(star_wars_matrix)
+taquilla_mundial
 ```
 
 *** =sct
@@ -258,7 +258,7 @@ test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_function("rowSums", "x", 
               not_called_msg = "¿Usaste la función <code>rowSums()</code?",
               incorrect_msg = "¿Usaste <code>rowSums()</code> con el argumento correcto?")
-test_object("taquilla_mundial", eq_condition = "equal",
+test_object("taquilla_mundial",
             undefined_msg = "Asegúrate de definir la variable<code>taquilla_mundial</code>.",
             incorrect_msg = "Revisa el código para <code>taquilla_mundial</code>.")
 test_output_contains("taquilla_mundial", incorrect_msg = "Imprime <code>taquilla_mundial</code> para que puedas ver el dinero que hizo cada película en la consola.")
@@ -328,8 +328,8 @@ matriz_completa
 
 *** =sct
 ```{r eval=FALSE}
-msg = "No cambies ninguna el código escrito en el editor que genera <code>taquillas</code>, <code>nombres</code>, <code>nombres_columnas</code> y <code>star_wars_matrix</code>!"
-test_object("taquilla", undefined_msg = msg, incorrect_msg = msg)
+msg = "No cambies el código escrito en el editor que genera <code>taquillas</code>, <code>nombres</code>, <code>nombres_columnas</code> y <code>star_wars_matrix</code>!"
+test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres_columnas", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)
@@ -351,13 +351,12 @@ success_msg("Excelente! después de agregar columnas, el siguiente paso es agreg
 
 Así como cada acción tiene una reacción, cada [`cbind()`](http://www.rdocumentation.org/packages/base/functions/cbind) tiene una [`rbind()`](http://www.rdocumentation.org/packages/base/functions/cbind). Bueno... si es una mala metáfora :/ pero la idea es esta: `rbind()` hace lo mismo que `cbind()` pero para filas. 
 
-Tu espacio de trabajo (workspace: en términos sencillos es el conjunto de todos los objetos que puedes usar en R) ([revisa la documentación](http://www.statmethods.net/interface/workspace.html)) ha sido inicializado para tener dos matrices: `star_wars_matrix` que corresponde a la primera trilogía, y tambien `star_wars_matrix2` para la segunda trilogía. Escribe el nombre de las matrices en la consola para que puedas ver los datos.
+Tu espacio de trabajo (workspace: en términos sencillos es el conjunto de todos los objetos que puedes usar en R) ([revisa la documentación](http://www.statmethods.net/interface/workspace.html)) ha sido inicializado para tener dos matrices: `star_wars_matrix` que corresponde a la primera trilogía, y tambien `star_wars_matrix2` para la segunda trilogía. Escribe el nombre de las matrices en la consola para que puedas ver los datos. También puedes ver los contenidos de tu espacio de trabajo (workspace) con la función [`ls()`](http://www.rdocumentation.org/packages/base/functions/ls) úsala en la consola.
 
 *** =instructions
 Crea la matriz `todas_star_wars` de manera que contenga los datos de `star_wars_matrix` en las primeras tres filas y los de `star_wars_matrix2` en las siguientes tres.
 
 *** =hint
-Puedes ver los contenidos de tu espacio de trabajo (workspace) con la función [`ls()`](http://www.rdocumentation.org/packages/base/functions/ls) úsala en la consola.
 Combina las filas dos matrices de la siguiente manera: 
 ```
 rbind(matrix1, matrix2)
@@ -370,7 +369,7 @@ Asigna el resultado a `todas_wars_matrix`.
 # Primera matriz
 taquillas <- c(461, 314.4, 290.5, 247.9, 309.3, 165.8)
 nombres <- c("A New Hope","The Empire Strikes Back","Return of the Jedi")
-nombres_columnas <- c("US","non-US")
+nombres_columnas <- c("EEUU","no-EEUU")
 star_wars_matrix <- matrix(taquillas, nrow = 3, byrow = TRUE, dimnames = list(nombres, nombres_columnas))
 
 # Segunda matriz
@@ -460,6 +459,7 @@ todas_star_wars
 
 # Total de taquilla para EEUU y no-EEUU
 taquilla_por_region <- colSums(todas_star_wars)
+taquilla_por_region
 
 ```
 
@@ -624,7 +624,7 @@ test_object("entradas",
             incorrect_msg = "Parece que la variable <code>entradas</code> no tiene el valor correcto, revisa el código y las instrucciones.")
 test_output_contains("entradas", 
                      incorrect_msg = "No olvides de imprimir la matriz <code>entradas</code> a la consola.")
-success_msg("Bien! ¿Que es lo que nos dicen estos resultados? 92 millones de entradas fueron vendidas para ver la película \"A New Hope\" a los cines, que impresionante! Vamos al último ejercicio.");
+success_msg("Bien! ¿Que es lo que nos dicen estos resultados? 92 millones de entradas fueron vendidas para ver la película \"A New Hope\", que impresionante! Vamos al último ejercicio.");
 ```
 
 ---
@@ -693,7 +693,7 @@ entradas_promedio_noEEUU <- mean(entradas[,2])
 *** =sct
 ```{r eval=FALSE}
 msg = "No cambies nada del código o las variables predefinidas!"
-test_object("taquilla", undefined_msg = msg, incorrect_msg = msg)
+test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres_columnas", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)

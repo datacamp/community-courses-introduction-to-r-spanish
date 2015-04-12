@@ -33,7 +33,7 @@ Solo agrega una linea que calcule la suma de `6` y `12` tal como se muestra en e
 ```{r eval=FALSE}
 # Este es el editor y la parte de abajo es la consola
 
-# El símbolo de numeral # (hashtag) es utilizada para hacer comentarios
+# El símbolo de numeral # es utilizada para hacer comentarios
 
 # Calcula 3 + 4
 3 + 4
