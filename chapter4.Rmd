@@ -198,7 +198,7 @@ factor_genero
 genero <- c("M", "F", "F", "M", "M")
 
 # Asigna el vector genero como un factor a factor_genero
-factor_genero <- 
+factor_genero <- factor(genero)
 
 # Especifica los niveles de factor_genero
 levels(factor_genero) <- c("Femenino", "Masculino")
@@ -275,8 +275,7 @@ msg = "No cambies nada de la definición de los vectores <code>genero</code> y <
 test_object("genero", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_genero", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_function("summary", "x", 
-              incorrect_msg = c("¿Usaste la función summary() en <code>genero</code>?",
-                                "¿Usaste la función summary() en <code>factor_genero</code>?"))
+              incorrect_msg = c("¿Usaste la función summary() en <code>genero</code>?", "¿Usaste la función summary() en <code>factor_genero</code>?"))
 success_msg("Bien! Fíjate en la salida. El hecho de que hayas identificado como un factor a factor_genero le permite a R mostrar el número de elementos en cada categoría.")
 ```
 
@@ -440,7 +439,7 @@ test_correct({
               undefined_msg = "Asegúrate de definir la variable <code>factor_desempeno</code>.",
               incorrect_msg = "Asegurate de que creaste de manera adecuada a factor_desempeno. Fíjate en el orden en que pusiste los niveles en el argumento levels.")
 },{
-  test_function("factor", c("x", "levels", "ordered"))
+  test_function("factor", c("x", "levels", "ordered"), incorrect_msg = "Parece que los argumentos de la función <code>factor</code> no tienen los argumentos correctos de <code>levels</code> y <code>ordered</code>.")
 })
 success_msg("Muy bien! Mira la consola, se muestra que los niveles tienen un orden dado por el signo <code><</code> Continuemos al último ejercicio!");
 ```
@@ -450,7 +449,7 @@ success_msg("Muy bien! Mira la consola, se muestra que los niveles tienen un ord
 
 Al tener un mal día en el trabajo, el `Trabajador 2` entra a tu oficina y empieza a quejarse de que el `Trabajador 5` está atrasando todos los proyectos porque su desempeño en el trabajo es "Bajo". Como sabes que el `Trabajador 2` tiene la reputación de “problemático” decides averiguar si lo que dice tiene sentido.
 
-Aprovechando que `factor_desempeno` es un factor ordenado te permite comparar sus diferentes elementos, a los trabajadores en este caso. Podemos simplemente utilizar operadores de comparación bien conocidos.
+Dado que `factor_desempeno` es un factor ordenado, esto te permite comparar sus diferentes elementos, a los trabajadores en este caso. Podemos simplemente utilizar operadores de comparación bien conocidos.
 
 *** =instructions
 Averigua si el desempeño del Trabajador 2 es mejor que el del Trabajador 5. Asigna el resultado a la variable `comparacion`. Recuerda  `a > b` te permite saber si `a` es mayor que `b`.
@@ -499,6 +498,6 @@ test_object("factor_desempeno", eq_condition = "equal", undefined_msg = msg, inc
 test_object("comparacion",
             undefined_msg = "Define la variable <code>comparacion</code>.",
             incorrect_msg = "Parece que <code>comparacion</code> no contiene el resultado de la comparación solicitada. Fíjate en los índices.");
-success_msg("Bellissimo! ¿Qué es lo que nos dice este resultado? El Trabajador 2 se parece darle validez a su fama de problemático… es lo que nos dice la evidencia de los datos!
+success_msg("Bellissimo! ¿Qué es lo que nos dice este resultado? El Trabajador 2 se parece darle validez a su fama de problemático… es lo que nos dice la evidencia de los datos! \n
 Acá terminamos el capítulo sobre factores. Ahora que sabemos bastante sobre vectores, matrices y factores podemos entrar al maravilloso mundo de los data frames, una de las estructuras de datos más importantes en R!")
 ```

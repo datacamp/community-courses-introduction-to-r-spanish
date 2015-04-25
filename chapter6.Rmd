@@ -92,7 +92,7 @@ Los argumentos de la función `list` son la lista de componentes. Recuerda que e
 Construye una lista llamada `mi_lista` que contenga las variables `mi_vector`, `mi_matriz` y `mi_df` como componentes.
 
 *** =hint
-Usa la función [`list()`](http://www.rdocumentation.org/packages/base/functions/list) con `mi_vector`, `mi_matriz` and `mi_df` como argumentos separados por coma.
+Usa la función [`list()`](http://www.rdocumentation.org/packages/base/functions/list) con `mi_vector`, `mi_matriz` y `mi_df` como argumentos separados por coma.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -142,7 +142,7 @@ success_msg("Bien hecho! Tus habilidades en R estan creciendo exponencialmente. 
 
 Vamos muy bien, pero sigamos avanzando!
 
-Cuando se crean listas es buena idea dar nombres a cada uno de los componentes de la misma para recordar fácilmente a que se refiere cada uno de los elementos. Es por ello buena práctica siempre dar nombres a los elementos de nuestras listas: 
+Cuando se crean listas es buena idea dar nombres a cada uno de los componentes de la misma para recordar fácilmente a que se refiere cada uno de los componentes. Es por ello buena práctica siempre dar nombres a los componentes de nuestras listas: 
 
 ```
 mi_lista <- list(nombre1 = componente1, 
@@ -216,7 +216,7 @@ test_object("mi_lista",
 test_object("mi_lista", eq_condition = "equal",
             incorrect_msg = "Parece que <code>mi_lista</code> no tiene los nombres correctos de los elementos.");
 test_output_contains("mi_lista", incorrect_msg = "No olvides imprimir <code>mi_lista</code> a la consola, escribe <code>mi_lista</code> en una nueva linea en el editor.")
-success_msg("Excelente! No solo sabes construir listas sino también nombrar sus elementos, es una práctica muy útil y recomendable. Continuemos.")
+success_msg("Excelente! No solo sabes construir listas sino también nombrar sus componentes, es una práctica muy útil y recomendable. Continuemos.")
 ```
 
 ---
@@ -279,7 +279,6 @@ test_object("lista_resplandor", eq_condition = "equal",
 success_msg("Excelente! Ya sabes cómo crear y nombrar componentes de una lista. Como en los capítulos anteriores, veamos como seleccionar elementos de una lista. Vamos al siguiente ejercicio.")
 ```
 ---
-
 ## Seleccionando elementos de una lista
 
 La mayoría de veces las listas contendrán muchos componentes. Por lo tanto, saber cómo extraer un elemento de una lista es importante.
@@ -355,7 +354,6 @@ test_object("segunda_critica",
             incorrect_msg = "Parece que <code>segunda_critica</code> no contiene la información requerida.")
 success_msg("Bien hecho! Con todo lo que sabemos, es fácil seleccionar elementos de las listas ¿verdad? Continuemos!")
 ```
-
 ---
 ## Agregando más información a la lista de películas
 
@@ -417,7 +415,7 @@ pelicula_resplandor <-
 pelicula_resplandor <- c(lista_resplandor, anio = 1980)
 
 # Observa la estructura de la lista recién creada 'pelicula_resplandor'
-str(lista_resplandor_full)
+str(lista_resplandor)
 ```
 
 *** =sct

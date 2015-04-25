@@ -85,8 +85,7 @@ head(mtcars)
 *** =sct
 ```{r eval=FALSE}
 test_function("head", "x", incorrect_msg = "¿Usaste el parámetro correcto en la función <code>head()</code>? Asegúrate de pasar el data frame que deseas examinar, <code>mtcars</code> en este caso.")
-test_output_contains("head(mtcars)", 
-                     incorrect_msg = "Asegúrate de usar <code>head()</code> con el argumento <code>mtcars</code>.")
+test_output_contains("head(mtcars)", incorrect_msg = "Asegúrate de usar <code>head()</code> con el argumento <code>mtcars</code>.")
 success_msg("Excelente! Bueno... ¿Que tenemos en este conjunto de datos?, Por ejemplo, <code>hp</code> representa los caballos de fuerza del carro (horsepower); el Datsun tiene la menor cantidad de caballos de fuerza de los 6 carros mostrados. Para una información completa de las variables escribe <code>?mtcars</code> en la consola y lee la página de ayuda. Vamos al siguiente ejercicio!");
 ```
 
@@ -360,7 +359,7 @@ msg = "No cambies o modifiques el data frame <code>planetas_df</code>."
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("diametros_planetas_lejanos",
             undefined_msg = "Asegúrate de definir la variable <code>diametros_planetas_lejanos</code>.",
-            incorrect_msg = "¿Escoge las últimas 6 columnas de la columna <code>diametro</code>.")
+            incorrect_msg = "¿Escogiste las últimas 6 filas de la columna <code>diametro</code>?")
 success_msg("Excelente! vamos al siguiente ejercicio!")
 ```
 
@@ -438,7 +437,7 @@ Puedes utilizar un vector con valores lógicos para seleccionar elementos de un 
 Asigna a `planetas_con_anillos_df` todos los datos del data frame `planetas_df` de aquellos planetas que tienen anillos, es decir aquellos donde `vector_anillos` es igual a `TRUE`.
 
 *** =hint
-Selecciona elementos los elementos de `planetas_df` usando los corchetes `[]`. El vector  `vector_anillos` contiene los valores lógicos y R seleccionará solamente aquellas filas en donde los elementos sean verdaderos (`TRUE`). Además quieres todas las columnas.
+Selecciona elementos de `planetas_df` usando los corchetes `[]`. El vector  `vector_anillos` contiene los valores lógicos y R seleccionará solamente aquellas filas en donde los elementos sean verdaderos (`TRUE`). Además quieres todas las columnas.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
