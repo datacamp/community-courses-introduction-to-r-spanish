@@ -2,8 +2,7 @@
 title_meta  : Capítulo 2
 title       : Vectores
 description : Vamos a ir a Las Vegas! donde aprenderemos como analizar los resultados de los juegos usando vectores en R! Después de completar este capítulo serás capaz de crear vectores en R, nombrarlos, seleccionar elementos de ellos y comparar diferentes vectores.
-framework   : datacamp
-mode        : selfcontained
+
 ---
 
 ## Creando vectores

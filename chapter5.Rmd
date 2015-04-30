@@ -1,9 +1,13 @@
 --- 
 title_meta  : Capítulo 5
 title       : Data frames
+<<<<<<< Updated upstream
 description : La mayoría de los datos con los que trabajarás en R van a ser guardados en data frames. Al finalizar este capítulo vas a ser capaz de crear data frames, seleccionar partes del mismo y ordenar los datos que contiene de acuerdo a cierta variable.
 framework   : datacamp
 mode        : selfcontained
+=======
+description : Most data sets you will be working with will be stored as a data frame. By the end of this chapter, you will be able to create a data frame, select interesting parts of a data frame and order a data frame according to certain variables. 
+>>>>>>> Stashed changes
 
 ---
 ## ¿Que es un data frame?

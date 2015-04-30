@@ -1,9 +1,15 @@
 --- 
+<<<<<<< Updated upstream
 title_meta  : Capítulo 6
 title       : Listas
 description : Las listas, en contraste con los vectores, pueden tener elementos de diferentes tipos. En este capítulo aprenderemos a crear, nombrar y extraer elementos de las listas. ¿Listo? ;-) 
 framework   : datacamp
 mode        : selfcontained
+=======
+title_meta  : Chapter 6
+title       : Lists
+description : Lists, as opposed to vectors, can hold components of different types, just like your to-do list at home or at work. This chapter will teach you how to create, name and subset these lists!
+>>>>>>> Stashed changes
 
 ---
 ## Listas, ¿Para qué las necesitamos?
