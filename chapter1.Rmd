@@ -420,7 +420,6 @@ success_msg("GBuen trabajo! ya casi finalizamos este capítulo :)")
 ```
 
 ---
-
 ## ¿Cómo sé el tipo de dato?
 
 ¿Recuerdas que cuando añadiste `5 + "seis"` obtuviste un error debido a que los tipos de datos no coincidian? Para evitar estas penosas situaciones :\ puedes saber de antemano el tipo de dato que tienen tus variables utilizando el código `class(nombre_variable)`
