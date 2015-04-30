@@ -1,15 +1,9 @@
 --- 
-<<<<<<< Updated upstream
 title_meta  : Capítulo 4
 title       : Factores
 description : Existen un tipo de variables llamadas variables categóricas. Por ejemplo, el género puede ser femenino o masculino. En R las variables categóricas son llamadas factores. Dada la importancia de los factores en el analisis de datos, vamos a aprender a crearlos y a todo lo relacionado con su manejo. Empecemos!
 framework   : datacamp
 mode        : selfcontained
-=======
-title_meta  : Chapter 4
-title       : Factors
-description : Very often, data falls into a limited number of categories. For example, humans are either male or female. In R, categorical data is stored in factors. Given the importance of these factors in data analysis, you should start learning how to create, subset and compare them now!
->>>>>>> Stashed changes
 
 ---
 ## ¿Que son los factores y para qué se usan?

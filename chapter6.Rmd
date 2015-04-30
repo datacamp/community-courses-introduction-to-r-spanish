@@ -1,15 +1,7 @@
 --- 
-<<<<<<< Updated upstream
 title_meta  : Capítulo 6
 title       : Listas
 description : Las listas, en contraste con los vectores, pueden tener elementos de diferentes tipos. En este capítulo aprenderemos a crear, nombrar y extraer elementos de las listas. ¿Listo? ;-) 
-framework   : datacamp
-mode        : selfcontained
-=======
-title_meta  : Chapter 6
-title       : Lists
-description : Lists, as opposed to vectors, can hold components of different types, just like your to-do list at home or at work. This chapter will teach you how to create, name and subset these lists!
->>>>>>> Stashed changes
 
 ---
 ## Listas, ¿Para qué las necesitamos?
@@ -284,6 +276,7 @@ test_object("lista_resplandor", eq_condition = "equal",
             incorrect_msg = "Parece que <code>lista_resplandor</code> no contiene los elementos o nombres correctos.");
 success_msg("Excelente! Ya sabes cómo crear y nombrar componentes de una lista. Como en los capítulos anteriores, veamos como seleccionar elementos de una lista. Vamos al siguiente ejercicio.")
 ```
+
 ---
 ## Seleccionando elementos de una lista
 
@@ -360,6 +353,7 @@ test_object("segunda_critica",
             incorrect_msg = "Parece que <code>segunda_critica</code> no contiene la información requerida.")
 success_msg("Bien hecho! Con todo lo que sabemos, es fácil seleccionar elementos de las listas ¿verdad? Continuemos!")
 ```
+
 ---
 ## Agregando más información a la lista de películas
 
