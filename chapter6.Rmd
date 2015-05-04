@@ -279,6 +279,7 @@ test_object("lista_resplandor", eq_condition = "equal",
 success_msg("Excelente! Ya sabes cómo crear y nombrar componentes de una lista. Como en los capítulos anteriores, veamos como seleccionar elementos de una lista. Vamos al siguiente ejercicio.")
 ```
 ---
+
 ## Seleccionando elementos de una lista
 
 La mayoría de veces las listas contendrán muchos componentes. Por lo tanto, saber cómo extraer un elemento de una lista es importante.
@@ -355,6 +356,7 @@ test_object("segunda_critica",
 success_msg("Bien hecho! Con todo lo que sabemos, es fácil seleccionar elementos de las listas ¿verdad? Continuemos!")
 ```
 ---
+
 ## Agregando más información a la lista de películas
 
 Al estar tan orgulloso de tu primera lista, decides compartirla con tu club de cine. Sin embargo, uno de los miembros más antiguos, el Sr. Kubrick, ha notado que olvidaste tener en cuenta el año de estreno de la película. Así que decides agregar esa información para que nadie pueda criticar tu lista.
