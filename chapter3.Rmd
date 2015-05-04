@@ -2,8 +2,6 @@
 title_meta  : Capítulo 3
 title       : Matrices
 description : En este capítulo vamos a aprender a trabajar con matrices en R. Al finalizar el capítulo serás capaz de crear matrices y hacer operaciones básicas con éstas. Vamos a analizar cuánto dinero hizo la película Star Wars para ilustrar el uso de matrices en R. Que la fuerza te acompañe!
-framework   : datacamp
-mode        : selfcontained
 
 ---
 ## ¿Que es una Matriz?
