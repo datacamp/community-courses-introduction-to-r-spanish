@@ -3,8 +3,7 @@ title_meta  : Capítulo 1
 title       : Introducción
 description : En este capítulo vamos a dar nuestros primeros pasos en R. Aprenderemos a usar la consola como calculadora y a asignar variables. También aprenderemos algunos de los tipos básicos de datos en R. Comencemos!
 
----
-
+--- type:NormalExercise xp:100
 ## Como funciona la plataforma
 
 En el **editor** a la derecha puedes escribir el código para resolver los ejercicios. Al dar clic en 'Submit Answer' (Enviar Respuesta) cada línea de código es interpretada y ejecutada por R y se mostrará un mensaje diciendo si el cá, every line of code is interpreted and executed by R and you get código es correcto o contiene errores. La salidas son mostradas en la **consola** en la parte inferior derecha. También es posibe ejecutar comandos directamente en la consola, es una buena forma de experimentar con R. Los **gráficos** se muestran en la esquina superior derecha.
@@ -23,7 +22,7 @@ Solo agrega una linea que calcule la suma de `6` y `12` tal como se muestra en e
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -57,8 +56,10 @@ test_output_contains("18", incorrect_msg = "Asegúrate de agregar una linea que 
 success_msg("Muy bien! Ahora que estas familiarizado con la plataforma empecemos a aprende-R!")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Aritmética con R
 
 Como vimos el uso más simple que se le puede dar a R es el de una calculadora. Consideremos las siguientes operaciones:
@@ -137,8 +138,10 @@ test_output_contains("28%%6", incorrect_msg = "Parece haber un problema con la p
 success_msg("Excelente! vamos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Variables y asignaciones
 
 Un concepto básico en programación es el de **variable**. 
@@ -155,7 +158,7 @@ Mira como asignamos el número 4 a `mi_variable`: `mi_variable <- 4`
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -183,8 +186,10 @@ test_object("x", undefined_msg = "Asegúrate de haber definido la variable <code
 success_msg("Bien! Notaste que R no imprime el valor de la variable a la que le asignaste el valor? el código<code>x <- 42</code> no generó ninguna salida a la consola porque R supone que vas a usar esa variable en el futuro, precisamente por eso fue que creamos la variable, verdad? Muy bien sigamos!")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Variables y asignaciones (2)
 
 Supongamos que tienes una canasta con cinco manzanas. Para recordarlo, quizás quieras asignar el número de manzanas en una variable llamada `numero_manzanas`
@@ -199,6 +204,7 @@ Recuerda que para asignar valores a variables puedes utilizar el símbolo `<-`. 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -229,8 +235,10 @@ test_output_contains("numero_manzanas",
 success_msg("Ok bien! Vamos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Variables y asignaciones (3)
 
 Supongamos que ahora tienes 6 naranjas. De nuevo, para no olvidarlo se te ocurre crear una variable llamada `numero_naranjas` y asignar el valor de 6 a esa variable. Ahora podemos a empezar a utilizar las variables creadas para hacer algo con ellas. Usemos R para saber el número total de frutas con las que contamos, pidamos que haga la cuenta por nosotros: `numero_manzanas + numero_naranjas`. Al leer este codigo nos damos cuenta de la importancia de dar nombres útiles a nuestras variables.
@@ -244,7 +252,7 @@ Supongamos que ahora tienes 6 naranjas. De nuevo, para no olvidarlo se te ocurre
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -287,7 +295,10 @@ test_object("numero_frutas",
 success_msg("Bien hecho! La gran ventaja de haber hecho los cálculos usando variables es que éstas son reusables. Si cambias el valor de la variable <code>numero_manzanas</code> que sea 12 en lugar de 5 y corres de nuevo el script el valor de <code>numero_frutas</code> se actualizará al nuevo valor. Continuemos!")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Manzanas y naranjas
 
 En la escuela primaria nos decían que no sumáramos manzanas con naranjas, pero es lo que acabamos de hacer :) \n Sin embargo `numero_manzanas` y `numero_naranjas` son dos variables que contienen el mismo tipo de dato: un dato de tipo numérico. El operador `+` en R funciona con variables de este tipo. Si alguna de nuestras variables no es numérica sino por ejemplo caracter (ver el editor), entonces estaríamos tratando de asignar la suma de un caracter y un número a la variable `numero_frutas`, lo cual no es posible.
@@ -301,7 +312,7 @@ Tienes que asignar el valor de `6` a `numero_naranjas` en lugar de la cadena de 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -352,8 +363,10 @@ test_object("numero_frutas",
 success_msg("Muy bien, que buen trabajo! Sigamos...")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Tipos de datos básicos en R
 
 R trabaja con muchos tipos de datos. Para empezar, algunos de los más básicos son:
@@ -378,7 +391,7 @@ Solo sigue instrucciones, recuerda que asignamos valores a las variables con `<-
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -419,7 +432,10 @@ test_object("mi_logica",
 success_msg("GBuen trabajo! ya casi finalizamos este capítulo :)")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## ¿Cómo sé el tipo de dato?
 
 ¿Recuerdas que cuando añadiste `5 + "seis"` obtuviste un error debido a que los tipos de datos no coincidian? Para evitar estas penosas situaciones :\ puedes saber de antemano el tipo de dato que tienen tus variables utilizando el código `class(nombre_variable)`
@@ -433,7 +449,7 @@ Puedes saber el tipo de dato de la variable `mi_numerica` escribiendo `class(mi_
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -473,3 +489,6 @@ test_output_contains("class(mi_logica)",
                      incorrect_msg = "El resultado no contiene el tipo de <code>mi_logica</code>.")
 success_msg("Felicitaciones! Este fue el último ejercicio del capítulo. Ahora vamos a conocer el mundo de los vectores!")
 ```
+
+*** =skills
+1

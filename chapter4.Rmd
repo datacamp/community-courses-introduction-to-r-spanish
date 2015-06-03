@@ -5,7 +5,7 @@ description : Existen un tipo de variables llamadas variables categóricas. Por 
 framework   : datacamp
 mode        : selfcontained
 
----
+--- type:NormalExercise xp:100
 ## ¿Que son los factores y para qué se usan?
 
 En este capítulo vamos a sumergirnos en el mundo de los **factores**. 
@@ -24,7 +24,7 @@ En este punto, este ejercicio debe de ser muy sencillo.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -46,8 +46,10 @@ test_object("teoria",
 success_msg("Bien! ¿Listo para empezar? continuemos!")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## ¿Que son los factores y para qué se usan? (2)
 
 Para crear factores en R usamos la función [`factor()`](http://www.rdocumentation.org/packages/base/functions/factor). Lo primero que tenemos que hacer es crear un vector que contenga todas las observaciones de nuestra variable. Por ejemplo el vector `genero` contiene el género de 5 individuos diferentes:
@@ -72,7 +74,7 @@ Simplemente utiliza la función [`factor()`](http://www.rdocumentation.org/packa
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -99,7 +101,10 @@ test_object("factor_genero",
 success_msg("Muy bien! Si quieres saber más sobre la función <code>factor()</code> puedes escribir en la consola <code>?factor</code> esto mostrará la ayuda para esa función. Continuemos!");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## ¿Que son los factores y para qué se usan? (3)
 
 Existen dos tipos de variables categóricas: **nominales** y **ordinales**. 
@@ -117,7 +122,7 @@ Solo da clic a 'Submit Answer' y fíjate en la consola.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -153,7 +158,10 @@ test_output_contains("factor_desempeno_laboral", incorrect_msg = msg)
 success_msg("¿Puedes ver que está pasando en este ejercicio? Bien! Sigamos y estudiemos los factores en detalle.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Niveles de los factores
 
 Cuando trabajas con datos categóricos a veces notarás que los factores vienen dados con ciertos niveles. Sin embargo, frecuentemente es conveniente cambiar los niveles por varias razones, por ejemplo por claridad en los análisis. R permite modificar los niveles con la función [`levels()`](http://www.rdocumentation.org/packages/base/functions/levels):
@@ -177,7 +185,7 @@ Fíjate en el orden en que asignas los niveles de los factores. Pista: fíjate e
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -219,7 +227,10 @@ test_object("factor_genero", eq_condition = "equal",
 success_msg("Excelente! Vamos al siguiente ejercicio")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Resumiendo un factor
 
 Luego de terminar este curso, una de nuestras funciones favoritas en R será [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) (resumen). Esta función nos dará una visión general del objeto o variable que usemos como argumento:
@@ -238,7 +249,7 @@ Solo usa la función [`summary()`](http://www.rdocumentation.org/packages/base/f
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -279,7 +290,10 @@ test_function("summary", "x",
 success_msg("Bien! Fíjate en la salida. El hecho de que hayas identificado como un factor a factor_genero le permite a R mostrar el número de elementos en cada categoría.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Batalla de los sexos
 
 _"Todos los animales son iguales, pero algunos son más iguales que otros." -- George Orwell_
@@ -294,7 +308,7 @@ Solo da clic a 'Submit Answer' y fíjate en lo que se imprime en la consola.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -334,7 +348,10 @@ test_output_contains("factor_genero[1] > factor_genero[2]", incorrect_msg = "No 
 success_msg("Naaaa, parece que R es neutral sobre los géneros. O quizás solo quiere evitarse discusiones (con las mujeres) ;-).")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Factores con niveles ordenados
 
 Como los niveles `"Masculino"` y `"Femenino"` son niveles no ordenados de nuestro factor `genero` R responde con un mensaje de advertencia de que esa comparación (por medio del símbolo `>`) no tiene sentido en el caso de factores nominales (no ordenados).
@@ -357,7 +374,7 @@ Asigna a `desempeno` un vector que contenga los caracteres `"Medio"`, `"Bajo"` .
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -380,7 +397,10 @@ test_object("desempeno",
 success_msg("Buen trabajo! Vamos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Factores con niveles ordenados (2)
 
 El vector `desempeno` debería de ser convertido a un factor ordenado porque sus niveles tienen un orden natural. De forma predeterminada la función [`factor()`](http://www.rdocumentation.org/packages/base/functions/factor) transforma el vector `desempeno` en un factor no ordenado. Para crearlo como un factor ordenado necesitamos usar los argumentos adicionales: `ordered` y `levels`. 
@@ -399,7 +419,7 @@ Usa la función [`factor()`](http://www.rdocumentation.org/packages/base/functio
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -444,7 +464,10 @@ test_correct({
 success_msg("Muy bien! Mira la consola, se muestra que los niveles tienen un orden dado por el signo <code><</code> Continuemos al último ejercicio!");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Comparando vectores ordenados
 
 Al tener un mal día en el trabajo, el `Trabajador 2` entra a tu oficina y empieza a quejarse de que el `Trabajador 5` está atrasando todos los proyectos porque su desempeño en el trabajo es "Bajo". Como sabes que el `Trabajador 2` tiene la reputación de “problemático” decides averiguar si lo que dice tiene sentido.
@@ -463,7 +486,7 @@ Este código evalúa si el primer elemento del vector es mayor que el segundo.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -501,3 +524,6 @@ test_object("comparacion",
 success_msg("Bellissimo! ¿Qué es lo que nos dice este resultado? El Trabajador 2 se parece darle validez a su fama de problemático… es lo que nos dice la evidencia de los datos! \n
 Acá terminamos el capítulo sobre factores. Ahora que sabemos bastante sobre vectores, matrices y factores podemos entrar al maravilloso mundo de los data frames, una de las estructuras de datos más importantes en R!")
 ```
+
+*** =skills
+1

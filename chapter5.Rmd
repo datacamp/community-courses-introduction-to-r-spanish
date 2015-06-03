@@ -3,7 +3,7 @@ title_meta  : Capítulo 5
 title       : Data frames
 description : La mayoría de los datos con los que trabajarás en R van a ser guardados en data frames. Al finalizar este capítulo vas a ser capaz de crear data frames, seleccionar partes del mismo y ordenar los datos que contiene de acuerdo a cierta variable.
 
----
+--- type:NormalExercise xp:100
 ## ¿Que es un data frame?
 
 Quizás recuerdes de nuestro capítulo sobre matrices que todos los elementos que ponemos en una matriz deben de ser del mismo tipo. Por ejemplo, cuando trabajamos con matrices los datos de Star Wars eran todos numéricos.
@@ -27,7 +27,7 @@ Solo da clic a 'Submit Answer' y observa la magia!
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -46,7 +46,10 @@ test_output_contains("mtcars", incorrect_msg = "No cambies nada del código en e
 success_msg("Bien! vamos al siguiente ejercicio")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Una rápida mirada a nuestros datos
 
 Vaya! que montón de carros!
@@ -65,7 +68,7 @@ Usa la función [`head()`](http://www.rdocumentation.org/packages/utils/function
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -87,7 +90,10 @@ test_output_contains("head(mtcars)", incorrect_msg = "Asegúrate de usar <code>h
 success_msg("Excelente! Bueno... ¿Que tenemos en este conjunto de datos?, Por ejemplo, <code>hp</code> representa los caballos de fuerza del carro (horsepower); el Datsun tiene la menor cantidad de caballos de fuerza de los 6 carros mostrados. Para una información completa de las variables escribe <code>?mtcars</code> en la consola y lee la página de ayuda. Vamos al siguiente ejercicio!");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Veamos la estructura
 
 Otro método frecuentemente usado para echar un vistazo rápido a los datos es la función [`str()`](http://www.rdocumentation.org/packages/utils/functions/str). Esta función muestra la estructura de un data frame (u otro objeto de R). En este caso, el comando `str(mtcars)` muestra:
@@ -108,7 +114,7 @@ Usa la función [`str()`](http://www.rdocumentation.org/packages/utils/functions
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -129,7 +135,10 @@ test_output_contains("str(mtcars)", incorrect_msg = "Usa la función <code>str()
 success_msg("Buen trabajo! ¿Pudiste ver toda la información de la que hablamos? Bien, vamos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Creando un data frame
 
 Debido a que estamos usando conjuntos de datos que vienen con R, nos estamos perdiendo de más de la mitad de la diversión de crear nuestros propios data frames, el resto del capítulo está basado en tu propio conjunto de datos. ¿Qué tal si exploramos el espacio?
@@ -153,7 +162,7 @@ La función `data.frame(col1, col2, col3,...)` toma como argumentos los vectores
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -202,7 +211,10 @@ test_correct({
 success_msg("Excelente! Continuemos al siguiente ejercicio. El siguiente paso lógico es dar una inspección rápida al data frame que acabamos de crear. Hagámoslo!");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Creando un data frame (2)
 
 Asegúrate que tienes 8 observaciones y 5 variables. El data frame `planetas_df` está en tu espacio de trabajo (workspace) y ahora lo puedes explorar.
@@ -215,6 +227,8 @@ Este ejercicio es muy fácil, nada de pistas!
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
+
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
 diametro <- c(0.382, 0.949, 1, 0.532, 11.209, 9.449, 4.007, 3.883); 
@@ -242,7 +256,10 @@ test_function("str", "object", incorrect_msg = "Usa la función <code>str()</cod
 success_msg("Bien! Ahora que ya tenemos un entendimiento de nuestros datos es hora de que seleccionemos elementos de nuestro data frame. Esto hacemos en el siguiente ejercicio!")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Selección de elementos
 
 De manera similar a los vectores y matrices, seleccionamos elementos de un data frame con los corchetes `[ ]`. Usando una coma, separamos los índices que deseamos seleccionar de las filas y las columnas respectivamente. Por ejemplo:
@@ -261,6 +278,8 @@ A veces queremos seleccionar todos los elementos de una fila o de una columna. P
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
+
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
 diametro <- c(0.382, 0.949, 1, 0.532, 11.209, 9.449, 4.007, 3.883); 
@@ -312,7 +331,10 @@ test_object("planetas_lejanos_df",
 success_msg("Muy bien! Además de poder seleccionar las columnas de un data frame por números también los puedes seleccionar los nombres de las columnas. Para aprender cómo vamos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Selección de elementos (2)
 
 En lugar de usar los índices de las columnas para seleccionar elementos de un data frame también puedes usar los nombres de las columnas para seleccionar datos.
@@ -327,6 +349,8 @@ Selecciona las filas de la 3 a la 8 usando `3:8` y usa `"diametro"` para selecci
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
+
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
 diametro <- c(0.382, 0.949, 1, 0.532, 11.209, 9.449, 4.007, 3.883); 
@@ -361,7 +385,10 @@ test_object("diametros_planetas_lejanos",
 success_msg("Excelente! vamos al siguiente ejercicio!")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Solamente planetas con anillos
 
 Frecuentemente vas a querer seleccionar una columna entera, es decir, una variable específica de un data frame. Por ejemplo si quieres seleccionar todos los elementos de la variable `anillos` ambas notaciones servirán: `planetas_df[,5]` ó `planetas_df[,"anillos"]`.
@@ -380,6 +407,8 @@ data_frame$variable
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
+
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
 diametro <- c(0.382, 0.949, 1, 0.532, 11.209, 9.449, 4.007, 3.883); 
@@ -414,7 +443,10 @@ test_object("vector_anillos",
 success_msg("Excelente! Vamos al siguiente ejercicio para descubrir otra manera importante de seleccionar elementos de un data frame")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Solamente planetas con anillos (2)
 
 Quizás recuerdes de la secundaria que algunos planetas del sistema solar tienen anillos y otros no. Pero debido a tus prioridades de esa época (¿recuerdas la pubertad?) no puedes recordar los nombres de los planetas con anillos, mucho menos su rotación, velocidad, etc...
@@ -439,6 +471,8 @@ Selecciona elementos de `planetas_df` usando los corchetes `[]`. El vector  `vec
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
+
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
 diametro <- c(0.382, 0.949, 1, 0.532, 11.209, 9.449, 4.007, 3.883); 
@@ -475,7 +509,10 @@ test_object("planetas_con_anillos_df",
 success_msg("Grandioso! Aunque a decir verdad esto fue una solución un poco tediosa, en el siguiente ejercicio veremos una manera más concisa de hacerlo.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Solamente planetas con anillos, pero más eficiente
 
 ¿Que fue exactamente lo que hicimos en los ejercicios anteriores? Básicamente seleccionamos un subconjunto del data frame `planetas_df` basándonos en que cierta condición fuera verdadera (tiene o no tiene anillos). En el ejercicio pasado pudimos obtener esa información, quizás ya estés listo para trabajar en la NASA ;-).
@@ -502,6 +539,8 @@ Lo siento, tendrás que resolver este ejercicio tú sólo.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
+
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
 diametro <- c(0.382, 0.949, 1, 0.532, 11.209, 9.449, 4.007, 3.883); 
@@ -536,7 +575,10 @@ test_object("planetas_pequenos_df",
 success_msg("Muy bien! El código que usamos ahora con la función <code>subset()</code> es más conciso, además quizás sea más entendible para la gente que lea tu código. Vamos al siguiente ejercicio.");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Ordenando
 
 Hacer rankings es uno de los pasatiempos favoritos de la humanidad. Estos rankings pueden ser útiles (países menos violentos en el mundo), entretenidos (estrellas de cine más influyentes) o sin sentido (las mujeres más parecidas a Lady Gaga). Cualquiera sea el propósito de tu ranking, R te puede ayudar.
@@ -564,7 +606,7 @@ Sólo juega con la función [`order()`](http://www.rdocumentation.org/packages/b
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -586,7 +628,10 @@ order(c(50,4,61,75))
 success_msg("Bien! ahora usemos la función <code>order()</code> para ordenar nuestro data frame!")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Ordenando un data frame
 
 Ok, ahora que entendemos cómo funciona [`order()`](http://www.rdocumentation.org/packages/base/functions/order) hagamos algo útil con ella. Qué tal si ordenamos nuestros datos empezando por el planeta más grande, o sea ordenemos usando la columna `diametro`.
@@ -603,6 +648,8 @@ Te dará el vector de posiciones de los planetas acuerdo con la variable `diamet
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
+
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
 diametro <- c(0.382, 0.949, 1, 0.532, 11.209, 9.449, 4.007, 3.883); 
@@ -645,3 +692,6 @@ test_object("planetas_por_tamano",
             incorrect_msg = "Parece que <code>planetas_por_tamano</code> no contiene los datos ornedados de <code>planetas_df</code>.")
 success_msg("Muy bien! ¿Cómo se ve el data frame resultante? Escribe <code>planetas_por_tamano</code> para poder verlo! Este ejercicio concluye nuestro capítulo sobre data frames. Recuerda que los data frames son extremadamente importantes en R, los necesitarás casi siempre que analices datos. Otra estructura muy común e importante son las listas, el tema de nuestro próximo capítulo!")
 ```
+
+*** =skills
+1

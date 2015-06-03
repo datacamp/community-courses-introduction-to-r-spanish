@@ -3,7 +3,7 @@ title_meta  : Capítulo 6
 title       : Listas
 description : Las listas, en contraste con los vectores, pueden tener elementos de diferentes tipos. En este capítulo aprenderemos a crear, nombrar y extraer elementos de las listas. ¿Listo? ;-) 
 
----
+--- type:NormalExercise xp:100
 ## Listas, ¿Para qué las necesitamos?
 
 Felicitaciones! en este punto del curso ya eres un (semi-)experto en:
@@ -22,7 +22,7 @@ Da clic a 'Submit Answer'.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -40,7 +40,10 @@ Da clic a 'Submit Answer'.
 success_msg("En sus marcas, LISTOS, fuera! Aprendamos sobre listas!")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Listas, ¿Para qué las necesitamos? (2)
 
 Una **lista** en R es similar a una... bueno a una lista, de esas que usamos para anotar cosas.
@@ -57,7 +60,7 @@ Solo da clic 'Submit Answer'.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -75,7 +78,10 @@ Solo da clic 'Submit Answer'.
 success_msg("Ok. Hora de ensuciarnos las manos!")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Creando listas
 
 Vamos a crear nuestra primera lista! para ello usamos la función [`list()`](http://www.rdocumentation.org/packages/base/functions/list): 
@@ -94,7 +100,7 @@ Usa la función [`list()`](http://www.rdocumentation.org/packages/base/functions
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -135,7 +141,10 @@ test_object("mi_lista",
 success_msg("Bien hecho! Tus habilidades en R estan creciendo exponencialmente. Vamos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Creando una lista con nombres
 
 Vamos muy bien, pero sigamos avanzando!
@@ -167,7 +176,7 @@ Agrega los otros dos componentes de la misma manera.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -217,7 +226,10 @@ test_output_contains("mi_lista", incorrect_msg = "No olvides imprimir <code>mi_l
 success_msg("Excelente! No solo sabes construir listas sino también nombrar sus componentes, es una práctica muy útil y recomendable. Continuemos.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Creando una lista con nombres (2)
 
 Siendo un gran fanático del buen cine (recuerda que analizaste Star Wars!), ahora decides que vas a empezar a guardar información sobre películas buenas con la ayuda de listas.
@@ -241,6 +253,8 @@ lista_resplandor <- list(nombre = "El Resplandor")
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
+
 actores <- c("Jack Nicholson","Shelley Duvall","Danny Lloyd","Scatman Crothers","Barry Nelson")
 fuentes <- c("IMDb1","IMDb2","IMDb3")
 comentarios <- c("Best Horror Film I Have Ever Seen","A truly brilliant and scary film from Stanley Kubrick","A masterpiece of psychological horror")
@@ -277,8 +291,10 @@ test_object("lista_resplandor", eq_condition = "equal",
 success_msg("Excelente! Ya sabes cómo crear y nombrar componentes de una lista. Como en los capítulos anteriores, veamos como seleccionar elementos de una lista. Vamos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Seleccionando elementos de una lista
 
 La mayoría de veces las listas contendrán muchos componentes. Por lo tanto, saber cómo extraer un elemento de una lista es importante.
@@ -311,6 +327,8 @@ Además de seleccionar componentes, frecuentemente necesitas seleccionar element
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
+
 actores <- c("Jack Nicholson","Shelley Duvall","Danny Lloyd","Scatman Crothers","Barry Nelson")
 fuentes <- c("IMDb1","IMDb2","IMDb3")
 comentarios <- c("Best Horror Film I Have Ever Seen","A truly brilliant and scary film from Stanley Kubrick","A masterpiece of psychological horror")
@@ -355,8 +373,10 @@ test_object("segunda_critica",
 success_msg("Bien hecho! Con todo lo que sabemos, es fácil seleccionar elementos de las listas ¿verdad? Continuemos!")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Agregando más información a la lista de películas
 
 Al estar tan orgulloso de tu primera lista, decides compartirla con tu club de cine. Sin embargo, uno de los miembros más antiguos, el Sr. Kubrick, ha notado que olvidaste tener en cuenta el año de estreno de la película. Así que decides agregar esa información para que nadie pueda criticar tu lista.
@@ -387,6 +407,8 @@ Tienes que agregar algo de código en lugar de esos puntos...
 
 *** =pre_exercise_code
 ```{r, eval = FALSE}
+options(lang = "es")
+
 actores <- c("Jack Nicholson","Shelley Duvall","Danny Lloyd","Scatman Crothers","Barry Nelson")
 fuentes <- c("IMDb1","IMDb2","IMDb3")
 comentarios <- c("Best Horror Film I Have Ever Seen","A truly brilliant and scary film from Stanley Kubrick","A masterpiece of psychological horror")
@@ -432,3 +454,6 @@ test_object("pelicula_resplandor", eq_condition = "equal",
 test_function("str", "object", incorrect_msg = "Asegúrate de imprimir la estructura de <code>pelicula_resplandor</code>.")
 success_msg("Bravísimo!!! Este fue el último ejercicio sobre listas! Ahora tienes un conocimiento sólido sobre los fundamentos de R. Felicitaciones!!! Aunque hay mucho más por aprender, puedes estar seguro de que vas por buen camino! Explora otros cursos en datacamp para poder ser un verdadero experto en ciencia de datos!")
 ```
+
+*** =skills
+1

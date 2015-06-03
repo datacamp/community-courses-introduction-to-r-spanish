@@ -3,8 +3,7 @@ title_meta  : Capítulo 2
 title       : Vectores
 description : Vamos a ir a Las Vegas! donde aprenderemos como analizar los resultados de los juegos usando vectores en R! Después de completar este capítulo serás capaz de crear vectores en R, nombrarlos, seleccionar elementos de ellos y comparar diferentes vectores.
 
----
-
+--- type:NormalExercise xp:100
 ## Creando vectores
 
 Te sientes de suerte? 
@@ -25,7 +24,7 @@ Ten en cuenta que R distingue las mayúsculas de las minúsculas.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -47,8 +46,10 @@ test_object("Vegas",
 success_msg("Muy bien! Sigamos.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Creando vectores (2)
 
 Primero concentrémonos.
@@ -72,7 +73,7 @@ Asigna `c(TRUE,FALSE,TRUE)` a la variable `vector_logico` con el operador `<-`. 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -101,8 +102,10 @@ test_object("vector_logico",
 success_msg("Perfecto! notemos que agregar espacios después de las comas ayuda a que el código sea mas legible. Practiquemos un poco más con los vectores.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Creando vectores (3)
 
 Después de una semana en Las Vegas y cero Ferraris en tu garage, decides que es hora de empezar a utilizar tus super-poderes analíticos.
@@ -162,8 +165,10 @@ test_object("vector_ruleta",
 success_msg("Muy bien! revisa los contenidos en tus vectores, puedes hacerlo simplemente escribiendo el nombre de la variable en la consola y presionando enter. Sigamos, esto se pone interesante!")
 ```
 
---- 
+*** =skills
+1
 
+---  type:NormalExercise xp:100
 ## Nombrando elementos
 
 Como analista de datos, es importante tener una clara visión de que datos estas usando. Entender a qué se refiere cada elemento es por lo tanto esencial.
@@ -196,6 +201,7 @@ c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -250,7 +256,10 @@ test_output_contains("vector_ruleta", incorrect_msg = "Imprime vector_ruleta par
 success_msg("Bien hecho! Continuemos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Nombrando elementos (2)
 
 Si quieres ser un buen estadístico, tienes que ser un poco perezoso. (Si ya eres perezoso, quizás hayas nacido con esos excepcionales talentos estadísticos.)
@@ -268,7 +277,7 @@ Puedes usar `names(vector_poker)` para asignar nombres a los elementos de `vecto
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -323,8 +332,10 @@ test_object("vector_ruleta",
 success_msg("Bien hecho! Un consejo de programación: trata de evitar duplicar el código que ya has escrito, eso te hará mucho más productivo. Continuemos para ver cómo hacer aritmética con vectores!")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Calculando las ganancias totales
 
 Ahora que tienes los resultados del poker y la ruleta en un vector con elementos apropiadamente nombrados, puedes empezar a hacer análisis.
@@ -353,7 +364,7 @@ Usa el operador `+` para sumar `vector_A` y `vector_B`. Usa `<-` para asignar el
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -396,8 +407,10 @@ test_object("vector_total",
 success_msg("Buen trabajo! Continuemos.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Calculando las ganancias totales (2)
 
 ¿Entendiste como R realiza aritmética con los vectores?
@@ -418,7 +431,7 @@ Justo como en el ejercicio anterior, asigna la suma de los vectores a `total_dia
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -480,8 +493,10 @@ test_output_contains("total_diario", incorrect_msg = "Imprime <code>total_diario
 success_msg("Bien! Vamos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Calculando ganancias totales (3)
 
 Basado en los análisis previos, parece que tuviste una mezcla de días buenos y malos. Esto no era lo que tu ego esperaba, y te preguntas si quizás hay una (muy pequeña) posibilidad de que hayas perdido dinero en la semana.
@@ -502,7 +517,7 @@ Usa la función `sum` para obtener el total de `vector_ruleta`. `total_semana` d
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -573,8 +588,10 @@ test_output_contains("total_semana", incorrect_msg = "Imprime <code>total_semana
 success_msg("Bien! Eres muy bueno en R! aunque como vemos no te fue tan bien en el casino... no importa, vamos al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Comparando ganancias totales
 
 Mmmmm.... parece que estás perdiendo dinero. Que sorpresa! Hora de repensar tu estrategia! Esto va a requerir un análisis más profundo.
@@ -592,7 +609,7 @@ Prácticamente ya calculaste la respuesta en el ejercicio anterior. Para saber s
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -661,8 +678,10 @@ test_output_contains("respuesta", incorrect_msg = "Imprime <code>respuesta</code
 success_msg("Buen trabajo! Continúa al siguiente ejercicio.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Seleccionando elementos: los buenos tiempos
 
 La corazonada parece que fue cierta. Parece que te va mejor en el poker que en la ruleta.
@@ -680,7 +699,7 @@ Nota que el primer elemento tiene índice 1 no 0 como en muchos otros lenguajes 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -729,7 +748,10 @@ test_object("poker_miercoles",
 success_msg("Vamos muy bien! También es posible seleccionar múltiples elementos de un vector, veamos como en el siguiente ejercicio!")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Seleccionando elementos: los buenos tiempos (2)
 
 
@@ -750,7 +772,7 @@ Usa el vector `c(2,3,4)` entre corchetes para seleccionar los elementos deseados
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ``` 
 
 *** =sample_code
@@ -806,8 +828,10 @@ test_output_contains("dias_medios_poker", incorrect_msg = "Imprime <code>dias_me
 success_msg("Bien hecho! Seleccionar elementos es de las operaciones más importantes en R, y hemos aprendiendo mucho, pero falta más aun");
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Seleccionando elementos: los buenos tiempos (3)
 
 Seleccionar varios elementos del `vector_poker` con `c(2,3,4)` quizás no sea muy conveniente.  Recordemos como estadísticos nuestras raíces perezosas, así que usemos una notación que R utiliza para crear vectores de números consecutivos `c(2,3,4)` se puede crear con el código `2:4`, que genera el vector que contiene los números naturales del 2 al 4 (incluyendo ambos extremos).
@@ -878,8 +902,10 @@ test_output_contains("martes_a_viernes_ruleta", incorrect_msg = "Imprime <code>m
 success_msg("Fantástico! El operados dos puntos es muy útil y se usa mucho en R. Así que recuérdalo bien. Vamos al siguiente ejercicio")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Seleccionando elementos: los buenos tiempos (4)
 
 Otra forma de abordar este problema es usar los nombres de los elementos (Lunes, Martes, etc.) en lugar de sus índices. Por ejemplo:
@@ -902,7 +928,7 @@ Si usas `mean(vector_poker)` vas a obtener el promedio de todos los días. Pero 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -949,8 +975,10 @@ test_object("promedio_primeros3_dias",
 success_msg("Buen trabajo! Aparte de seleccionar elementos por índice y por nombre también lo puedes hacer por comparación. En los siguientes ejercicios veremos como.");
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Selección por comparación - Paso 1
 
 Al utilizar los operadores de comparación, podemos abordar las preguntas anteriores de una manera más interesante.
@@ -975,7 +1003,7 @@ Para obtener los días en que tuviste ganancias, R debe chequear cada elemento y
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -1024,8 +1052,10 @@ test_object("positivos_poker",
 success_msg("Bien! Algo equivalente a reciclar el valor <code>0</code> cinco veces y luego hacer la comparación es hacer la comparación con el vector `c(0,0,0,0,0)`, en ambos casos el resultado es el mismo.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Selección por comparación - Paso 2
 
 Trabajar con comparaciones hará tu vida analítica más fácil. En lugar de seleccionar "a mano" un conjunto de días para analizar (como en los primeros ejercicios), puedes decirle a R que te seleccione solo aquellos días en los que tuviste ganancias en el poker.
@@ -1042,7 +1072,7 @@ Usa el vector `positivos_poker` para elegir los elementos positivos del `vector_
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -1100,8 +1130,10 @@ test_object("ganancias_poker",
 success_msg("Muy bien! Haz aprendido algo muy importante en R, seleccionar utilizando comparaciones y valores lógicos. Vamos al último ejercicio!")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Selección Avanzada
 
 Así como lo hiciste con el poker, también quisieras saber aquellos días en los que tuviste ganancia en la ruleta.
@@ -1115,7 +1147,7 @@ Puedes consultar los dos ejercicios previos y hacer lo mismo, esta vez con `vect
 
 *** =pre_exercise_ocde
 ```{r eval=FALSE}
-# no pec
+options(lang = "es")
 ```
 
 *** =sample_code
@@ -1171,3 +1203,6 @@ test_object("ganancias_ruleta",
             incorrect_msg = "Parece que <code>positivos_ruleta</code> no contiene el resultado esperado. Por favor, intenta de nuevo.")
 success_msg("Excelente! Ahora sabemos lo básico de los vectores, los cuales son estructuras de datos sumamente importantes en R. En el siguiente capítulo introduciremos la versión de dos dimensiones de los vectores: las matrices.")
 ```
+
+*** =skills
+1
