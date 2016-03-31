@@ -27,7 +27,7 @@ Lee la pregunta con cuidado, la respuesta ya está escrita en alguna parte...
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -43,6 +43,7 @@ matrix(1:9, byrow = TRUE, nrow = 3)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_function("matrix", c("data","byrow", "nrow"))
 test_output_contains("matrix(1:9, byrow=TRUE, nrow=3)",
                      incorrect_msg = "Parece haber un problema con la definición de la matriz.")
@@ -74,7 +75,7 @@ c(new_hope, empire_strikes, return_jedi)
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -103,6 +104,7 @@ star_wars_matrix <- matrix(c(new_hope, empire_strikes, return_jedi), nrow = 3, b
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada de los vectores <code>new_hope</code>, <code>empire_strikes</code> y <code>return_jedi</code>!"
 test_object("new_hope", undefined_msg = msg, incorrect_msg = msg)
 test_object("empire_strikes", undefined_msg = msg, incorrect_msg = msg)
@@ -147,7 +149,7 @@ c("A New Hope",
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -183,6 +185,7 @@ rownames(star_wars_matrix) <- c("A New Hope", "The Empire Strikes Back", "Return
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada de los vectores <code>new_hope</code>, <code>empire_strikes</code> y <code>return_jedi</code>!"
 test_object("new_hope", undefined_msg = msg, incorrect_msg = msg)
 test_object("empire_strikes", undefined_msg = msg, incorrect_msg = msg)
@@ -225,7 +228,7 @@ La función ['rowSums'](http://www.rdocumentation.org/packages/base/functions/co
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -258,6 +261,7 @@ taquilla_mundial
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada de las variables escritas en el editor: <code>taquillas</code>, <code>nombres</code>, <code>nombres_columnas</code> y <code>star_wars_matrix</code>!"
 test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
@@ -301,7 +305,7 @@ Asigna el resultado a `matriz_completa`.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -339,6 +343,7 @@ matriz_completa
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies el código escrito en el editor que genera <code>taquillas</code>, <code>nombres</code>, <code>nombres_columnas</code> y <code>star_wars_matrix</code>!"
 test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
@@ -380,7 +385,7 @@ Asigna el resultado a `todas_wars_matrix`.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 # Primera matriz
 taquillas <- c(461, 314.4, 290.5, 247.9, 309.3, 165.8)
@@ -420,6 +425,7 @@ todas_star_wars <- rbind(star_wars_matrix, star_wars_matrix2)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No modifiques las variables que han sido definidas en tu workspace (<code>star_wars_matrix</code> y <code>star_wars_matrix2</code>)."
 test_object("star_wars_matrix", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix2", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -447,7 +453,7 @@ Debes usar la función [`colSums()`](http://www.rdocumentation.org/packages/base
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 # Primera matriz
 taquillas <- c(461, 314.4, 290.5, 247.9, 309.3, 165.8)
@@ -486,6 +492,7 @@ taquilla_por_region
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No modifiques las variables definidas en el workspace."
 test_object("star_wars_matrix", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix2", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -525,7 +532,7 @@ Puedes usar la función [`mean()`](http://www.rdocumentation.org/packages/base/f
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -569,6 +576,7 @@ promedio_EEUU <- mean(star_wars_matrix[1:2,1])
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada de las variables predeterminadas!"
 test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
@@ -604,7 +612,7 @@ Solo divide la matriz por el valor promedio de cada entrada que es de 5 dólares
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ``` 
 
 *** =sample_code
@@ -641,6 +649,7 @@ entradas
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada del código predefinido!"
 test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
@@ -677,7 +686,7 @@ _Aquellos familiarizados con operaciones con matrices, noten que esto no es la m
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -722,6 +731,7 @@ entradas_promedio_noEEUU <- mean(entradas[,2])
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada del código o las variables predefinidas!"
 test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)

@@ -27,7 +27,7 @@ Solo da clic a 'Submit Answer' y observa la magia!
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -42,6 +42,7 @@ mtcars # conjunto de datos que viene con R
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_output_contains("mtcars", incorrect_msg = "No cambies nada del código en el editor, el código muestra el conjunto <code>mtcars</code>.");
 success_msg("Bien! vamos al siguiente ejercicio")
 ```
@@ -68,7 +69,7 @@ Usa la función [`head()`](http://www.rdocumentation.org/packages/utils/function
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -85,6 +86,7 @@ head(mtcars)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_function("head", "x", incorrect_msg = "¿Usaste el parámetro correcto en la función <code>head()</code>? Asegúrate de pasar el data frame que deseas examinar, <code>mtcars</code> en este caso.")
 test_output_contains("head(mtcars)", incorrect_msg = "Asegúrate de usar <code>head()</code> con el argumento <code>mtcars</code>.")
 success_msg("Excelente! Bueno... ¿Que tenemos en este conjunto de datos?, Por ejemplo, <code>hp</code> representa los caballos de fuerza del carro (horsepower); el Datsun tiene la menor cantidad de caballos de fuerza de los 6 carros mostrados. Para una información completa de las variables escribe <code>?mtcars</code> en la consola y lee la página de ayuda. Vamos al siguiente ejercicio!");
@@ -114,7 +116,7 @@ Usa la función [`str()`](http://www.rdocumentation.org/packages/utils/functions
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -130,6 +132,7 @@ str(mtcars)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_function("str","object",incorrect_msg = "Asegúrate de ver la estructura del data frame <code>mtcars</code>.")
 test_output_contains("str(mtcars)", incorrect_msg = "Usa la función <code>str()</code> con el argumento <code>mtcars</code>.")
 success_msg("Buen trabajo! ¿Pudiste ver toda la información de la que hablamos? Bien, vamos al siguiente ejercicio.")
@@ -162,7 +165,7 @@ La función `data.frame(col1, col2, col3,...)` toma como argumentos los vectores
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -194,14 +197,14 @@ planetas_df   <- data.frame(planetas, tipo, diametro, rotacion, anillos)
 
 *** =sct
 ```{r eval=FALSE}
-
+set_language("es")
 test_correct({
   test_object("planetas_df",
               undefined_msg = "¿Creaste la variable <code>planetas_df</code>?",
               incorrect_msg = "Asegúrate de poner en orden correcto a los elementos al crear el data frame <code>planetas_df</code>. El orden correcto es planetas, tipo, diametro, rotacion y anillos.")  
 }, {
   msg = "No cambies el código que define a los vectores! Solo añade el código para crear el data frame <code>planetas_df</code>."
-  test_object("planeta", undefined_msg = msg, incorrect_msg = msg)
+  test_object("planetas", undefined_msg = msg, incorrect_msg = msg)
   test_object("tipo", undefined_msg = msg, incorrect_msg = msg)
   test_object("diametro", undefined_msg = msg, incorrect_msg = msg)
   test_object("rotacion", undefined_msg = msg, incorrect_msg = msg)
@@ -227,7 +230,7 @@ Este ejercicio es muy fácil, nada de pistas!
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
@@ -250,6 +253,7 @@ str(planetas_df)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o modifiques el data frame <code>planetas_df</code>!"
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_function("str", "object", incorrect_msg = "Usa la función <code>str()</code> en el data frame <code>planetas_df</code>.")
@@ -278,7 +282,7 @@ A veces queremos seleccionar todos los elementos de una fila o de una columna. P
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
@@ -320,6 +324,7 @@ planetas_lejanos_df
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o cambies el data fame <code>planetas_df</code>!"
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("planetas_cercanos_df",
@@ -349,7 +354,7 @@ Selecciona las filas de la 3 a la 8 usando `3:8` y usa `"diametro"` para selecci
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
@@ -377,6 +382,7 @@ diametros_planetas_lejanos <- planetas_df[3:8,"diametro"]
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies o modifiques el data frame <code>planetas_df</code>."
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("diametros_planetas_lejanos",
@@ -407,7 +413,7 @@ data_frame$variable
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
@@ -435,6 +441,7 @@ vector_anillos <- planetas_df$anillos
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies o modifiques el data frame <code>planetas_df</code>."
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_anillos",
@@ -471,7 +478,7 @@ Selecciona elementos de `planetas_df` usando los corchetes `[]`. El vector  `vec
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
@@ -500,6 +507,7 @@ planetas_con_anillos_df <- planetas_df[vector_anillos,]
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o modifiques <code>planetas_df</code> o <code>vector_anillos</code>!"
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_anillos", undefined_msg = msg, incorrect_msg = msg)
@@ -539,7 +547,7 @@ Lo siento, tendrás que resolver este ejercicio tú sólo.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
@@ -567,6 +575,7 @@ planetas_pequenos_df  <- subset(planetas_df, subset = planetas_df$diametro < 1)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o cambies el data frame <code>planetas_df</code>!"
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("planetas_pequenos_df",
@@ -606,7 +615,7 @@ Sólo juega con la función [`order()`](http://www.rdocumentation.org/packages/b
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -625,6 +634,7 @@ order(c(50,4,61,75))
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 success_msg("Bien! ahora usemos la función <code>order()</code> para ordenar nuestro data frame!")
 ```
 
@@ -648,7 +658,7 @@ Te dará el vector de posiciones de los planetas acuerdo con la variable `diamet
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 planetas <- c("Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno");
 tipo <- c("Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Planeta Terrestre", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso", "Gigante Gaseoso")
@@ -682,6 +692,7 @@ planetas_por_tamano <- planetas_df[posiciones, ]
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o cambies el data frame <code>planetas_df</code>."
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("posiciones",

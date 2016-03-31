@@ -24,7 +24,7 @@ En este punto, este ejercicio debe de ser muy sencillo.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -40,6 +40,7 @@ teoria <- "R usa factores para variables categoricas"
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("teoria",
             undefined_msg = "Asegúrate de haber definido la variable <code>teoria</code>.",
             incorrect_msg = "Asegúrate de haber asignado el valor correcto a <code>teoria</code>. Recuerda que R distingue las mayúsculas");
@@ -74,7 +75,7 @@ Simplemente utiliza la función [`factor()`](http://www.rdocumentation.org/packa
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -95,6 +96,7 @@ factor_genero <- factor(genero)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("factor_genero",
             undefined_msg = "Asegúrate de definir <code>factor_genero</code>.",
             incorrect_msg = "Asignaste correctamente  <code>genero</code> a <code>factor_genero</code>?")
@@ -122,7 +124,7 @@ Solo da clic a 'Submit Answer' y fíjate en la consola.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -149,6 +151,7 @@ factor_desempeno_laboral
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada del código del editor. Solo da clic a Submit Answer y fíjate en la solución!"
 test_object("genero", undefined_msg = msg, incorrect_msg = msg)
 test_object("desempeno_laboral", undefined_msg = msg, incorrect_msg = msg)
@@ -185,7 +188,7 @@ Fíjate en el orden en que asignas los niveles de los factores. Pista: fíjate e
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -216,6 +219,7 @@ factor_genero
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies el código que crea <code>genero</code>!"
 test_object("genero", undefined_msg = msg, incorrect_msg = msg)
 test_function("factor","x",
@@ -249,7 +253,7 @@ Solo usa la función [`summary()`](http://www.rdocumentation.org/packages/base/f
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -282,10 +286,11 @@ summary(factor_genero)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada de la definición de los vectores <code>genero</code> y <code>factor_genero</code>."
 test_object("genero", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_genero", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
-test_function("summary", "x", 
+test_function("summary", "object", 
               incorrect_msg = c("¿Usaste la función summary() en <code>genero</code>?", "¿Usaste la función summary() en <code>factor_genero</code>?"))
 success_msg("Bien! Fíjate en la salida. El hecho de que hayas identificado como un factor a factor_genero le permite a R mostrar el número de elementos en cada categoría.")
 ```
@@ -308,7 +313,7 @@ Solo da clic a 'Submit Answer' y fíjate en lo que se imprime en la consola.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -341,6 +346,7 @@ factor_genero[1] > factor_genero[2]
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada del código del editor"
 test_object("genero", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_genero", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -374,7 +380,7 @@ Asigna a `desempeno` un vector que contenga los caracteres `"Medio"`, `"Bajo"` .
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -391,6 +397,7 @@ desempeno <- c("Medio", "Bajo", "Bajo", "Medio", "Alto")
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("desempeno", 
             undefined_msg = "Asegúrate de definir la variable <code>desempeno</code>.",
             incorrect_msg = "Asigna cuidadosamente los valores correctos al vector desempeno.")
@@ -419,7 +426,7 @@ Usa la función [`factor()`](http://www.rdocumentation.org/packages/base/functio
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -452,6 +459,7 @@ summary(factor_desempeno)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies el código que crea el vector<code>desempeno</code>."
 test_object("desempeno", undefined_msg = msg, incorrect_msg = msg)
 test_correct({
@@ -486,7 +494,7 @@ Este código evalúa si el primer elemento del vector es mayor que el segundo.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -515,6 +523,7 @@ comparacion
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies nada del código que crea los vectores <code>desempeno</code> y <code>factor_genero</code>!"
 test_object("desempeno", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_desempeno", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)

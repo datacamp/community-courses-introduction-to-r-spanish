@@ -22,7 +22,7 @@ Da clic a 'Submit Answer'.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -37,6 +37,7 @@ options(lang = "es")
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 success_msg("En sus marcas, LISTOS, fuera! Aprendamos sobre listas!")
 ```
 
@@ -60,7 +61,7 @@ Solo da clic 'Submit Answer'.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -75,6 +76,7 @@ options(lang = "es")
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 success_msg("Ok. Hora de ensuciarnos las manos!")
 ```
 
@@ -100,7 +102,7 @@ Usa la función [`list()`](http://www.rdocumentation.org/packages/base/functions
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -131,6 +133,7 @@ mi_lista <- list(mi_vector, mi_matriz, mi_df)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o cambies las definiciones de las variables <code>mi_vector</code>, <code>mi_matriz</code> o <code>mi_df</code>!"
 test_object("mi_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("mi_matriz", undefined_msg = msg, incorrect_msg = msg)
@@ -176,7 +179,7 @@ Agrega los otros dos componentes de la misma manera.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -213,6 +216,7 @@ mi_lista
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o cambies la definición de <code>mi_vector</code>, <code>mi_matriz</code> o <code>mi_df</code>!"
 test_object("mi_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("mi_matriz", undefined_msg = msg, incorrect_msg = msg)
@@ -253,7 +257,7 @@ lista_resplandor <- list(nombre = "El Resplandor")
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 actores <- c("Jack Nicholson","Shelley Duvall","Danny Lloyd","Scatman Crothers","Barry Nelson")
 fuentes <- c("IMDb1","IMDb2","IMDb3")
@@ -280,6 +284,7 @@ lista_resplandor <- list(nombre = "El resplandor", actores = actores, criticas =
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o cambies ninguna de las variables predefinidas!"
 test_object("criticas", undefined_msg = msg, incorrect_msg = msg)
 test_object("actores", undefined_msg = msg, incorrect_msg = msg)
@@ -327,7 +332,7 @@ Además de seleccionar componentes, frecuentemente necesitas seleccionar element
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 
 actores <- c("Jack Nicholson","Shelley Duvall","Danny Lloyd","Scatman Crothers","Barry Nelson")
 fuentes <- c("IMDb1","IMDb2","IMDb3")
@@ -362,6 +367,7 @@ segunda_critica <- lista_resplandor$criticas[2,]
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o cambies el código que genera <code>lista_resplandor</code>."
 test_object("lista_resplandor", undefined_msg = msg, incorrect_msg = msg)
 test_object("ultimo_actor", 
@@ -407,7 +413,7 @@ Tienes que agregar algo de código en lugar de esos puntos...
 
 *** =pre_exercise_code
 ```{r, eval = FALSE}
-options(lang = "es")
+# no pec
 
 actores <- c("Jack Nicholson","Shelley Duvall","Danny Lloyd","Scatman Crothers","Barry Nelson")
 fuentes <- c("IMDb1","IMDb2","IMDb3")
@@ -444,6 +450,7 @@ str(lista_resplandor)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres o cambies las variables precargadas en tu espacio de trabajo!"
 test_object("lista_resplandor", undefined_msg = msg, incorrect_msg = msg)
 test_object("pelicula_resplandor",

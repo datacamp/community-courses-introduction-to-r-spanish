@@ -24,7 +24,7 @@ Ten en cuenta que R distingue las mayúsculas de las minúsculas.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -40,6 +40,7 @@ Vegas <- "Alla vamos!"
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("Vegas", 
             undefined_msg = "Asegúrate de haber definido la variable <code>Vegas</code>.",
             incorrect_msg = "Asegúrate de haber asignado el valor correcto a la variable<code>Vegas</code>. Ten cuidado con las mayúsculas y minúsculas")
@@ -73,7 +74,7 @@ Asigna `c(TRUE,FALSE,TRUE)` a la variable `vector_logico` con el operador `<-`. 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -94,6 +95,7 @@ vector_logico <- c(TRUE, FALSE, TRUE)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("vector_numerico")
 test_object("vector_caracter")
 test_object("vector_logico",
@@ -156,6 +158,7 @@ vector_ruleta <- c(-24, -50, 100, -350, 10)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("vector_poker",
             undefined_msg = "Asegúrate de definir la variable <code>vector_poker</code>.",
             incorrect_msg = "Asegúrate de haber asignado los valores correctos a <code>vector_poker</code>.")
@@ -201,7 +204,7 @@ c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -239,6 +242,7 @@ vector_ruleta
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("vector_poker",
             undefined_msg = "Asegúrate de definir la variable <code>vector_poker</code>.",
             incorrect_msg = "No cambies los valores dentro de <code>vector_poker</code>; ya estaban escritos para ti.")
@@ -277,7 +281,7 @@ Puedes usar `names(vector_poker)` para asignar nombres a los elementos de `vecto
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -314,6 +318,7 @@ names(vector_ruleta) <- vector_dias
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("vector_poker",
             undefined_msg = "Asegúrate de definir la variable <code>vector_poker</code>.",
             incorrect_msg = "No cambies los valores de <code>vector_poker</code>; ya fueron escritos para ti")
@@ -364,7 +369,7 @@ Usa el operador `+` para sumar `vector_A` y `vector_B`. Usa `<-` para asignar el
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -393,12 +398,9 @@ vector_total
 
 *** =sct
 ```{r eval=FALSE}
-test_object("vector_A",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_A</code>.",
-            incorrect_msg = "Asegúrate de asignar los valores correctos a <code>vector_A</code>.")
-test_object("vector_B",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_B</code>.",
-            incorrect_msg = "Asegúrate de asignar los valores correctos a <code>vector_B</code>.")
+set_language("es")
+test_object("vector_A")
+test_object("vector_B")
 test_object("vector_total",
             undefined_msg = "Asegúrate de definir la variable <code>vector_total</code>.",
             incorrect_msg = "Asegúrate de que <code>vector_total</code> contiene la suma de  <code>vector_A</code> y <code>vector_B</code>.")
@@ -431,7 +433,7 @@ Justo como en el ejercicio anterior, asigna la suma de los vectores a `total_dia
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -483,6 +485,7 @@ total_diario
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -517,7 +520,7 @@ Usa la función `sum` para obtener el total de `vector_ruleta`. `total_semana` d
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -570,6 +573,7 @@ total_semana
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -609,7 +613,7 @@ Prácticamente ya calculaste la respuesta en el ejercicio anterior. Para saber s
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -661,6 +665,7 @@ respuesta
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -699,7 +704,7 @@ Nota que el primer elemento tiene índice 1 no 0 como en muchos otros lenguajes 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -738,6 +743,7 @@ poker_miercoles <- vector_poker[3]
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -772,7 +778,7 @@ Usa el vector `c(2,3,4)` entre corchetes para seleccionar los elementos deseados
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ``` 
 
 *** =sample_code
@@ -817,6 +823,7 @@ dias_medios_poker
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -891,6 +898,7 @@ martes_a_viernes_ruleta
 *** =sct
 
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -928,7 +936,7 @@ Si usas `mean(vector_poker)` vas a obtener el promedio de todos los días. Pero 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -965,6 +973,7 @@ promedio_primeros3_dias <- mean(vector_poker[c("Lunes", "Martes", "Miercoles")])
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -1003,7 +1012,7 @@ Para obtener los días en que tuviste ganancias, R debe chequear cada elemento y
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -1042,6 +1051,7 @@ positivos_poker <- vector_poker > 0
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -1072,7 +1082,7 @@ Usa el vector `positivos_poker` para elegir los elementos positivos del `vector_
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -1117,13 +1127,11 @@ ganancias_poker <- vector_poker[selection_vector]
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
-test_object("positivos_poker", 
-            undefined_msg = "Asegúrate de definir la variable <code>positivos_poker</code>.",
-            incorrect_msg = "Parece que <code>positivos_poker</code> no tiene los valores correctos")
 test_object("ganancias_poker",
             undefined_msg =  "Asegúrate de definir la variable <code>ganancias_poker</code>.",
             incorrect_msg =  "Parece que <code>ganancias_poker</code> No contiene el resultado adecuado, por favor intenta de nuevo.")
@@ -1147,7 +1155,7 @@ Puedes consultar los dos ejercicios previos y hacer lo mismo, esta vez con `vect
 
 *** =pre_exercise_ocde
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -1191,6 +1199,7 @@ ganancias_ruleta <- vector_ruleta[positivos_ruleta]
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No cambies los valores o nombres de <code>vector_poker</code> y <code>vector_ruleta</code>."
 test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)

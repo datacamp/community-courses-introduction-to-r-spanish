@@ -22,7 +22,6 @@ Solo agrega una linea que calcule la suma de `6` y `12` tal como se muestra en e
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
 ```
 
 *** =sample_code
@@ -51,7 +50,8 @@ options(lang = "es")
 
 *** =sct
 ```{r eval=FALSE}
-test_output_contains("7", incorrect_msg = "No borres el código que calcula la suma de 3 y 4. Solo agrega una linea que suma 6 y 12")
+set_language("es")
+test_output_contains("7", incorrect_msg = "No borres el c\u00f3digo que calcula la suma de 3 y 4. Solo agrega una linea que suma 6 y 12")
 test_output_contains("18", incorrect_msg = "Asegúrate de agregar una linea que suma 6 y 12. No empieces la linea con <code>#</code> o R no la ejecutará.")
 success_msg("Muy bien! Ahora que estas familiarizado con la plataforma empecemos a aprende-R!")
 ```
@@ -129,6 +129,7 @@ Solo sigue las instrucciones, es sencillo :). Otro ejemplo de módulo es 9%%2 = 
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 msg = "No borres los otros ejemplos aritméticos!"
 test_output_contains("5 + 5", incorrect_msg = msg)
 test_output_contains("5 - 5", incorrect_msg = msg)
@@ -158,7 +159,7 @@ Mira como asignamos el número 4 a `mi_variable`: `mi_variable <- 4`
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -181,8 +182,8 @@ x
 
 *** =sct
 ```{r eval=FALSE}
-test_object("x", undefined_msg = "Asegúrate de haber definido la variable <code>x</code>.",
-            incorrect_msg = "Asegúrate de que asignaste el valor correcto a <code>x</code>.") 
+set_language("es")
+test_object("x") 
 success_msg("Bien! Notaste que R no imprime el valor de la variable a la que le asignaste el valor? el código<code>x <- 42</code> no generó ninguna salida a la consola porque R supone que vas a usar esa variable en el futuro, precisamente por eso fue que creamos la variable, verdad? Muy bien sigamos!")
 ```
 
@@ -204,7 +205,7 @@ Recuerda que para asignar valores a variables puedes utilizar el símbolo `<-`. 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -227,6 +228,7 @@ numero_manzanas
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("numero_manzanas", 
             undefined_msg = "Asegúrate de haber creado la variable <code>numero_manzanas</code>.",
             incorrect_msg = "Asegúrate de haber asignado el valor correcto a la variable <code>numero_manzanas</code>.")
@@ -252,7 +254,7 @@ Supongamos que ahora tienes 6 naranjas. De nuevo, para no olvidarlo se te ocurre
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -281,6 +283,7 @@ numero_frutas <- numero_manzanas + numero_naranjas
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("numero_manzanas", 
             undefined_msg = "Asegúrate de haber definido la variable <code>numero_manzanas</code>.",
             incorrect_msg = "No cambias el valor asignado a la variable <code>numero_manzanas</code>")
@@ -312,7 +315,7 @@ Tienes que asignar el valor de `6` a `numero_naranjas` en lugar de la cadena de 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -351,6 +354,7 @@ numero_frutas
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_error()
 test_object("numero_naranjas",
             undefined_msg = "Por favor define la variable <code>numero_naranjas</code>.",
@@ -391,7 +395,7 @@ Solo sigue instrucciones, recuerda que asignamos valores a las variables con `<-
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -420,6 +424,7 @@ mi_logica <- FALSE
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("mi_numerica", 
             undefined_msg = "Asegúrate de definir la variable <code>my_numeric</code>.",
             incorrect_msg = "Asignaste el valor correcto a <code>mi_numerica.</code>?")
@@ -449,7 +454,7 @@ Puedes saber el tipo de dato de la variable `mi_numerica` escribiendo `class(mi_
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
-options(lang = "es")
+# no pec
 ```
 
 *** =sample_code
@@ -478,6 +483,7 @@ class(mi_logica)
 
 *** =sct
 ```{r eval=FALSE}
+set_language("es")
 test_object("mi_numerica")
 test_object("mi_caracter")
 test_object("mi_logica")

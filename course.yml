@@ -13,9 +13,9 @@ Alvaro posee una M.S. en Matemáticas y una M.S. en Economía y Finanzas Cuantit
 Alvaro holds a M.S. in Mathematics and a M.S. in Quantitative Economics and Finance. He has extensive consulting experience working in both academia and the private industry, applying data science techniques in areas such as economics, finance, education, communication, psychology and business. 
 "
 chapters:
-- chapter1.Rmd: 1578
-- chapter2.Rmd: 1579
-- chapter3.Rmd: 1584
-- chapter4.Rmd: 1599
-- chapter5.Rmd: 1600
-- chapter6.Rmd: 1601
+  chapter1.Rmd: 1578
+  chapter2.Rmd: 1579
+  chapter3.Rmd: 1584
+  chapter4.Rmd: 1599
+  chapter5.Rmd: 1600
+  chapter6.Rmd: 1601
