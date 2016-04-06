@@ -99,9 +99,9 @@ set_language("es")
 test_object("vector_numerico")
 test_object("vector_caracter")
 test_object("vector_logico",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_logico</code>.",
-            incorrect_msg = "Asegúrate de haber asignado los valores correctos a <code>vector_logico</code>. El orden es importante!")
-success_msg("Perfecto! notemos que agregar espacios después de las comas ayuda a que el código sea mas legible. Practiquemos un poco más con los vectores.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_logico</code>.",
+            incorrect_msg = "Aseg&#250;rate de haber asignado los valores correctos a <code>vector_logico</code>. El orden es importante!")
+success_msg("Perfecto! notemos que agregar espacios despu&#233;s de las comas ayuda a que el c&#243;digo sea mas legible. Practiquemos un poco más con los vectores.")
 ```
 
 *** =skills
@@ -160,11 +160,11 @@ vector_ruleta <- c(-24, -50, 100, -350, 10)
 ```{r eval=FALSE}
 set_language("es")
 test_object("vector_poker",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_poker</code>.",
-            incorrect_msg = "Asegúrate de haber asignado los valores correctos a <code>vector_poker</code>.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_poker</code>.",
+            incorrect_msg = "Aseg&#250;rate de haber asignado los valores correctos a <code>vector_poker</code>.")
 test_object("vector_ruleta",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_ruleta</code>.",
-            incorrect_msg = "Asegúrate de haber asignado los valores correctos a <code>vector_ruleta</code>.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_ruleta</code>.",
+            incorrect_msg = "Aseg&#250;rate de haber asignado los valores correctos a <code>vector_ruleta</code>.")
 success_msg("Muy bien! revisa los contenidos en tus vectores, puedes hacerlo simplemente escribiendo el nombre de la variable en la consola y presionando enter. Sigamos, esto se pone interesante!")
 ```
 
@@ -244,17 +244,17 @@ vector_ruleta
 ```{r eval=FALSE}
 set_language("es")
 test_object("vector_poker",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_poker</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_poker</code>.",
             incorrect_msg = "No cambies los valores dentro de <code>vector_poker</code>; ya estaban escritos para ti.")
 test_object("vector_ruleta",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_ruleta</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_ruleta</code>.",
             incorrect_msg = "No cambies los valores dentro de <code>vector_ruleta</code>; ya estaban escritos para ti")
 test_object("vector_poker",
             eq_condition = "equal",
-            incorrect_msg = "Asegúrate de haber asignado los nombres correctos a<code>vector_poker</code>.")
+            incorrect_msg = "Aseg&#250;rate de haber asignado los nombres correctos a<code>vector_poker</code>.")
 test_object("vector_ruleta",
             eq_condition = "equal",
-            incorrect_msg = "Asegúrate de haber asignado los nombres correctos a <code>vector_ruleta</code>.")
+            incorrect_msg = "Aseg&#250;rate de haber asignado los nombres correctos a <code>vector_ruleta</code>.")
 test_output_contains("vector_poker", incorrect_msg = "Imprime vector_poker para que puedas ver sus contenidos, solo escribe vector_poker en el editor.")
 test_output_contains("vector_ruleta", incorrect_msg = "Imprime vector_ruleta para que puedas ver sus contenidos, solo escribe vector_ruleta en el editor.")
 success_msg("Bien hecho! Continuemos al siguiente ejercicio.")
@@ -320,21 +320,21 @@ names(vector_ruleta) <- vector_dias
 ```{r eval=FALSE}
 set_language("es")
 test_object("vector_poker",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_poker</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_poker</code>.",
             incorrect_msg = "No cambies los valores de <code>vector_poker</code>; ya fueron escritos para ti")
 test_object("vector_ruleta",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_ruleta</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_ruleta</code>.",
             incorrect_msg = "No cambies los valores de <code>vector_ruleta</code>; ya fueron escritos para ti")
 test_object("vector_dias",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_dias</code>.",
-            incorrect_msg = "Asegúrate de asignar los valores correctos a <code>vector_dias</code>.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_dias</code>.",
+            incorrect_msg = "Aseg&#250;rate de asignar los valores correctos a <code>vector_dias</code>.")
 test_object("vector_poker",
             eq_condition = "equal",
-            incorrect_msg = "Asegúrate de asignar los valores de  <code>vector_dias</code> como nombres de <code>vector_poker</code>.")
+            incorrect_msg = "Aseg&#250;rate de asignar los valores de  <code>vector_dias</code> como nombres de <code>vector_poker</code>.")
 test_object("vector_ruleta",
             eq_condition = "equal",
-            incorrect_msg = "Asegúrate de asignar los valores de <code>vector_dias</code> como nombres de <code>vector_ruleta</code>.")
-success_msg("Bien hecho! Un consejo de programación: trata de evitar duplicar el código que ya has escrito, eso te hará mucho más productivo. Continuemos para ver cómo hacer aritmética con vectores!")
+            incorrect_msg = "Aseg&#250;rate de asignar los valores de <code>vector_dias</code> como nombres de <code>vector_ruleta</code>.")
+success_msg("Bien hecho! Un consejo de programaci&#243;n: trata de evitar duplicar el c&#243;digo que ya has escrito, eso te har&#224; mucho m&#224;s productivo. Continuemos para ver c&#243;mo hacer aritm&#233;tica con vectores!")
 ```
 
 *** =skills
@@ -402,8 +402,8 @@ set_language("es")
 test_object("vector_A")
 test_object("vector_B")
 test_object("vector_total",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_total</code>.",
-            incorrect_msg = "Asegúrate de que <code>vector_total</code> contiene la suma de  <code>vector_A</code> y <code>vector_B</code>.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_total</code>.",
+            incorrect_msg = "Aseg&#250;rate de que <code>vector_total</code> contiene la suma de  <code>vector_A</code> y <code>vector_B</code>.")
 
 
 success_msg("Buen trabajo! Continuemos.")
@@ -491,7 +491,7 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("total_diario", eq_condition = "equal",
-            incorrect_msg = "Asegúrate de asignar la suma de <code>vector_poker</code> y <code>vector_ruleta</code> a <code>total_diario</code>. También tienes que nombrar los elementos de <code>total_diario</code> usando <code>vector_dias</code>.")
+            incorrect_msg = "Aseg&#250;rate de asignar la suma de <code>vector_poker</code> y <code>vector_ruleta</code> a <code>total_diario</code>. Tambi&#233;n tienes que nombrar los elementos de <code>total_diario</code> usando <code>vector_dias</code>.")
 test_output_contains("total_diario", incorrect_msg = "Imprime <code>total_diario</code> para que puedas ver sus contenidos, solo escribe <code>total_diario</code> en el editor.")
 success_msg("Bien! Vamos al siguiente ejercicio.")
 ```
@@ -579,14 +579,14 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("total_poker", 
-            undefined_msg = "Asegúrate de definir la variable <code>total_poker</code>.",
-            incorrect_msg = "Asegúrate de asignar a <code>total_poker</code> la suma de <code>vector_poker</code>.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>total_poker</code>.",
+            incorrect_msg = "Aseg&#250;rate de asignar a <code>total_poker</code> la suma de <code>vector_poker</code>.")
 test_object("total_ruleta",
-            undefined_msg = "Asegúrate de definir la variable <code>total_ruleta</code>.",
-            incorrect_msg = "Asegúrate de asignar a <code>total_ruleta</code> la suma de  <code>vector_ruleta</code>.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>total_ruleta</code>.",
+            incorrect_msg = "Aseg&#250;rate de asignar a <code>total_ruleta</code> la suma de  <code>vector_ruleta</code>.")
 test_object("total_semana",
-            undefined_msg = "Asegúrate de definir la variable <code>total_semana</code>.",
-            incorrect_msg = "Asegúrate de asignar a <code>total_semana</code> la suma de totales de los vectores.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>total_semana</code>.",
+            incorrect_msg = "Aseg&#250;rate de asignar a <code>total_semana</code> la suma de totales de los vectores.")
 
 test_output_contains("total_semana", incorrect_msg = "Imprime <code>total_semana</code> para que puedas ver sus contenidos, solo escribe <code>total_semana</code> en el editor.")
 success_msg("Bien! Eres muy bueno en R! aunque como vemos no te fue tan bien en el casino... no importa, vamos al siguiente ejercicio.")
@@ -671,13 +671,13 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("total_poker", 
-            undefined_msg = "Asegúrate de definir la variable <code>total_poker</code>.",
-            incorrect_msg = "Asegúrate de asignar a <code>total_poker</code> la suma de <code>vector_poker</code>.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>total_poker</code>.",
+            incorrect_msg = "Aseg&#250;rate de asignar a <code>total_poker</code> la suma de <code>vector_poker</code>.")
 test_object("total_ruleta",
-            undefined_msg = "Asegúrate de definir la variable <code>total_ruleta</code>.",
-            incorrect_msg = "Asegúrate de asignar a <code>total_ruleta</code> la suma de <code>vector_ruleta</code>.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>total_ruleta</code>.",
+            incorrect_msg = "Aseg&#250;rate de asignar a <code>total_ruleta</code> la suma de <code>vector_ruleta</code>.")
 test_object("respuesta",
-            undefined_msg = "Asegúrate de definir la variable <code>respuesta</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>respuesta</code>.",
             incorrect_msg = "Parece que la variable respuesta no contiene el valor correcto. Lee las instrucciones cuidadosamente")
 test_output_contains("respuesta", incorrect_msg = "Imprime <code>respuesta</code> para que puedas ver sus contenidos, solo escribe <code>respuesta</code> en el editor.")
 success_msg("Buen trabajo! Continúa al siguiente ejercicio.")
@@ -749,9 +749,9 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_miercoles", 
-            undefined_msg = "Asegúrate de haber definido la variable <code>poker_miercoles</code>.",
+            undefined_msg = "Aseg&#250;rate de haber definido la variable <code>poker_miercoles</code>.",
             incorrect_msg = "Parece que <code>poker_miercoles</code> no contiene el valor correcto de <code>vector_poker</code>.")
-success_msg("Vamos muy bien! También es posible seleccionar múltiples elementos de un vector, veamos como en el siguiente ejercicio!")
+success_msg("Vamos muy bien! Tambi&#233;n es posible seleccionar múltiples elementos de un vector, veamos como en el siguiente ejercicio!")
 ```
 
 *** =skills
@@ -829,10 +829,10 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("dias_medios_poker", 
-            undefined_msg = "Asegúrate de definir la variable <code>dias_medios_poker</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>dias_medios_poker</code>.",
             incorrect_msg = "Parece que <code>dias_medios_poker</code> no contiene los valores correctos de <code>vector_poker</code>.")
 test_output_contains("dias_medios_poker", incorrect_msg = "Imprime <code>dias_medios_poker</code> para que puedas ver sus contenidos, solo escribe <code>dias_medios_poker</code> en el editor.")
-success_msg("Bien hecho! Seleccionar elementos es de las operaciones más importantes en R, y hemos aprendiendo mucho, pero falta más aun");
+success_msg("Bien hecho! Seleccionar elementos es de las operaciones m&#224;s importantes en R, y hemos aprendiendo mucho, pero falta m&#224;s aun");
 ```
 
 *** =skills
@@ -904,10 +904,10 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("martes_a_viernes_ruleta", 
-            undefined_msg = "Asegúrate de haber definido <code>martes_a_viernes_ruleta</code>.",
-            incorrect_msg = "Parece que <code>martes_a_viernes_ruleta</code> no contiene los valores correctos de <code>vector_ruleta</code>. Verifica que utilizaste los índices correctos.")
+            undefined_msg = "Aseg&#250;rate de haber definido <code>martes_a_viernes_ruleta</code>.",
+            incorrect_msg = "Parece que <code>martes_a_viernes_ruleta</code> no contiene los valores correctos de <code>vector_ruleta</code>. Verifica que utilizaste los &#237;ndices correctos.")
 test_output_contains("martes_a_viernes_ruleta", incorrect_msg = "Imprime <code>martes_a_viernes_ruleta</code> para que puedas ver sus contenidos, solo escribe <code>martes_a_viernes_ruleta</code> en el editor.")
-success_msg("Fantástico! El operados dos puntos es muy útil y se usa mucho en R. Así que recuérdalo bien. Vamos al siguiente ejercicio")
+success_msg("Fant&#224;stico! El operados dos puntos es muy &#250;til y se usa mucho en R. As&#237; que recu&#233;rdalo bien. Vamos al siguiente ejercicio")
 ```
 
 *** =skills
@@ -979,9 +979,9 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("promedio_primeros3_dias", 
-            undefined_msg = "Asegúrate de definir la variable <code>promedio_primeros3_dias</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>promedio_primeros3_dias</code>.",
             incorrect_msg = "Parece que <code>promedio_primeros3_dias</code> no tiene el valor correcto, intenta de nuevo.")
-success_msg("Buen trabajo! Aparte de seleccionar elementos por índice y por nombre también lo puedes hacer por comparación. En los siguientes ejercicios veremos como.");
+success_msg("Buen trabajo! Aparte de seleccionar elementos por índice y por nombre tambi&#233;n lo puedes hacer por comparación. En los siguientes ejercicios veremos como.");
 ```
 
 *** =skills
@@ -1057,7 +1057,7 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("positivos_poker", 
-            undefined_msg = "Asegúrate de haber definido la variable <code>positivos_poker</code>.",
+            undefined_msg = "Aseg&#250;rate de haber definido la variable <code>positivos_poker</code>.",
             incorrect_msg = "Parece que <code>positivos_poker</code> no tiene el resultado correcto. Recuerda que R usa operaciones elemento por elemento.")
 success_msg("Bien! Algo equivalente a reciclar el valor <code>0</code> cinco veces y luego hacer la comparación es hacer la comparación con el vector `c(0,0,0,0,0)`, en ambos casos el resultado es el mismo.")
 ```
@@ -1133,9 +1133,9 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("ganancias_poker",
-            undefined_msg =  "Asegúrate de definir la variable <code>ganancias_poker</code>.",
+            undefined_msg =  "Aseg&#250;rate de definir la variable <code>ganancias_poker</code>.",
             incorrect_msg =  "Parece que <code>ganancias_poker</code> No contiene el resultado adecuado, por favor intenta de nuevo.")
-success_msg("Muy bien! Haz aprendido algo muy importante en R, seleccionar utilizando comparaciones y valores lógicos. Vamos al último ejercicio!")
+success_msg("Muy bien! Haz aprendido algo muy importante en R, seleccionar utilizando comparaciones y valores l&#243;gicos. Vamos al &#250;ltimo ejercicio!")
 ```
 
 *** =skills
@@ -1205,12 +1205,12 @@ test_object("vector_dias", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_poker", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_ruleta", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("positivos_ruleta", 
-            undefined_msg = "Asegurate de definir la variable <code>positivos_ruleta</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>positivos_ruleta</code>.",
             incorrect_msg = "Parece que <code>positivos_ruleta</code> No contiene el resultado esperado. Por favor, intenta de nuevo.")
 test_object("ganancias_ruleta",
-            undefined_msg = "Asegurate de definir la variable <code>ganancias_ruleta</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>ganancias_ruleta</code>.",
             incorrect_msg = "Parece que <code>positivos_ruleta</code> no contiene el resultado esperado. Por favor, intenta de nuevo.")
-success_msg("Excelente! Ahora sabemos lo básico de los vectores, los cuales son estructuras de datos sumamente importantes en R. En el siguiente capítulo introduciremos la versión de dos dimensiones de los vectores: las matrices.")
+success_msg("Excelente! Ahora sabemos lo b&#224;sico de los vectores, los cuales son estructuras de datos sumamente importantes en R. En el siguiente cap&#237;tulo introduciremos la versi&#243;n de dos dimensiones de los vectores: las matrices.")
 ```
 
 *** =skills
