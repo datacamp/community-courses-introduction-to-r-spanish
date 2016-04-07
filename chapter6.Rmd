@@ -139,7 +139,7 @@ test_object("mi_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("mi_matriz", undefined_msg = msg, incorrect_msg = msg)
 test_object("mi_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("mi_lista",
-            undefined_msg = "Por favor asegúrate de definir la variable <code>mi_lista</code>.",
+            undefined_msg = "Por favor aseg&#250;rate de definir la variable <code>mi_lista</code>.",
             incorrect_msg = "Parece que <code>mi_lista</code> no tiene los elementos correctos.")
 success_msg("Bien hecho! Tus habilidades en R estan creciendo exponencialmente. Vamos al siguiente ejercicio.")
 ```
@@ -217,17 +217,17 @@ mi_lista
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No borres o cambies la definición de <code>mi_vector</code>, <code>mi_matriz</code> o <code>mi_df</code>!"
+msg = "No borres o cambies la definici&#243;n de <code>mi_vector</code>, <code>mi_matriz</code> o <code>mi_df</code>!"
 test_object("mi_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("mi_matriz", undefined_msg = msg, incorrect_msg = msg)
 test_object("mi_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("mi_lista",
-            undefined_msg = "Asegúrate de haber creado la variable <code>mi_lista</code>.",
+            undefined_msg = "Aseg&#250;rate de haber creado la variable <code>mi_lista</code>.",
             incorrect_msg = "Parece que <code>mi_lista</code> no contiene los elementos correctos.")
 test_object("mi_lista", eq_condition = "equal",
             incorrect_msg = "Parece que <code>mi_lista</code> no tiene los nombres correctos de los elementos.");
 test_output_contains("mi_lista", incorrect_msg = "No olvides imprimir <code>mi_lista</code> a la consola, escribe <code>mi_lista</code> en una nueva linea en el editor.")
-success_msg("Excelente! No solo sabes construir listas sino también nombrar sus componentes, es una práctica muy útil y recomendable. Continuemos.")
+success_msg("Excelente! No solo sabes construir listas sino tambi&#233;n nombrar sus componentes, es una pr&#224;ctica muy &#250;til y recomendable. Continuemos.")
 ```
 
 *** =skills
@@ -293,7 +293,7 @@ test_object("lista_resplandor",
             incorrect_msg = "Parece que <code>lista_resplandor</code> no contiene los elementos correctos.")
 test_object("lista_resplandor", eq_condition = "equal",
             incorrect_msg = "Parece que <code>lista_resplandor</code> no contiene los elementos o nombres correctos.");
-success_msg("Excelente! Ya sabes cómo crear y nombrar componentes de una lista. Como en los capítulos anteriores, veamos como seleccionar elementos de una lista. Vamos al siguiente ejercicio.")
+success_msg("Excelente! Ya sabes c&#243;mo crear y nombrar componentes de una lista. Como en los capítulos anteriores, veamos como seleccionar elementos de una lista. Vamos al siguiente ejercicio.")
 ```
 
 *** =skills
@@ -368,15 +368,15 @@ segunda_critica <- lista_resplandor$criticas[2,]
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No borres o cambies el código que genera <code>lista_resplandor</code>."
+msg = "No borres o cambies el c&#243;digo que genera <code>lista_resplandor</code>."
 test_object("lista_resplandor", undefined_msg = msg, incorrect_msg = msg)
 test_object("ultimo_actor", 
             undefined_msg = "Define la variable <code>ultimo_actor</code>.",
-            incorrect_msg = "Parece que <code>ultimo_actor</code> no contiene la información requerida.")
+            incorrect_msg = "Parece que <code>ultimo_actor</code> no contiene la informaci&#243;n requerida.")
 test_object("segunda_critica",
             undefined_msg = "Define la variable <code>segunda_critica</code>.",
-            incorrect_msg = "Parece que <code>segunda_critica</code> no contiene la información requerida.")
-success_msg("Bien hecho! Con todo lo que sabemos, es fácil seleccionar elementos de las listas ¿verdad? Continuemos!")
+            incorrect_msg = "Parece que <code>segunda_critica</code> no contiene la informaci&#243;n requerida.")
+success_msg("Bien hecho! Con todo lo que sabemos, es f&#224;cil seleccionar elementos de las listas ¿verdad? Continuemos!")
 ```
 
 *** =skills
@@ -457,9 +457,9 @@ test_object("pelicula_resplandor",
             undefined_msg = "Define la variable <code>pelicula_resplandor</code>.",
             incorrect_msg = "Parece que <code>pelicula_resplandor</code> no contiene los elementos correctos. Revisa si contiene el año (<code>anio</code>) = 1980.")
 test_object("pelicula_resplandor", eq_condition = "equal",
-            incorrect_msg = "Parece que <code>pelicula_resplandor</code> no contiene el los nombres correctos para los componentes, para el año usa el nombre 'anio', a R no le gustan los caracteres especiales del castellano.");
-test_function("str", "object", incorrect_msg = "Asegúrate de imprimir la estructura de <code>pelicula_resplandor</code>.")
-success_msg("Bravísimo!!! Este fue el último ejercicio sobre listas! Ahora tienes un conocimiento sólido sobre los fundamentos de R. Felicitaciones!!! Aunque hay mucho más por aprender, puedes estar seguro de que vas por buen camino! Explora otros cursos en datacamp para poder ser un verdadero experto en ciencia de datos!")
+            incorrect_msg = "Parece que <code>pelicula_resplandor</code> no contiene el los nombres correctos para los componentes, para el a&#241;o usa el nombre 'anio', a R no le gustan los caracteres especiales del castellano.");
+test_function("str", "object", incorrect_msg = "Aseg&#250;rate de imprimir la estructura de <code>pelicula_resplandor</code>.")
+success_msg("Brav&#237;simo!!! Este fue el &#250;ltimo ejercicio sobre listas! Ahora tienes un conocimiento s&#243;lido sobre los fundamentos de R. Felicitaciones!!! Aunque hay mucho m&#224;s por aprender, puedes estar seguro de que vas por buen camino! Explora otros cursos en datacamp para poder ser un verdadero experto en ciencia de datos!")
 ```
 
 *** =skills
