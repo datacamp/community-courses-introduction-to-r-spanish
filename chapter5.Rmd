@@ -87,9 +87,9 @@ head(mtcars)
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-test_function("head", "x", incorrect_msg = "¿Usaste el parámetro correcto en la función <code>head()</code>? Asegúrate de pasar el data frame que deseas examinar, <code>mtcars</code> en este caso.")
-test_output_contains("head(mtcars)", incorrect_msg = "Asegúrate de usar <code>head()</code> con el argumento <code>mtcars</code>.")
-success_msg("Excelente! Bueno... ¿Que tenemos en este conjunto de datos?, Por ejemplo, <code>hp</code> representa los caballos de fuerza del carro (horsepower); el Datsun tiene la menor cantidad de caballos de fuerza de los 6 carros mostrados. Para una información completa de las variables escribe <code>?mtcars</code> en la consola y lee la página de ayuda. Vamos al siguiente ejercicio!");
+test_function("head", "x", incorrect_msg = "¿Usaste el par&#224;metro correcto en la funci&#243;n <code>head()</code>? Aseg&#250;rate de pasar el data frame que deseas examinar, <code>mtcars</code> en este caso.")
+test_output_contains("head(mtcars)", incorrect_msg = "Aseg&#250;rate de usar <code>head()</code> con el argumento <code>mtcars</code>.")
+success_msg("Excelente! Bueno... ¿Que tenemos en este conjunto de datos?, Por ejemplo, <code>hp</code> representa los caballos de fuerza del carro (horsepower); el Datsun tiene la menor cantidad de caballos de fuerza de los 6 carros mostrados. Para una informaci&#243;n completa de las variables escribe <code>?mtcars</code> en la consola y lee la p&#224;gina de ayuda. Vamos al siguiente ejercicio!");
 ```
 
 *** =skills
@@ -133,9 +133,9 @@ str(mtcars)
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-test_function("str","object",incorrect_msg = "Asegúrate de ver la estructura del data frame <code>mtcars</code>.")
-test_output_contains("str(mtcars)", incorrect_msg = "Usa la función <code>str()</code> con el argumento <code>mtcars</code>.")
-success_msg("Buen trabajo! ¿Pudiste ver toda la información de la que hablamos? Bien, vamos al siguiente ejercicio.")
+test_function("str","object",incorrect_msg = "Aseg&#250;rate de ver la estructura del data frame <code>mtcars</code>.")
+test_output_contains("str(mtcars)", incorrect_msg = "Usa la funci&#243;n <code>str()</code> con el argumento <code>mtcars</code>.")
+success_msg("Buen trabajo! ¿Pudiste ver toda la informaci&#243;n de la que hablamos? Bien, vamos al siguiente ejercicio.")
 ```
 
 *** =skills
@@ -201,9 +201,9 @@ set_language("es")
 test_correct({
   test_object("planetas_df",
               undefined_msg = "¿Creaste la variable <code>planetas_df</code>?",
-              incorrect_msg = "Asegúrate de poner en orden correcto a los elementos al crear el data frame <code>planetas_df</code>. El orden correcto es planetas, tipo, diametro, rotacion y anillos.")  
+              incorrect_msg = "Aseg&#250;rate de poner en orden correcto a los elementos al crear el data frame <code>planetas_df</code>. El orden correcto es planetas, tipo, diametro, rotacion y anillos.")  
 }, {
-  msg = "No cambies el código que define a los vectores! Solo añade el código para crear el data frame <code>planetas_df</code>."
+  msg = "No cambies el c&#243;digo que define a los vectores! Solo a&#241;ade el c&#243;digo para crear el data frame <code>planetas_df</code>."
   test_object("planetas", undefined_msg = msg, incorrect_msg = msg)
   test_object("tipo", undefined_msg = msg, incorrect_msg = msg)
   test_object("diametro", undefined_msg = msg, incorrect_msg = msg)
@@ -211,7 +211,7 @@ test_correct({
   test_object("anillos", undefined_msg = msg, incorrect_msg = msg)
 })
 
-success_msg("Excelente! Continuemos al siguiente ejercicio. El siguiente paso lógico es dar una inspección rápida al data frame que acabamos de crear. Hagámoslo!");
+success_msg("Excelente! Continuemos al siguiente ejercicio. El siguiente paso l&#243;gico es dar una inspecci&#243;n r&#224;pida al data frame que acabamos de crear. Hag&#224;moslo!");
 ```
 
 *** =skills
@@ -256,7 +256,7 @@ str(planetas_df)
 set_language("es")
 msg = "No borres o modifiques el data frame <code>planetas_df</code>!"
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
-test_function("str", "object", incorrect_msg = "Usa la función <code>str()</code> en el data frame <code>planetas_df</code>.")
+test_function("str", "object", incorrect_msg = "Usa la funci&#243;n <code>str()</code> en el data frame <code>planetas_df</code>.")
 success_msg("Bien! Ahora que ya tenemos un entendimiento de nuestros datos es hora de que seleccionemos elementos de nuestro data frame. Esto hacemos en el siguiente ejercicio!")
 ```
 
@@ -328,12 +328,12 @@ set_language("es")
 msg = "No borres o cambies el data fame <code>planetas_df</code>!"
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("planetas_cercanos_df",
-            undefined_msg = "Asegúrate de definir la variable <code>planetas_cercanos_df</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>planetas_cercanos_df</code>.",
             incorrect_msg = "¿Seleccionaste las primeras tres filas de <code>planetas_df</code>?")
 test_object("planetas_lejanos_df",
-            undefined_msg = "Asegúrate de definir la variable <code>planetas_lejanos_df</code>.",
-            incorrect_msg = "¿Seleccionaste las últimas tres filas de <code>planetas_df</code>?")
-success_msg("Muy bien! Además de poder seleccionar las columnas de un data frame por números también los puedes seleccionar los nombres de las columnas. Para aprender cómo vamos al siguiente ejercicio.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>planetas_lejanos_df</code>.",
+            incorrect_msg = "¿Seleccionaste las &#250;ltimas tres filas de <code>planetas_df</code>?")
+success_msg("Muy bien! Adem&#224;s de poder seleccionar las columnas de un data frame por n&#250;meros tambi&#233;n los puedes seleccionar los nombres de las columnas. Para aprender c&#243;mo vamos al siguiente ejercicio.")
 ```
 
 *** =skills
@@ -386,8 +386,8 @@ set_language("es")
 msg = "No cambies o modifiques el data frame <code>planetas_df</code>."
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("diametros_planetas_lejanos",
-            undefined_msg = "Asegúrate de definir la variable <code>diametros_planetas_lejanos</code>.",
-            incorrect_msg = "¿Escogiste las últimas 6 filas de la columna <code>diametro</code>?")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>diametros_planetas_lejanos</code>.",
+            incorrect_msg = "¿Escogiste las &#250;ltimas 6 filas de la columna <code>diametro</code>?")
 success_msg("Excelente! vamos al siguiente ejercicio!")
 ```
 
@@ -445,7 +445,7 @@ set_language("es")
 msg = "No cambies o modifiques el data frame <code>planetas_df</code>."
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_anillos",
-            undefined_msg = "Asegúrate de definir la variable <code>vector_anillos</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>vector_anillos</code>.",
             incorrect_msg = "Parece que <code>vector_anillos</code> no contiene todos los elementos de la variable <code>anillos</code> del data frame <code>planetas_df</code>.")
 success_msg("Excelente! Vamos al siguiente ejercicio para descubrir otra manera importante de seleccionar elementos de un data frame")
 ```
@@ -512,9 +512,9 @@ msg = "No borres o modifiques <code>planetas_df</code> o <code>vector_anillos</c
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("vector_anillos", undefined_msg = msg, incorrect_msg = msg)
 test_object("planetas_con_anillos_df",
-            undefined_msg = "Asegúrate de definir la variable <code>planetas_con_anillos_df</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>planetas_con_anillos_df</code>.",
             incorrect_msg = "Parece que <code>planetas_con_anillos_df</code> no tiene todos los datos de los planetas con anillos.");
-success_msg("Grandioso! Aunque a decir verdad esto fue una solución un poco tediosa, en el siguiente ejercicio veremos una manera más concisa de hacerlo.")
+success_msg("Grandioso! Aunque a decir verdad esto fue una soluci&#243;n un poco tediosa, en el siguiente ejercicio veremos una manera m&#224;s concisa de hacerlo.")
 ```
 
 *** =skills
@@ -579,9 +579,9 @@ set_language("es")
 msg = "No borres o cambies el data frame <code>planetas_df</code>!"
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("planetas_pequenos_df",
-            undefined_msg = "Asegúrate de definir la variable <code>planetas_pequenos_df</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>planetas_pequenos_df</code>.",
             incorrect_msg = "Parece que el data frame <code>planetas_pequenos_df</code> no tiene todos los datos necesarios de planetas_df.");
-success_msg("Muy bien! El código que usamos ahora con la función <code>subset()</code> es más conciso, además quizás sea más entendible para la gente que lea tu código. Vamos al siguiente ejercicio.");
+success_msg("Muy bien! El c&#243;digo que usamos ahora con la función <code>subset()</code> es m&#224;s conciso, adem&#224;s quiz&#224;s sea m&#224;s entendible para la gente que lea tu c&#243;digo. Vamos al siguiente ejercicio.");
 ```
 
 *** =skills
@@ -696,12 +696,12 @@ set_language("es")
 msg = "No borres o cambies el data frame <code>planetas_df</code>."
 test_object("planetas_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("posiciones",
-            undefined_msg = "Asegúrate de definir la variable <code>posiciones</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>posiciones</code>.",
             incorrect_msg = "Parece que el vector <code>posiciones</code> no contiene las posiciones correctas.")
 test_object("planetas_por_tamano",
-            undefined_msg = "Asegúrate de definir la variable <code>planetas_por_tamano</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>planetas_por_tamano</code>.",
             incorrect_msg = "Parece que <code>planetas_por_tamano</code> no contiene los datos ornedados de <code>planetas_df</code>.")
-success_msg("Muy bien! ¿Cómo se ve el data frame resultante? Escribe <code>planetas_por_tamano</code> para poder verlo! Este ejercicio concluye nuestro capítulo sobre data frames. Recuerda que los data frames son extremadamente importantes en R, los necesitarás casi siempre que analices datos. Otra estructura muy común e importante son las listas, el tema de nuestro próximo capítulo!")
+success_msg("Muy bien! ¿C&#243;mo se ve el data frame resultante? Escribe <code>planetas_por_tamano</code> para poder verlo! Este ejercicio concluye nuestro cap&#237;tulo sobre data frames. Recuerda que los data frames son extremadamente importantes en R, los necesitar&#224;s casi siempre que analices datos. Otra estructura muy com&#250;n e importante son las listas, el tema de nuestro pr&#243;ximo cap&#237;tulo!")
 ```
 
 *** =skills
