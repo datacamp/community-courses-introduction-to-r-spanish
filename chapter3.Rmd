@@ -111,7 +111,7 @@ test_object("empire_strikes", undefined_msg = msg, incorrect_msg = msg)
 test_object("return_jedi", undefined_msg = msg, incorrect_msg = msg)
 test_function("matrix", c("data", "nrow", "byrow"))
 test_object("star_wars_matrix",
-            undefined_msg = "Asegúrate de definir la variable <code>star_wars_matrix</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>star_wars_matrix</code>.",
             incorrect_msg = "Revisa si construiste correctamente la matriz, ¿Pusiste los datos de las tres peliculas en <code>star_wars_matrix</code>?")
 success_msg("La fuerza esta contigo! sigamos...")
 ```
@@ -192,14 +192,14 @@ test_object("empire_strikes", undefined_msg = msg, incorrect_msg = msg)
 test_object("return_jedi", undefined_msg = msg, incorrect_msg = msg)
 test_function("matrix", c("data", "nrow", "byrow"))
 test_object("star_wars_matrix",
-            undefined_msg = "Asegúrate de definir <code>star_wars_matrix</code>.",
+            undefined_msg = "Aseg&#250;rate de definir <code>star_wars_matrix</code>.",
             incorrect_msg = "Revisa si construiste correctamente la matriz, ¿Pusiste los datos de las tres peliculas en <code>star_wars_matrix</code>?")
 test_function("colnames", "x", 
-              incorrect_msg = "Asegúrate de haber pasado el argumento correcto a la función <code>colnames()</code>.")
+              incorrect_msg = "Aseg&#250;rate de haber pasado el argumento correcto a la funci&#243;n <code>colnames()</code>.")
 test_function("rownames", "x", 
-              incorrect_msg = "Asegúrate de haber pasado el argumento correcto a la función <code>rownames()</code>.")
+              incorrect_msg = "Aseg&#250;rate de haber pasado el argumento correcto a la funci&#243;n <code>rownames()</code>.")
 test_object("star_wars_matrix", eq_condition = "equal",
-            incorrect_msg = "¿Asignaste los nombres correctos a las filas y columnas de  <code>star_wars_matrix</code>? Revisa detalladamente tu código.")
+            incorrect_msg = "¿Asignaste los nombres correctos a las filas y columnas de  <code>star_wars_matrix</code>? Revisa detalladamente tu c&#243;digo.")
 success_msg("Bien! vas en camino a ser un Jedi-R... sigamos!.")
 ```
 
@@ -268,12 +268,12 @@ test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres_columnas", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_function("rowSums", "x", 
-              not_called_msg = "¿Usaste la función <code>rowSums()</code?",
+              not_called_msg = "¿Usaste la funci&#243;n <code>rowSums()</code?",
               incorrect_msg = "¿Usaste <code>rowSums()</code> con el argumento correcto?")
 test_object("taquilla_mundial",
-            undefined_msg = "Asegúrate de definir la variable<code>taquilla_mundial</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable<code>taquilla_mundial</code>.",
             incorrect_msg = "Revisa el código para <code>taquilla_mundial</code>.")
-test_output_contains("taquilla_mundial", incorrect_msg = "Imprime <code>taquilla_mundial</code> para que puedas ver el dinero que hizo cada película en la consola.")
+test_output_contains("taquilla_mundial", incorrect_msg = "Imprime <code>taquilla_mundial</code> para que puedas ver el dinero que hizo cada pel&#237;cula en la consola.")
 success_msg("Vamos muy bien! estamos aprendiendo mucho!")
 ```
 
@@ -344,22 +344,22 @@ matriz_completa
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No cambies el código escrito en el editor que genera <code>taquillas</code>, <code>nombres</code>, <code>nombres_columnas</code> y <code>star_wars_matrix</code>!"
+msg = "No cambies el c&#237;digo escrito en el editor que genera <code>taquillas</code>, <code>nombres</code>, <code>nombres_columnas</code> y <code>star_wars_matrix</code>!"
 test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres_columnas", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_function("rowSums", "x", 
-              not_called_msg = "¿Usaste la función <code>rowSums()</code>?",
+              not_called_msg = "¿Usaste la funci&#243;n <code>rowSums()</code>?",
               incorrect_msg = "¿Usaste la función <code>rowSums()</code> con el argumento correcto?")
 test_object("taquilla_mundial",
-            undefined_msg = "Asegúrate de definir la variable <code>taquilla_mudial</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>taquilla_mudial</code>.",
             incorrect_msg = "¿Has definido <code>taquilla_mundial</code> correctamente?")
 test_object("matriz_completa", eq_condition = "equal",
-            undefined_msg = "Asegúrate de definir la variable <code>matriz_completa</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>matriz_completa</code>.",
             incorrect_msg = "¿Usaste la funcion  <code>cbind()</code> con los argumentos correctos?")
-test_output_contains("matriz_completa", incorrect_msg = "Imprime <code>matriz_completa</code> para que puedas ver el dinero que hizo cada película en la consola.")
-success_msg("Excelente! después de agregar columnas, el siguiente paso es agregar filas, será muy fácil...");
+test_output_contains("matriz_completa", incorrect_msg = "Imprime <code>matriz_completa</code> para que puedas ver el dinero que hizo cada pel&#237;cula en la consola.")
+success_msg("Excelente! despu&#233;s de agregar columnas, el siguiente paso es agregar filas, será muy fácil...");
 ```
 
 *** =skills
@@ -430,7 +430,7 @@ msg = "No modifiques las variables que han sido definidas en tu workspace (<code
 test_object("star_wars_matrix", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix2", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("todas_star_wars", 
-            undefined_msg = "Asegúrate de definir <code>todas_star_wars</code>.",
+            undefined_msg = "Aseg&#250;rate de definir <code>todas_star_wars</code>.",
             incorrect_msg = "¿Usaste la función <code>rbind()</code> con los argumentos correctos?")
 success_msg("Perfecto! Continuemos aplicando todo lo que hemos aprendido.")
 ```
@@ -499,9 +499,9 @@ test_object("star_wars_matrix2", eq_condition = "equal", undefined_msg = msg, in
 test_object("todas_star_wars", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_function("colSums", "x", incorrect_msg = "¿Usaste la función <code>colSums()</code> en todas_star_wars?")
 test_object("taquilla_por_region",
-            undefined_msg = "Asegúrate de definir la variable <code>taquilla_por_region</code>.",
-            incorrect_msg = "Revisa el código que usaste para <code>taquilla_por_region</code> ¿Usaste el argumento correcto?")
-test_output_contains("taquilla_por_region", incorrect_msg = "Imprime <code>taquilla_por_region</code> para que puedas ver los totales por cada región.")
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>taquilla_por_region</code>.",
+            incorrect_msg = "Revisa el c&#243;digo que usaste para <code>taquilla_por_region</code> ¿Usaste el argumento correcto?")
+test_output_contains("taquilla_por_region", incorrect_msg = "Imprime <code>taquilla_por_region</code> para que puedas ver los totales por cada regi&#243;n.")
 success_msg("Excelente! ya sabemos sumar filas y columnas de las matrices.")
 ```
 
@@ -650,17 +650,17 @@ entradas
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No cambies nada del código predefinido!"
+msg = "No cambies nada del c&#243;digo predefinido!"
 test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres_columnas", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_object("entradas",
             undefined_msg = "Define la variable <code>entradas</code>.",
-            incorrect_msg = "Parece que la variable <code>entradas</code> no tiene el valor correcto, revisa el código y las instrucciones.")
+            incorrect_msg = "Parece que la variable <code>entradas</code> no tiene el valor correcto, revisa el c&#243;digo y las instrucciones.")
 test_output_contains("entradas", 
                      incorrect_msg = "No olvides de imprimir la matriz <code>entradas</code> a la consola.")
-success_msg("Bien! ¿Que es lo que nos dicen estos resultados? 92 millones de entradas fueron vendidas para ver la película \"A New Hope\", que impresionante! Vamos al último ejercicio.");
+success_msg("Bien! ¿Que es lo que nos dicen estos resultados? 92 millones de entradas fueron vendidas para ver la pel&#237;cula \"A New Hope\", que impresionante! Vamos al &#250;ltimo ejercicio.");
 ```
 
 *** =skills
@@ -732,7 +732,7 @@ entradas_promedio_noEEUU <- mean(entradas[,2])
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No cambies nada del código o las variables predefinidas!"
+msg = "No cambies nada del c&#243;digo o las variables predefinidas!"
 test_object("taquillas", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres", undefined_msg = msg, incorrect_msg = msg)
 test_object("nombres_columnas", undefined_msg = msg, incorrect_msg = msg)
@@ -746,8 +746,8 @@ test_object("entradas_promedio_EEUU",
             incorrect_msg = "Parece que la variable <code>entradas_promedio_EEUU</code> no contiene los valores correctos.")
 test_object("entradas_promedio_noEEUU",
             undefined_msg = "Define la variable<code>entradas_promedio_noEEUU</code>.",
-            incorrect_msg = "Parece que la variable <code>entradas_promedio_noEEUU</code> no tiene los valores correctos, revisa tu código.")
-success_msg("Es un hecho: la fue-R-za está contigo! Este ejercicio concluye nuestro paso por las matrices. La siguiente parada en nuestro viaje son objetos denominados factores.")
+            incorrect_msg = "Parece que la variable <code>entradas_promedio_noEEUU</code> no tiene los valores correctos, revisa tu c&#243;digo.")
+success_msg("Es un hecho: la fue-R-za est&#224; contigo! Este ejercicio concluye nuestro paso por las matrices. La siguiente parada en nuestro viaje son objetos denominados factores.")
 ```
 
 *** =skills

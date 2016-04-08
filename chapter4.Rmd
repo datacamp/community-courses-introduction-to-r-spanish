@@ -98,9 +98,9 @@ factor_genero <- factor(genero)
 ```{r eval=FALSE}
 set_language("es")
 test_object("factor_genero",
-            undefined_msg = "Asegúrate de definir <code>factor_genero</code>.",
+            undefined_msg = "Aseg&#250;rate de definir <code>factor_genero</code>.",
             incorrect_msg = "Asignaste correctamente  <code>genero</code> a <code>factor_genero</code>?")
-success_msg("Muy bien! Si quieres saber más sobre la función <code>factor()</code> puedes escribir en la consola <code>?factor</code> esto mostrará la ayuda para esa función. Continuemos!");
+success_msg("Muy bien! Si quieres saber m&#224;s sobre la función <code>factor()</code> puedes escribir en la consola <code>?factor</code> esto mostrar&#224; la ayuda para esa funci&#243;n. Continuemos!");
 ```
 
 *** =skills
@@ -152,13 +152,13 @@ factor_desempeno_laboral
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No cambies nada del código del editor. Solo da clic a Submit Answer y fíjate en la solución!"
+msg = "No cambies nada del c&#243;digo del editor. Solo da clic a Submit Answer y f&#237;jate en la soluci&#243;n!"
 test_object("genero", undefined_msg = msg, incorrect_msg = msg)
 test_object("desempeno_laboral", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_desempeno_laboral", undefined_msg = msg, incorrect_msg = msg)
 test_output_contains("factor_genero", incorrect_msg = msg)
 test_output_contains("factor_desempeno_laboral", incorrect_msg = msg)
-success_msg("¿Puedes ver que está pasando en este ejercicio? Bien! Sigamos y estudiemos los factores en detalle.")
+success_msg("¿Puedes ver que est&#224; pasando en este ejercicio? Bien! Sigamos y estudiemos los factores en detalle.")
 ```
 
 *** =skills
@@ -220,12 +220,12 @@ factor_genero
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No cambies el código que crea <code>genero</code>!"
+msg = "No cambies el c&#243;digo que crea <code>genero</code>!"
 test_object("genero", undefined_msg = msg, incorrect_msg = msg)
 test_function("factor","x",
-              incorrect_msg = "Usaste de manera correcta la función <code>factor()</code> para definir <code>factor_genero</code>?")
+              incorrect_msg = "Usaste de manera correcta la funci&#237;n <code>factor()</code> para definir <code>factor_genero</code>?")
 test_object("factor_genero", eq_condition = "equal",
-            undefined_msg = "Asegúrate de definir la variable <code>factor_genero</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>factor_genero</code>.",
             incorrect_msg = paste("Asignaste los niveles correctos a <code>factor_genero</code>?",
                                   "El orden de los nombres de los niveles es muy importante!"))
 success_msg("Excelente! Vamos al siguiente ejercicio")
@@ -287,12 +287,12 @@ summary(factor_genero)
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No cambies nada de la definición de los vectores <code>genero</code> y <code>factor_genero</code>."
+msg = "No cambies nada de la definici&#243;n de los vectores <code>genero</code> y <code>factor_genero</code>."
 test_object("genero", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_genero", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_function("summary", "object", 
-              incorrect_msg = c("¿Usaste la función summary() en <code>genero</code>?", "¿Usaste la función summary() en <code>factor_genero</code>?"))
-success_msg("Bien! Fíjate en la salida. El hecho de que hayas identificado como un factor a factor_genero le permite a R mostrar el número de elementos en cada categoría.")
+              incorrect_msg = c("¿Usaste la funci&#243;n summary() en <code>genero</code>?", "¿Usaste la funci&#243;n summary() en <code>factor_genero</code>?"))
+success_msg("Bien! F&#237;jate en la salida. El hecho de que hayas identificado como un factor a factor_genero le permite a R mostrar el n&#250;mero de elementos en cada categor&#237;a.")
 ```
 
 *** =skills
@@ -347,11 +347,11 @@ factor_genero[1] > factor_genero[2]
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No cambies nada del código del editor"
+msg = "No cambies nada del c&#243;digo del editor"
 test_object("genero", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_genero", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
-test_output_contains("factor_genero[1] > factor_genero[2]", incorrect_msg = "No cambies la última línea, queremos resolver la batalla de los sexos de una vez por todas!")
-success_msg("Naaaa, parece que R es neutral sobre los géneros. O quizás solo quiere evitarse discusiones (con las mujeres) ;-).")
+test_output_contains("factor_genero[1] > factor_genero[2]", incorrect_msg = "No cambies la &#250;ltima l&#237;nea, queremos resolver la batalla de los sexos de una vez por todas!")
+success_msg("Naaaa, parece que R es neutral sobre los g&#233;neros. O quiz&#224;s solo quiere evitarse discusiones (con las mujeres) ;-).")
 ```
 
 *** =skills
@@ -399,7 +399,7 @@ desempeno <- c("Medio", "Bajo", "Bajo", "Medio", "Alto")
 ```{r eval=FALSE}
 set_language("es")
 test_object("desempeno", 
-            undefined_msg = "Asegúrate de definir la variable <code>desempeno</code>.",
+            undefined_msg = "Aseg&#250;rate de definir la variable <code>desempeno</code>.",
             incorrect_msg = "Asigna cuidadosamente los valores correctos al vector desempeno.")
 success_msg("Buen trabajo! Vamos al siguiente ejercicio.")
 ```
@@ -460,16 +460,16 @@ summary(factor_desempeno)
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No cambies el código que crea el vector<code>desempeno</code>."
+msg = "No cambies el c&#243;digo que crea el vector<code>desempeno</code>."
 test_object("desempeno", undefined_msg = msg, incorrect_msg = msg)
 test_correct({
   test_object("factor_desempeno", eq_condition = "equal",
-              undefined_msg = "Asegúrate de definir la variable <code>factor_desempeno</code>.",
-              incorrect_msg = "Asegurate de que creaste de manera adecuada a factor_desempeno. Fíjate en el orden en que pusiste los niveles en el argumento levels.")
+              undefined_msg = "Aseg&#250;rate de definir la variable <code>factor_desempeno</code>.",
+              incorrect_msg = "Asegurate de que creaste de manera adecuada a factor_desempeno. F&#237;jate en el orden en que pusiste los niveles en el argumento levels.")
 },{
-  test_function("factor", c("x", "levels", "ordered"), incorrect_msg = "Parece que los argumentos de la función <code>factor</code> no tienen los argumentos correctos de <code>levels</code> y <code>ordered</code>.")
+  test_function("factor", c("x", "levels", "ordered"), incorrect_msg = "Parece que los argumentos de la funci&#243;n <code>factor</code> no tienen los argumentos correctos de <code>levels</code> y <code>ordered</code>.")
 })
-success_msg("Muy bien! Mira la consola, se muestra que los niveles tienen un orden dado por el signo <code><</code> Continuemos al último ejercicio!");
+success_msg("Muy bien! Mira la consola, se muestra que los niveles tienen un orden dado por el signo <code><</code> Continuemos al &#250;ltimo ejercicio!");
 ```
 
 *** =skills
@@ -524,14 +524,14 @@ comparacion
 *** =sct
 ```{r eval=FALSE}
 set_language("es")
-msg = "No cambies nada del código que crea los vectores <code>desempeno</code> y <code>factor_genero</code>!"
+msg = "No cambies nada del c&#243;digo que crea los vectores <code>desempeno</code> y <code>factor_genero</code>!"
 test_object("desempeno", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_desempeno", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("comparacion",
             undefined_msg = "Define la variable <code>comparacion</code>.",
-            incorrect_msg = "Parece que <code>comparacion</code> no contiene el resultado de la comparación solicitada. Fíjate en los índices.");
-success_msg("Bellissimo! ¿Qué es lo que nos dice este resultado? El Trabajador 2 se parece darle validez a su fama de problemático… es lo que nos dice la evidencia de los datos! \n
-Acá terminamos el capítulo sobre factores. Ahora que sabemos bastante sobre vectores, matrices y factores podemos entrar al maravilloso mundo de los data frames, una de las estructuras de datos más importantes en R!")
+            incorrect_msg = "Parece que <code>comparacion</code> no contiene el resultado de la comparaci&#243;n solicitada. F&#237;jate en los &#237;ndices.");
+success_msg("Bellissimo! ¿Qu&#222; es lo que nos dice este resultado? El Trabajador 2 se parece darle validez a su fama de problem&#224;tico… es lo que nos dice la evidencia de los datos! \n
+Ac&#224; terminamos el cap&#237;tulo sobre factores. Ahora que sabemos bastante sobre vectores, matrices y factores podemos entrar al maravilloso mundo de los data frames, una de las estructuras de datos m&#224;s importantes en R!")
 ```
 
 *** =skills
