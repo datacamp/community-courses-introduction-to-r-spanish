@@ -242,12 +242,12 @@ planetas_df   <- data.frame(planetas, tipo, diametro, rotacion, anillos)
 
 *** =sample_code
 ```{r eval=FALSE}
-# Da un vistazo a la estructura de 'planetas_df'
+# Da un vistazo a la estructura de planetas_df
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Da un vistazo a la estructura de 'planetas_df'
+# Da un vistazo a la estructura de planetas_df
 str(planetas_df)
 ```
 
@@ -294,7 +294,7 @@ planetas_df   <- data.frame(planetas, tipo, diametro, rotacion, anillos)
 
 *** =sample_code
 ```{r eval=FALSE}
-# El data frame 'planetas_df' de los ejercicios previos está en tu workspace, lo puedes usar
+# El data frame planetas_df de los ejercicios previos está en tu workspace, lo puedes usar
 
 # Selecciona todos los datos de los primeros tres planetas
 planetas_cercanos_df <- 
@@ -309,7 +309,7 @@ furthest_planets_df
 
 *** =solution
 ```{r eval=FALSE}
-# El data frame 'planetas_df' de los ejercicios previos está en tu workspace, lo puedes usar
+# El data frame planetas_df de los ejercicios previos está en tu workspace, lo puedes usar
 
 # Selecciona todos los datos de los primeros tres planetas
 planetas_cercanos_df <- planetas_df[1:3, ]
@@ -559,7 +559,7 @@ planetas_df   <- data.frame(planetas, tipo, diametro, rotacion, anillos)
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'planetas_df' está cargado en tu espacio de trabajo
+# planetas_df está cargado en tu espacio de trabajo
 
 # Datos de los planetas más pequeños que la tierra:
 planetas_pequenos_df  <- 
@@ -567,7 +567,7 @@ planetas_pequenos_df  <-
 
 *** =solution
 ```{r eval=FALSE}
-# 'planetas_df' está cargado en tu espacio de trabajo
+# planetas_df está cargado en tu espacio de trabajo
 
 # Datos de los planetas más pequeños que la tierra:
 planetas_pequenos_df  <- subset(planetas_df, subset = planetas_df$diametro < 1)
@@ -670,7 +670,7 @@ planetas_df   <- data.frame(planetas, tipo, diametro, rotacion, anillos)
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'planetas_df' está cargado en tu espacio de trabajo.
+# planetas_df está cargado en tu espacio de trabajo.
 
 # Genera el vector de posiciones basándote en la variable planetas_df$diametro
 posiciones <-  
@@ -681,7 +681,7 @@ planetas_por_tamano <-
 
 *** =solution
 ```{r eval=FALSE}
-# 'planetas_df' esta cargado en tu espacio de trabajo.
+# planetas_df esta cargado en tu espacio de trabajo.
 
 # Genera el vector de posiciones basándote en la variable planetas_df$diametro
 posiciones <- order(planetas_df$diametro, decreasing = TRUE)

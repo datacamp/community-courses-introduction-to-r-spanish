@@ -87,16 +87,16 @@ Solo sigue las instrucciones, es sencillo :). Otro ejemplo de módulo es 9%%2 = 
 
 ```{r eval=FALSE}
 # Adición
-5+5 
+5 + 5 
 
 # Resta
-5-5 
+5 - 5 
 
 # Multiplicación
-3*5
+3 * 5
 
  # División
-(5+5)/2 
+(5 + 5) / 2 
 
 # Exponenciación
 # Escribe aquí!
@@ -118,10 +118,10 @@ Solo sigue las instrucciones, es sencillo :). Otro ejemplo de módulo es 9%%2 = 
 3 * 5
 
  # División
-(5 + 5)/2 
+(5 + 5) / 2 
 
 # Exponenciación
-2^5
+2 ^ 5
 
 # Modulo
 28 %% 6

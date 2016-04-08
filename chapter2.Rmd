@@ -29,12 +29,12 @@ Ten en cuenta que R distingue las mayúsculas de las minúsculas.
 
 *** =sample_code
 ```{r eval=FALSE}
-# Define la variable 'Vegas'
+# Define la variable Vegas
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Define the variable 'Vegas'
+# Define the variable Vegas
 Vegas <- "Alla vamos!"
 ```
 
@@ -89,7 +89,7 @@ vector_logico <-
 ```{r eval=FALSE}
 vector_numerico <- c(1, 10, 49)
 vector_caracter <- c("a", "b", "c")
-# Completa el código para 'vector_logico'
+# Completa el código para vector_logico
 vector_logico <- c(TRUE, FALSE, TRUE)
 ```
 
@@ -292,10 +292,10 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Crea la variable 'vector_dias'
+# Crea la variable vector_dias
 vector_dias <- 
  
-# Asigna los nombres a los elementos de 'vector_poker' y 'vector_ruleta'
+# Asigna los nombres a los elementos de vector_poker y vector_ruleta
 names(vector_poker) <-   
 names(vector_ruleta) <- 
 ```
@@ -308,10 +308,10 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Crea la variable 'vector_dias'
+# Crea la variable vector_dias
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
  
-# Asigna los nombres a los elementos de 'vector_poker' y 'vector_ruleta'
+# Asigna los nombres a los elementos de vector_poker y vector_ruleta
 names(vector_poker) <- vector_dias   
 names(vector_ruleta) <- vector_dias
 ```
@@ -377,10 +377,10 @@ Usa el operador `+` para sumar `vector_A` y `vector_B`. Usa `<-` para asignar el
 vector_A <- c(1, 2, 3)
 vector_B <- c(4, 5, 6)
 
-# Asigna la suma de 'vector_A' y 'vector_B'
+# Asigna la suma de vector_A y vector_B
 vector_total <- 
   
-# Imprime el 'vector_total' a la consola
+# Imprime el vector_total a la consola
 vector_total
 ```
 
@@ -389,10 +389,10 @@ vector_total
 vector_A <- c(1, 2, 3)
 vector_B <- c(4, 5, 6)
 
-# Asigna la suma de 'vector_A' y 'vector_B'
+# Asigna la suma de vector_A y vector_B
 vector_total <- vector_A + vector_B
 
-# Imprime el 'vector_total' a la consola
+# Imprime el vector_total a la consola
 vector_total
 ```
 
@@ -444,7 +444,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -452,7 +452,7 @@ names(vector_ruleta) <- vector_dias
 # Calculando las ganancias/pérdidas diarias:
 total_diario <- 
   
-# Dando nombres a 'total_diario'
+# Dando nombres a total_diario
 names(total_diario) <- 
   
 # Imprime total_diario a la consola para ver tus resultados por día
@@ -467,7 +467,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -475,7 +475,7 @@ names(vector_ruleta) <- vector_dias
 # Calculando las ganancias/pérdidas diarias:
 total_diario <- vector_poker + vector_ruleta
 
-# Dando nombres a 'total_diario'
+# Dando nombres a total_diario
 names(total_diario) <- vector_dias
   
 # Imprime total_diario a la consolo para ver tus resultados por día
@@ -531,7 +531,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -555,7 +555,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -624,7 +624,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -647,7 +647,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -715,7 +715,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -732,7 +732,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -789,7 +789,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -809,7 +809,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -863,7 +863,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -883,7 +883,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -947,7 +947,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -963,7 +963,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -1023,7 +1023,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -1040,7 +1040,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -1093,7 +1093,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -1113,7 +1113,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -1166,7 +1166,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias
@@ -1185,7 +1185,7 @@ vector_poker <- c(140, -50, 20, -120, 240)
 # Resultados en la ruleta en la semana
 vector_ruleta <- c(-24, -50, 100, -350, 10)
 
-# Dando nombres a 'vector_poker' y 'vector_ruleta'
+# Dando nombres a vector_poker y vector_ruleta
 vector_dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
 names(vector_poker) <- vector_dias
 names(vector_ruleta) <- vector_dias

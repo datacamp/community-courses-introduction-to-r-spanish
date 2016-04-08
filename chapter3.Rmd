@@ -224,7 +224,7 @@ vector_sumas_filas <- rowSums(mi_matriz)
 - Imprime el vector en la consola ¿Qué película hizo más dinero? 
 
 *** =hint
-La función ['rowSums'](http://www.rdocumentation.org/packages/base/functions/colSums) calculará la suma de cada fila de la matriz `star_wars_matrix` cuando le damos a esta matriz como argumento.
+La función [`rowSums`](http://www.rdocumentation.org/packages/base/functions/colSums) calculará la suma de cada fila de la matriz `star_wars_matrix` cuando le damos a esta matriz como argumento.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}

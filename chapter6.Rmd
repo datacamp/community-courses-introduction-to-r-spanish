@@ -111,7 +111,7 @@ Usa la función [`list()`](http://www.rdocumentation.org/packages/base/functions
 mi_vector <- 1:10 
 # Matriz con números del 1 al 9
 mi_matrix <- matrix(1:9, ncol = 3)
-# Primeras 10 filas del data frame 'mtcars' (incluido con R).
+# Primeras 10 filas del data frame mtcars (incluido con R).
 mi_df <- mtcars[1:10,]
 
 # Crea la lista que contenga como componentes las variables arriba definidas:
@@ -124,7 +124,7 @@ mi_lista <-
 mi_vector <- 1:10 
 # Matriz con números del 1 al 9
 mi_matriz <- matrix(1:9, ncol = 3)
-# Primeras 10 filas del data frame 'mtcars' (incluido con R).
+# Primeras 10 filas del data frame mtcars (incluido con R).
 mi_df <- mtcars[1:10,]
 
 # Crea la lista que contenga como componentes las variables arriba definidas:
@@ -188,13 +188,13 @@ Agrega los otros dos componentes de la misma manera.
 mi_vector <- 1:10 
 # Matriz con números del 1 al 9
 mi_matriz <- matrix(1:9, ncol = 3)
-# Primeras 10 filas del data frame 'mtcars' (incluido con R).
+# Primeras 10 filas del data frame mtcars (incluido con R).
 mi_df <- mtcars[1:10,]
 
 # Creando la lista, (tienes modificar este código para agregar los nombres):
 mi_lista <- list(mi_vector, mi_matriz, mi_df)
 
-# Imprime 'mi_lista' a la consola
+# Imprime mi_lista a la consola
 
 ```
 
@@ -204,13 +204,13 @@ mi_lista <- list(mi_vector, mi_matriz, mi_df)
 mi_vector <- 1:10 
 # Matriz con números del 1 al 9
 mi_matriz <- matrix(1:9, ncol = 3)
-# Primeras 10 filas del data frame 'mtcars' (incluido con R).
+# Primeras 10 filas del data frame mtcars (incluido con R).
 mi_df <- mtcars[1:10,]
 
 # Creando la lista, (tienes modificar este código para agregar los nombres):
 mi_lista <- list(vec = mi_vector, mat = mi_matriz, df = mi_df)
 
-# Imprime 'mi_lista' a la consola
+# Imprime mi_lista a la consola
 mi_lista
 ```
 
@@ -268,17 +268,17 @@ criticas <- data.frame(calificacion, fuentes, comentarios)
 
 *** =sample_code
 ```{r eval=FALSE}
-# Los objetos 'actores' y 'criticas' han sido cargados en tu espacio de trabajo
+# Los objetos actores y criticas han sido cargados en tu espacio de trabajo
 
-# Crea la lista 'lista_resplandor'
+# Crea la lista lista_resplandor
 lista_resplandor <- 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Los objetos 'actores' y 'criticas' han sido cargados en tu espacio de trabajo
+# Los objetos actores y criticas han sido cargados en tu espacio de trabajo
 
-# Crea la lista 'lista_resplandor'
+# Crea la lista lista_resplandor
 lista_resplandor <- list(nombre = "El resplandor", actores = actores, criticas = criticas)
 ```
 
@@ -345,23 +345,23 @@ lista_resplandor <- list(nombre ="El Resplandor", actores=actores, criticas=crit
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'lista_resplandor' ya está cargada en tu espacio de trabajo.
+# lista_resplandor ya está cargada en tu espacio de trabajo.
 
-# Define 'ultimo_actor'
+# Define ultimo_actor
 ultimo_actor <- 
 
-# Define 'segunda_critica'
+# Define segunda_critica
 segunda_critica <- 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# 'lista_resplandor' ya está cargada en tu espacio de trabajo.
+# lista_resplandor ya está cargada en tu espacio de trabajo.
 
-# Defina 'ultimo_actor'
+# Defina ultimo_actor
 ultimo_actor <- lista_resplandor$actores[length(lista_resplandor$actores)]
 
-# Define 'segunda_critica'
+# Define segunda_critica
 segunda_critica <- lista_resplandor$criticas[2,]
 ```
 
@@ -427,24 +427,24 @@ lista_resplandor <- list(nombre ="El Resplandor", actores=actores, criticas=crit
 *** =sample_code
 
 ```{r eval=FALSE}
-# 'lista_resplandor' está cargada en tu espacio de trabajo.
+# lista_resplandor está cargada en tu espacio de trabajo.
 
 # Agrega el anio de estreno
 pelicula_resplandor <- 
 
-# Observa la estructura de la lista recién creada 'pelicula_resplandor'
+# Observa la estructura de la lista recién creada pelicula_resplandor
 
 ```
 
 *** =solution
 
 ```{r eval=FALSE}
-# 'lista_resplandor' está cargada en tu espacio de trabajo.
+# lista_resplandor está cargada en tu espacio de trabajo.
 
 # Agrega el anio de estreno
 pelicula_resplandor <- c(lista_resplandor, anio = 1980)
 
-# Observa la estructura de la lista recién creada 'pelicula_resplandor'
+# Observa la estructura de la lista recién creada pelicula_resplandor
 str(lista_resplandor)
 ```
 

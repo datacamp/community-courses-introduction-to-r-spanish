@@ -326,7 +326,7 @@ levels(factor_genero) <- c("Femenino", "Masculino")
 factor_genero[1] 
 # Femenino
 factor_genero[2] 
-# Batalla de los sexos:¿Es Masculino 'mayor' que Femenino?
+# Batalla de los sexos:¿Es Masculino mayor que Femenino?
 factor_genero[1] > factor_genero[2] 
 ```
 
@@ -340,7 +340,7 @@ levels(factor_genero) <- c("Femenino", "Masculino")
 factor_genero[1] 
 # Femenino
 factor_genero[2] 
-# Batalla de los sexos: ¿Es Masculino 'mayor' que Femenino?
+# Batalla de los sexos: ¿Es Masculino mayor que Femenino?
 factor_genero[1] > factor_genero[2] 
 ```
 
@@ -385,13 +385,13 @@ Asigna a `desempeno` un vector que contenga los caracteres `"Medio"`, `"Bajo"` .
 
 *** =sample_code
 ```{r eval=FALSE}
-# Crea el vector 'desempeno'
+# Crea el vector desempeno
 desempeno <-
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Crea el vector 'desempeno'
+# Crea el vector desempeno
 desempeno <- c("Medio", "Bajo", "Bajo", "Medio", "Alto")
 ```
 
