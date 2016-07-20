@@ -3,7 +3,7 @@ title_meta  : Capítulo 2
 title       : Vectores
 description : Vamos a ir a Las Vegas! donde aprenderemos como analizar los resultados de los juegos usando vectores en R! Después de completar este capítulo serás capaz de crear vectores en R, nombrarlos, seleccionar elementos de ellos y comparar diferentes vectores.
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:9674d73d9c
 ## Creando vectores
 
 Te sientes de suerte? 
@@ -50,7 +50,7 @@ success_msg("Muy bien! Sigamos.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:70876ac6d8
 ## Creando vectores (2)
 
 Primero concentrémonos.
@@ -107,7 +107,7 @@ success_msg("Perfecto! notemos que agregar espacios despu&#233;s de las comas ay
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:74e329e45e
 ## Creando vectores (3)
 
 Después de una semana en Las Vegas y cero Ferraris en tu garage, decides que es hora de empezar a utilizar tus super-poderes analíticos.
@@ -171,7 +171,7 @@ success_msg("Muy bien! revisa los contenidos en tus vectores, puedes hacerlo sim
 *** =skills
 1
 
----  type:NormalExercise xp:100
+---  type:NormalExercise xp:100 key:81e15ff44f
 ## Nombrando elementos
 
 Como analista de datos, es importante tener una clara visión de que datos estas usando. Entender a qué se refiere cada elemento es por lo tanto esencial.
@@ -263,7 +263,7 @@ success_msg("Bien hecho! Continuemos al siguiente ejercicio.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:edfb334946
 ## Nombrando elementos (2)
 
 Si quieres ser un buen estadístico, tienes que ser un poco perezoso. (Si ya eres perezoso, quizás hayas nacido con esos excepcionales talentos estadísticos.)
@@ -340,7 +340,7 @@ success_msg("Bien hecho! Un consejo de programaci&#243;n: trata de evitar duplic
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:121375f169
 ## Calculando las ganancias totales
 
 Ahora que tienes los resultados del poker y la ruleta en un vector con elementos apropiadamente nombrados, puedes empezar a hacer análisis.
@@ -412,7 +412,7 @@ success_msg("Buen trabajo! Continuemos.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:2b468bdaa1
 ## Calculando las ganancias totales (2)
 
 ¿Entendiste como R realiza aritmética con los vectores?
@@ -499,7 +499,7 @@ success_msg("Bien! Vamos al siguiente ejercicio.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:9ab41c0ec1
 ## Calculando ganancias totales (3)
 
 Basado en los análisis previos, parece que tuviste una mezcla de días buenos y malos. Esto no era lo que tu ego esperaba, y te preguntas si quizás hay una (muy pequeña) posibilidad de que hayas perdido dinero en la semana.
@@ -595,7 +595,7 @@ success_msg("Bien! Eres muy bueno en R! aunque como vemos no te fue tan bien en 
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:c1329e546f
 ## Comparando ganancias totales
 
 Mmmmm.... parece que estás perdiendo dinero. Que sorpresa! Hora de repensar tu estrategia! Esto va a requerir un análisis más profundo.
@@ -686,7 +686,7 @@ success_msg("Buen trabajo! Continúa al siguiente ejercicio.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:6375c00c0d
 ## Seleccionando elementos: los buenos tiempos
 
 La corazonada parece que fue cierta. Parece que te va mejor en el poker que en la ruleta.
@@ -757,7 +757,7 @@ success_msg("Vamos muy bien! Tambi&#233;n es posible seleccionar múltiples elem
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:05c342af5b
 ## Seleccionando elementos: los buenos tiempos (2)
 
 
@@ -838,7 +838,7 @@ success_msg("Bien hecho! Seleccionar elementos es de las operaciones m&#224;s im
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:073de542e2
 ## Seleccionando elementos: los buenos tiempos (3)
 
 Seleccionar varios elementos del `vector_poker` con `c(2,3,4)` quizás no sea muy conveniente.  Recordemos como estadísticos nuestras raíces perezosas, así que usemos una notación que R utiliza para crear vectores de números consecutivos `c(2,3,4)` se puede crear con el código `2:4`, que genera el vector que contiene los números naturales del 2 al 4 (incluyendo ambos extremos).
@@ -913,7 +913,7 @@ success_msg("Fant&#224;stico! El operados dos puntos es muy &#250;til y se usa m
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:7da15e2b32
 ## Seleccionando elementos: los buenos tiempos (4)
 
 Otra forma de abordar este problema es usar los nombres de los elementos (Lunes, Martes, etc.) en lugar de sus índices. Por ejemplo:
@@ -987,7 +987,7 @@ success_msg("Buen trabajo! Aparte de seleccionar elementos por índice y por nom
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:07424a76c0
 ## Selección por comparación - Paso 1
 
 Al utilizar los operadores de comparación, podemos abordar las preguntas anteriores de una manera más interesante.
@@ -1065,7 +1065,7 @@ success_msg("Bien! Algo equivalente a reciclar el valor <code>0</code> cinco vec
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:4db760f93d
 ## Selección por comparación - Paso 2
 
 Trabajar con comparaciones hará tu vida analítica más fácil. En lugar de seleccionar "a mano" un conjunto de días para analizar (como en los primeros ejercicios), puedes decirle a R que te seleccione solo aquellos días en los que tuviste ganancias en el poker.
@@ -1141,7 +1141,7 @@ success_msg("Muy bien! Haz aprendido algo muy importante en R, seleccionar utili
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:72ff62da0f
 ## Selección Avanzada
 
 Así como lo hiciste con el poker, también quisieras saber aquellos días en los que tuviste ganancia en la ruleta.
