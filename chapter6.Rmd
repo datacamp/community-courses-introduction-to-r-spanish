@@ -3,7 +3,7 @@ title_meta  : Capítulo 6
 title       : Listas
 description : Las listas, en contraste con los vectores, pueden tener elementos de diferentes tipos. En este capítulo aprenderemos a crear, nombrar y extraer elementos de las listas. ¿Listo? ;-) 
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:9229514b7f
 ## Listas, ¿Para qué las necesitamos?
 
 Felicitaciones! en este punto del curso ya eres un (semi-)experto en:
@@ -44,7 +44,7 @@ success_msg("En sus marcas, LISTOS, fuera! Aprendamos sobre listas!")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:069c4f0fcf
 ## Listas, ¿Para qué las necesitamos? (2)
 
 Una **lista** en R es similar a una... bueno a una lista, de esas que usamos para anotar cosas.
@@ -83,7 +83,7 @@ success_msg("Ok. Hora de ensuciarnos las manos!")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:2cb292f99e
 ## Creando listas
 
 Vamos a crear nuestra primera lista! para ello usamos la función [`list()`](http://www.rdocumentation.org/packages/base/functions/list): 
@@ -147,7 +147,7 @@ success_msg("Bien hecho! Tus habilidades en R estan creciendo exponencialmente. 
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:6c7823b822
 ## Creando una lista con nombres
 
 Vamos muy bien, pero sigamos avanzando!
@@ -233,7 +233,7 @@ success_msg("Excelente! No solo sabes construir listas sino tambi&#233;n nombrar
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:04423d16de
 ## Creando una lista con nombres (2)
 
 Siendo un gran fanático del buen cine (recuerda que analizaste Star Wars!), ahora decides que vas a empezar a guardar información sobre películas buenas con la ayuda de listas.
@@ -299,7 +299,7 @@ success_msg("Excelente! Ya sabes c&#243;mo crear y nombrar componentes de una li
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:29c3636866
 ## Seleccionando elementos de una lista
 
 La mayoría de veces las listas contendrán muchos componentes. Por lo tanto, saber cómo extraer un elemento de una lista es importante.
@@ -382,7 +382,7 @@ success_msg("Bien hecho! Con todo lo que sabemos, es f&#224;cil seleccionar elem
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:01e6b93271
 ## Agregando más información a la lista de películas
 
 Al estar tan orgulloso de tu primera lista, decides compartirla con tu club de cine. Sin embargo, uno de los miembros más antiguos, el Sr. Kubrick, ha notado que olvidaste tener en cuenta el año de estreno de la película. Así que decides agregar esa información para que nadie pueda criticar tu lista.
