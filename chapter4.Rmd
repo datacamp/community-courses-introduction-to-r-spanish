@@ -5,7 +5,7 @@ description : Existen un tipo de variables llamadas variables categóricas. Por 
 framework   : datacamp
 mode        : selfcontained
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:74d14d2ce0
 ## ¿Que son los factores y para qué se usan?
 
 En este capítulo vamos a sumergirnos en el mundo de los **factores**. 
@@ -50,7 +50,7 @@ success_msg("Bien! ¿Listo para empezar? continuemos!")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:ce9c3e1d79
 ## ¿Que son los factores y para qué se usan? (2)
 
 Para crear factores en R usamos la función [`factor()`](http://www.rdocumentation.org/packages/base/functions/factor). Lo primero que tenemos que hacer es crear un vector que contenga todas las observaciones de nuestra variable. Por ejemplo el vector `genero` contiene el género de 5 individuos diferentes:
@@ -106,7 +106,7 @@ success_msg("Muy bien! Si quieres saber m&#224;s sobre la función <code>factor(
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:2fe0390cca
 ## ¿Que son los factores y para qué se usan? (3)
 
 Existen dos tipos de variables categóricas: **nominales** y **ordinales**. 
@@ -164,7 +164,7 @@ success_msg("¿Puedes ver que est&#224; pasando en este ejercicio? Bien! Sigamos
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:8574ba67cd
 ## Niveles de los factores
 
 Cuando trabajas con datos categóricos a veces notarás que los factores vienen dados con ciertos niveles. Sin embargo, frecuentemente es conveniente cambiar los niveles por varias razones, por ejemplo por claridad en los análisis. R permite modificar los niveles con la función [`levels()`](http://www.rdocumentation.org/packages/base/functions/levels):
@@ -234,7 +234,7 @@ success_msg("Excelente! Vamos al siguiente ejercicio")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:b2dd155b98
 ## Resumiendo un factor
 
 Luego de terminar este curso, una de nuestras funciones favoritas en R será [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) (resumen). Esta función nos dará una visión general del objeto o variable que usemos como argumento:
@@ -298,7 +298,7 @@ success_msg("Bien! F&#237;jate en la salida. El hecho de que hayas identificado 
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:90689511f5
 ## Batalla de los sexos
 
 _"Todos los animales son iguales, pero algunos son más iguales que otros." -- George Orwell_
@@ -357,7 +357,7 @@ success_msg("Naaaa, parece que R es neutral sobre los g&#233;neros. O quiz&#224;
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:a93ac0edef
 ## Factores con niveles ordenados
 
 Como los niveles `"Masculino"` y `"Femenino"` son niveles no ordenados de nuestro factor `genero` R responde con un mensaje de advertencia de que esa comparación (por medio del símbolo `>`) no tiene sentido en el caso de factores nominales (no ordenados).
@@ -407,7 +407,7 @@ success_msg("Buen trabajo! Vamos al siguiente ejercicio.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:b51c023d03
 ## Factores con niveles ordenados (2)
 
 El vector `desempeno` debería de ser convertido a un factor ordenado porque sus niveles tienen un orden natural. De forma predeterminada la función [`factor()`](http://www.rdocumentation.org/packages/base/functions/factor) transforma el vector `desempeno` en un factor no ordenado. Para crearlo como un factor ordenado necesitamos usar los argumentos adicionales: `ordered` y `levels`. 
@@ -475,7 +475,7 @@ success_msg("Muy bien! Mira la consola, se muestra que los niveles tienen un ord
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:bda1c0d06a
 ## Comparando vectores ordenados
 
 Al tener un mal día en el trabajo, el `Trabajador 2` entra a tu oficina y empieza a quejarse de que el `Trabajador 5` está atrasando todos los proyectos porque su desempeño en el trabajo es "Bajo". Como sabes que el `Trabajador 2` tiene la reputación de “problemático” decides averiguar si lo que dice tiene sentido.
