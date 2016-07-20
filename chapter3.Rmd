@@ -3,7 +3,7 @@ title_meta  : Capítulo 3
 title       : Matrices
 description : En este capítulo vamos a aprender a trabajar con matrices en R. Al finalizar el capítulo serás capaz de crear matrices y hacer operaciones básicas con éstas. Vamos a analizar cuánto dinero hizo la película Star Wars para ilustrar el uso de matrices en R. Que la fuerza te acompañe!
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:c47104d257
 ## ¿Que es una Matriz?
 
 En R, una matriz es un conjunto de elementos del mismo tipo (numérico, caracter o lógico) arreglados de forma rectangular en filas y columnas. Como una matriz se compone de filas y columnas decimos que es un objeto de dos dimensiones. 
@@ -53,7 +53,7 @@ success_msg("Bien! Vamos al siguiente ejercicio.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:4f5011d627
 ## Analizando matrices
 
 Es hora de ensuciarnos las manos. En los siguientes ejercicios vamos a analizar los números de las películas de Star Wars. Que la fuerza te acompañe!
@@ -119,7 +119,7 @@ success_msg("La fuerza esta contigo! sigamos...")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:05d1a1396b
 ## Nombrando a las filas y columnas de una matriz
 
 Para ayudarte a recordar los datos que guardamos en la matriz sería buena idea poner el nombre de las películas en cada fila. Dar nombres a la filas no solo nos ayudará a recordar los datos sino también sirve, como veremos después, para seleccionar elementos de la matriz.
@@ -206,7 +206,7 @@ success_msg("Bien! vas en camino a ser un Jedi-R... sigamos!.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:a77e0a45a0
 ## Calculando la taquilla mundial
 
 Una de las cosas más importantes para quienes han invertido en hacer una película no es que tan buena es, sino cuánto dinero hace en la taquilla mundial!
@@ -280,7 +280,7 @@ success_msg("Vamos muy bien! estamos aprendiendo mucho!")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:71d095bf69
 ## Agregando la columna de taquilla mundial
 
 En el ejercicio anterior calculamos un vector que tenía información sobre la taquilla mundial para cada una de las tres películas. Sin embargo este vector no es parte de nuestra matriz `star_wars_matrix`.
@@ -365,7 +365,7 @@ success_msg("Excelente! despu&#233;s de agregar columnas, el siguiente paso es a
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:09305cfa04
 ## Agregando filas
 
 Así como cada acción tiene una reacción, cada [`cbind()`](http://www.rdocumentation.org/packages/base/functions/cbind) tiene una [`rbind()`](http://www.rdocumentation.org/packages/base/functions/cbind). Bueno... si es una mala metáfora :/ pero la idea es esta: `rbind()` hace lo mismo que `cbind()` pero para filas. 
@@ -438,7 +438,7 @@ success_msg("Perfecto! Continuemos aplicando todo lo que hemos aprendido.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:063a235793
 ## Taquilla total para toda la saga
 
 Así como toda [`cbind()`](http://www.rdocumentation.org/packages/base/functions/cbind) tiene una [`rbind()`](http://www.rdocumentation.org/packages/base/functions/cbind), cada [`colSums()`](http://www.rdocumentation.org/packages/base/functions/colSums) tiene una [`rowSums()`](http://www.rdocumentation.org/packages/base/functions/colSums). El workspace ya contiene la matriz `todas_star_wars` que construiste en el ejercicio pasado (escribe `todas_star_wars` en la consola para recordar los datos que contiene esta matriz). Calculemos ahora la taquilla total para toda la saga.
@@ -508,7 +508,7 @@ success_msg("Excelente! ya sabemos sumar filas y columnas de las matrices.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:fd7264a0d9
 ## Seleccionando elementos de una matriz
 
 De manera similar  a los vectores, podemos usar los corchetes `[]` para seleccionar elementos de una matriz. Recuerda que las matrices son objetos de dos dimensiones, así que cada elemento tiene dos índices: el de la fila y el de la columna. Para seleccionar elementos de una matriz hay que indicar los índices de las filas y los índices de las columnas separados por coma. Estos ejemplos harán más claro como seleccionar valores de una matriz, es aconsejable que experimentes en la consola con alguna matriz que construyas.
@@ -594,7 +594,7 @@ success_msg("Muy bien! Vamos al siguiente ejercicio")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:817d4c9f0f
 ## Aritmética con matrices
 
 De manera similar a como aprendimos con los vectores, los operadores comunes: `+`, `-`, `/`, `*`, etc. trabajan de la misma manera en las matrices: la operación se realiza elemento por elemento.
@@ -666,7 +666,7 @@ success_msg("Bien! ¿Que es lo que nos dicen estos resultados? 92 millones de en
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:0606a21f11
 ## Aritmética con matrices (2) 
 
 Así como `2*mi_matriz` multiplica cada elemento de `mi_matriz` por `2`, el código  `mi_matriz1 * mi_matriz2` crea una matriz en la cual cada elemento es el producto de los elementos correspondientes en `mi_matriz1` y `mi_matriz2`.
