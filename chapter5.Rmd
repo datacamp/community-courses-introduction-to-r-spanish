@@ -3,7 +3,7 @@ title_meta  : Capítulo 5
 title       : Data frames
 description : La mayoría de los datos con los que trabajarás en R van a ser guardados en data frames. Al finalizar este capítulo vas a ser capaz de crear data frames, seleccionar partes del mismo y ordenar los datos que contiene de acuerdo a cierta variable.
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:55a417e856
 ## ¿Que es un data frame?
 
 Quizás recuerdes de nuestro capítulo sobre matrices que todos los elementos que ponemos en una matriz deben de ser del mismo tipo. Por ejemplo, cuando trabajamos con matrices los datos de Star Wars eran todos numéricos.
@@ -50,7 +50,7 @@ success_msg("Bien! vamos al siguiente ejercicio")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:b1c40a20ff
 ## Una rápida mirada a nuestros datos
 
 Vaya! que montón de carros!
@@ -95,7 +95,7 @@ success_msg("Excelente! Bueno... ¿Que tenemos en este conjunto de datos?, Por e
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:80ca5dcd87
 ## Veamos la estructura
 
 Otro método frecuentemente usado para echar un vistazo rápido a los datos es la función [`str()`](http://www.rdocumentation.org/packages/utils/functions/str). Esta función muestra la estructura de un data frame (u otro objeto de R). En este caso, el comando `str(mtcars)` muestra:
@@ -141,7 +141,7 @@ success_msg("Buen trabajo! ¿Pudiste ver toda la informaci&#243;n de la que habl
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:5183cbfdc6
 ## Creando un data frame
 
 Debido a que estamos usando conjuntos de datos que vienen con R, nos estamos perdiendo de más de la mitad de la diversión de crear nuestros propios data frames, el resto del capítulo está basado en tu propio conjunto de datos. ¿Qué tal si exploramos el espacio?
@@ -217,7 +217,7 @@ success_msg("Excelente! Continuemos al siguiente ejercicio. El siguiente paso l&
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:e606aa210b
 ## Creando un data frame (2)
 
 Asegúrate que tienes 8 observaciones y 5 variables. El data frame `planetas_df` está en tu espacio de trabajo (workspace) y ahora lo puedes explorar.
@@ -263,7 +263,7 @@ success_msg("Bien! Ahora que ya tenemos un entendimiento de nuestros datos es ho
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:a89fcaf9ac
 ## Selección de elementos
 
 De manera similar a los vectores y matrices, seleccionamos elementos de un data frame con los corchetes `[ ]`. Usando una coma, separamos los índices que deseamos seleccionar de las filas y las columnas respectivamente. Por ejemplo:
@@ -339,7 +339,7 @@ success_msg("Muy bien! Adem&#224;s de poder seleccionar las columnas de un data 
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:f34f617752
 ## Selección de elementos (2)
 
 En lugar de usar los índices de las columnas para seleccionar elementos de un data frame también puedes usar los nombres de las columnas para seleccionar datos.
@@ -394,7 +394,7 @@ success_msg("Excelente! vamos al siguiente ejercicio!")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:60adb8f4e8
 ## Solamente planetas con anillos
 
 Frecuentemente vas a querer seleccionar una columna entera, es decir, una variable específica de un data frame. Por ejemplo si quieres seleccionar todos los elementos de la variable `anillos` ambas notaciones servirán: `planetas_df[,5]` ó `planetas_df[,"anillos"]`.
@@ -453,7 +453,7 @@ success_msg("Excelente! Vamos al siguiente ejercicio para descubrir otra manera 
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:edc0f93d4c
 ## Solamente planetas con anillos (2)
 
 Quizás recuerdes de la secundaria que algunos planetas del sistema solar tienen anillos y otros no. Pero debido a tus prioridades de esa época (¿recuerdas la pubertad?) no puedes recordar los nombres de los planetas con anillos, mucho menos su rotación, velocidad, etc...
@@ -520,7 +520,7 @@ success_msg("Grandioso! Aunque a decir verdad esto fue una soluci&#243;n un poco
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:0d223f169a
 ## Solamente planetas con anillos, pero más eficiente
 
 ¿Que fue exactamente lo que hicimos en los ejercicios anteriores? Básicamente seleccionamos un subconjunto del data frame `planetas_df` basándonos en que cierta condición fuera verdadera (tiene o no tiene anillos). En el ejercicio pasado pudimos obtener esa información, quizás ya estés listo para trabajar en la NASA ;-).
@@ -587,7 +587,7 @@ success_msg("Muy bien! El c&#243;digo que usamos ahora con la función <code>sub
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:ccde2e8c73
 ## Ordenando
 
 Hacer rankings es uno de los pasatiempos favoritos de la humanidad. Estos rankings pueden ser útiles (países menos violentos en el mundo), entretenidos (estrellas de cine más influyentes) o sin sentido (las mujeres más parecidas a Lady Gaga). Cualquiera sea el propósito de tu ranking, R te puede ayudar.
@@ -641,7 +641,7 @@ success_msg("Bien! ahora usemos la función <code>order()</code> para ordenar nu
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:a8bdfa4dae
 ## Ordenando un data frame
 
 Ok, ahora que entendemos cómo funciona [`order()`](http://www.rdocumentation.org/packages/base/functions/order) hagamos algo útil con ella. Qué tal si ordenamos nuestros datos empezando por el planeta más grande, o sea ordenemos usando la columna `diametro`.
