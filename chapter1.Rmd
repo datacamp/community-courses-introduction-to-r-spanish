@@ -3,7 +3,7 @@ title_meta  : Capítulo 1
 title       : Introducción
 description : En este capítulo vamos a dar nuestros primeros pasos en R. Aprenderemos a usar la consola como calculadora y a asignar variables. También aprenderemos algunos de los tipos básicos de datos en R. Comencemos!
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:fd3438d3bc
 ## Como funciona la plataforma
 
 En el **editor** a la derecha puedes escribir el código para resolver los ejercicios. Al dar clic en 'Submit Answer' (Enviar Respuesta) cada línea de código es interpretada y ejecutada por R y se mostrará un mensaje diciendo si el cá, every line of code is interpreted and executed by R and you get código es correcto o contiene errores. La salidas son mostradas en la **consola** en la parte inferior derecha. También es posibe ejecutar comandos directamente en la consola, es una buena forma de experimentar con R. Los **gráficos** se muestran en la esquina superior derecha.
@@ -59,7 +59,7 @@ success_msg("Muy bien! Ahora que estas familiarizado con la plataforma empecemos
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:514005615d
 ## Aritmética con R
 
 Como vimos el uso más simple que se le puede dar a R es el de una calculadora. Consideremos las siguientes operaciones:
@@ -142,7 +142,7 @@ success_msg("Excelente! vamos al siguiente ejercicio.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:df3d0ded22
 ## Variables y asignaciones
 
 Un concepto básico en programación es el de **variable**. 
@@ -190,7 +190,7 @@ success_msg("Bien! Notaste que R no imprime el valor de la variable a la que le 
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:b903aacbf6
 ## Variables y asignaciones (2)
 
 Supongamos que tienes una canasta con cinco manzanas. Para recordarlo, quizás quieras asignar el número de manzanas en una variable llamada `numero_manzanas`
@@ -240,7 +240,7 @@ success_msg("Ok bien! Vamos al siguiente ejercicio.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:8e54f9dca3
 ## Variables y asignaciones (3)
 
 Supongamos que ahora tienes 6 naranjas. De nuevo, para no olvidarlo se te ocurre crear una variable llamada `numero_naranjas` y asignar el valor de 6 a esa variable. Ahora podemos a empezar a utilizar las variables creadas para hacer algo con ellas. Usemos R para saber el número total de frutas con las que contamos, pidamos que haga la cuenta por nosotros: `numero_manzanas + numero_naranjas`. Al leer este codigo nos damos cuenta de la importancia de dar nombres útiles a nuestras variables.
@@ -301,7 +301,7 @@ success_msg("Bien hecho! La gran ventaja de haber hecho los c&#224;lculos usando
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:d21f37801f
 ## Manzanas y naranjas
 
 En la escuela primaria nos decían que no sumáramos manzanas con naranjas, pero es lo que acabamos de hacer :) \n Sin embargo `numero_manzanas` y `numero_naranjas` son dos variables que contienen el mismo tipo de dato: un dato de tipo numérico. El operador `+` en R funciona con variables de este tipo. Si alguna de nuestras variables no es numérica sino por ejemplo caracter (ver el editor), entonces estaríamos tratando de asignar la suma de un caracter y un número a la variable `numero_frutas`, lo cual no es posible.
@@ -370,7 +370,7 @@ success_msg("Muy bien, que buen trabajo! Sigamos...")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:f5d6084a36
 ## Tipos de datos básicos en R
 
 R trabaja con muchos tipos de datos. Para empezar, algunos de los más básicos son:
@@ -440,7 +440,7 @@ success_msg("GBuen trabajo! ya casi finalizamos este cap&#237;tulo :)")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:63b3c0fdfe
 ## ¿Cómo sé el tipo de dato?
 
 ¿Recuerdas que cuando añadiste `5 + "seis"` obtuviste un error debido a que los tipos de datos no coincidian? Para evitar estas penosas situaciones :\ puedes saber de antemano el tipo de dato que tienen tus variables utilizando el código `class(nombre_variable)`
