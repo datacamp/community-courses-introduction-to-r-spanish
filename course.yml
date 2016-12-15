@@ -7,15 +7,9 @@ time_needed: 4 horas
 description: "Con más de 2 millones de usuarios a nivel mundial, R se convierte rápidamente en el lenguaje de programación líder en estadística y ciencia de datos. Cada año, el número de usuarios de R crece en 40%, y cada vez más organizaciones lo están usando para sus actividades cotidianas.
 En esta introducción a R, vas a dominar los elementos básicos de este bello lenguaje de programación: vectores, factores, listas y data frames. Con el conocimiento obtenido en este curso serás capaz de llevar a cabo tus propios análisis de datos.
 "
-author_bio: "Alvaro es el fundador y director de <a href='http://www.quantcompany.com' target='_blank'>Quant Company</a>, una empresa consultora en análisis y minería de datos, analítica predictiva, ciencia de datos, estadística y otras áreas cuantitativas. Antes de fundar <a href='http://www.quantcompany.com' target='_blank'>Quant Company</a> trabajó como analista económico en el Banco de Guatemala donde desarrollaba modelos econométricos de distintas variables macroeconómicas. 
+author_bio: "Alvaro es el fundador y director de <a href='http://www.quantcompany.com' target='_blank'>Quant Company</a>, una empresa consultora en análisis y minería de datos, analítica predictiva, ciencia de datos, estadística y otras áreas cuantitativas. Antes de fundar <a href='http://www.quantcompany.com' target='_blank'>Quant Company</a> trabajó como analista económico en el Banco de Guatemala donde desarrollaba modelos econométricos de distintas variables macroeconómicas.
 Alvaro posee una M.S. en Matemáticas y una M.S. en Economía y Finanzas Cuantitativas. Tiene amplia experiencia trabajando como consultor tanto a nivel académico como empresarial aplicando las técnicas de análisis de datos en temas como economía, finanzas, educación, comunicación, psicología y negocios.
 <br><br>Alvaro is the founder and director of <a href='http://www.quantcompany.com' target='_blank'>Quant Company</a>, a firm that offers consulting services in data analysis, data science, statistics, and other quantitative areas. Before founding <a href='http://www.quantcompany.com' target='_blank'>Quant Company</a> he worked as economic analyst for the Central Bank of Guatemala where he used to develop econometric models to explain the behavior of macroeconomic variables.
-Alvaro holds a M.S. in Mathematics and a M.S. in Quantitative Economics and Finance. He has extensive consulting experience working in both academia and the private industry, applying data science techniques in areas such as economics, finance, education, communication, psychology and business. 
+Alvaro holds a M.S. in Mathematics and a M.S. in Quantitative Economics and Finance. He has extensive consulting experience working in both academia and the private industry, applying data science techniques in areas such as economics, finance, education, communication, psychology and business.
 "
-chapters:
-  chapter1.Rmd: 1578
-  chapter2.Rmd: 1579
-  chapter3.Rmd: 1584
-  chapter4.Rmd: 1599
-  chapter5.Rmd: 1600
-  chapter6.Rmd: 1601
+from: "r-base-prod:latest"
