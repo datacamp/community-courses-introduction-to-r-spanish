@@ -12,4 +12,4 @@ Alvaro posee una M.S. en Matemáticas y una M.S. en Economía y Finanzas Cuantit
 <br><br>Alvaro is the founder and director of <a href='http://www.quantcompany.com' target='_blank'>Quant Company</a>, a firm that offers consulting services in data analysis, data science, statistics, and other quantitative areas. Before founding <a href='http://www.quantcompany.com' target='_blank'>Quant Company</a> he worked as economic analyst for the Central Bank of Guatemala where he used to develop econometric models to explain the behavior of macroeconomic variables.
 Alvaro holds a M.S. in Mathematics and a M.S. in Quantitative Economics and Finance. He has extensive consulting experience working in both academia and the private industry, applying data science techniques in areas such as economics, finance, education, communication, psychology and business.
 "
-from: "r-base-prod:latest"
+from: "r-base-prod:10"
